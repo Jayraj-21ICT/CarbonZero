@@ -64,8 +64,6 @@ if 'emissions_data' not in st.session_state:
         ])
         # Make sure data directory exists
         os.makedirs('data', exist_ok=True)
-if 'theme' not in st.session_state:
-    st.session_state.theme = 'dark'
 if 'active_page' not in st.session_state:
     st.session_state.active_page = "AI Insights"
 
@@ -183,11 +181,10 @@ def save_emissions_data():
         # Save data to JSON file with proper formatting
         with open('data/emissions.json', 'w') as f:
             if len(st.session_state.emissions_data) > 0:
-                json.dump(st.session_state.emissions_data.to_dict('records'), f, indent=2)
+                json.dump(st.session_state.emissions_data.to_dict(orient='records'), f, indent=2)
             else:
                 # Write empty array if no data
-                f.write('[]')
-                
+                f.write('[]')               
         return True
     except Exception as e:
         st.error(f"Error saving data: {str(e)}")
@@ -239,7 +236,7 @@ def delete_emission_entry(index):
             # Save data and return success/failure
             return save_emissions_data()
         else:
-            st.error("Invalid index for deletion")
+            st.error(f"Index {index} is invalid for deletion, No deletion performed.")
             return False
     except Exception as e:
         st.error(f"Error deleting entry: {str(e)}")
@@ -658,7 +655,7 @@ with st.sidebar:
     st.divider()
     
     # Language selector
-    language = st.selectbox(t('language'), ['English', 'Hindi'])
+    language = st.selectbox(t('language'), ['English', 'Hindi'], key='language')
     if language != st.session_state.language:
         st.session_state.language = language
         st.rerun()
@@ -830,250 +827,150 @@ elif st.session_state.active_page == "Data Entry":
     tabs = st.tabs([" Manual Entry", " CSV Upload"])
     
     with tabs[0]:
-        st.markdown("<h3>Add New Emission Entry</h3>", unsafe_allow_html=True)
-        with st.form("emission_form", border=False):
-            col1, col2 = st.columns(2)
-            with col1:
-                date = st.date_input(t('date'), datetime.now(), help="Date when the emission occurred")
-                
-                # Add business unit field for enterprise tracking with tooltip
-                business_unit = st.selectbox(
-                    "Business Unit", 
-                    ["Corporate", "Manufacturing", "Sales", "R&D", "Logistics", "IT", "Other"],
-                    help="The business unit responsible for this emission"
-                )
-                if business_unit == "Other":
-                    business_unit = st.text_input("Custom Business Unit", placeholder="Enter business unit name")
-                
-                # Add project field for better categorization with tooltip
-                project = st.selectbox(
-                    "Project", 
-                    ["Not Applicable", "Carbon Reduction Initiative", "Sustainability Program", "Operational", "Other"],
-                    help="The project or initiative associated with this emission"
-                )
-                if project == "Other":
-                    project = st.text_input("Custom Project", placeholder="Enter project name")
-                
-                # Add scope selection with tooltip explaining each scope
-                scope = st.selectbox(
-                    t('scope'), 
-                    ['Scope 1', 'Scope 2', 'Scope 3'],
-                    help="Scope 1: Direct emissions from owned sources\nScope 2: Indirect emissions from purchased energy\nScope 3: All other indirect emissions in value chain"
-                )
-                category_options = {
-                    'Scope 1': ['Stationary Combustion', 'Mobile Combustion', 'Fugitive Emissions', 'Process Emissions', 'Other'],
-                    'Scope 2': ['Electricity', 'Steam', 'Heating', 'Cooling', 'Other'],
-                    'Scope 3': ['Purchased Goods and Services', 'Capital Goods', 'Fuel- and Energy-Related Activities', 'Upstream Transportation and Distribution', 'Waste Generated in Operations', 'Business Travel', 'Employee Commuting', 'Upstream Leased Assets', 'Downstream Transportation and Distribution', 'Processing of Sold Products', 'Use of Sold Products', 'End-of-Life Treatment of Sold Products', 'Downstream Leased Assets', 'Franchises', 'Investments', 'Other']
-                }
-                category = st.selectbox(
-                    t('category'), 
-                    category_options[scope],
-                    help="The category of emission source"
-                )
-                if category == 'Other':
-                    category = st.text_input(t('custom_category'), placeholder="Enter custom category")
-                
-                # Enhanced location tracking with facility details and tooltips
-                country_options = ['India', 'United States', 'United Kingdom', 'Japan', 'Indonesia', 'Other']
-                country = st.selectbox(
-                    "Country", 
-                    country_options,
-                    help="Country where the emission occurred"
-                )
-                if country == 'Other':
-                    country = st.text_input("Custom Country", placeholder="Enter country name")
-                
-                # Add facility/location field with tooltip
-                facility = st.text_input(
-                    "Facility/Location", 
-                    placeholder="e.g., Mumbai HQ, Jakarta Plant 2, etc.",
-                    help="Specific facility or location where the emission occurred"
-                )
-                
-                # Add responsible person field with tooltip
-                responsible_person = st.text_input(
-                    "Responsible Person", 
-                    placeholder="Person responsible for this emission source",
-                    help="Name of the person accountable for managing this emission source"
-                )
-            with col2:
-                activity_options = {
-                    'Stationary Combustion': ['Boiler', 'Furnace', 'Generator', 'Other'],
-                    'Mobile Combustion': ['Company Vehicle', 'Fleet Vehicle', 'Machinery', 'Other'],
-                    'Fugitive Emissions': ['Refrigerant Leak', 'SF6 Emissions', 'Other'],
-                    'Process Emissions': ['Cement Production', 'Chemical Production', 'Other'],
-                    'Electricity': ['Office Electricity', 'Manufacturing Electricity', 'Other'],
-                    'Steam': ['Industrial Steam', 'Heating Steam', 'Other'],
-                    'Heating': ['Office Heating', 'Industrial Heating', 'Other'],
-                    'Cooling': ['Office Cooling', 'Industrial Cooling', 'Other'],
-                    'Purchased Goods and Services': ['Raw Materials', 'Office Supplies', 'Other'],
-                    'Capital Goods': ['Equipment Purchase', 'Vehicle Purchase', 'Other'],
-                    'Fuel- and Energy-Related Activities': ['Upstream Fuel Production', 'Transmission Losses', 'Other'],
-                    'Upstream Transportation and Distribution': ['Supplier Transport', 'Inbound Logistics', 'Other'],
-                    'Waste Generated in Operations': ['Solid Waste', 'Wastewater', 'Other'],
-                    'Business Travel': ['Air Travel', 'Ground Travel', 'Hotel Stays', 'Other'],
-                    'Employee Commuting': ['Private Vehicle', 'Public Transport', 'Other'],
-                    'Upstream Leased Assets': ['Leased Equipment', 'Leased Vehicles', 'Other'],
-                    'Downstream Transportation and Distribution': ['Outbound Logistics', 'Customer Transport', 'Other'],
-                    'Processing of Sold Products': ['Intermediate Processing', 'Final Assembly', 'Other'],
-                    'Use of Sold Products': ['Product Operation', 'Energy Consumption', 'Other'],
-                    'End-of-Life Treatment of Sold Products': ['Recycling', 'Landfill', 'Other'],
-                    'Downstream Leased Assets': ['Leased Equipment', 'Leased Property', 'Other'],
-                    'Franchises': ['Franchise Operations', 'Franchise Energy Use', 'Other'],
-                    'Investments': ['Investment Emissions', 'Financed Emissions', 'Other'],
-                    'Other': ['Custom Activity', 'Other']
-                }
-                activity_key = category if category != 'Other' else 'Other'
-                activity_list = activity_options.get(activity_key, ['Custom Activity', 'Other'])
-                activity = st.selectbox(
-                    "Activity", 
-                    activity_options.get(category, ['Other']),
-                    help="Specific activity that generated the emissions"
-                )
-                if activity == 'Other':
-                    activity = st.text_input("Custom Activity", placeholder="Enter custom activity")
-                
-                # Add validation for quantity with tooltip
-                quantity = st.number_input(
-                    t('quantity'), 
-                    min_value=0.0, 
-                    format="%.2f",
-                    help="The amount of activity (e.g., kWh used, liters consumed, etc.)"
-                )
-                
-                # Enhanced unit selection with tooltip
-                unit_options = ['kWh', 'MWh', 'GJ', 'liter', 'gallon', 'kg', 'tonne', 'km', 'mile', 'hour', 'day', 'piece', 'USD', 'Other']
-                unit = st.selectbox(
-                    t('unit'), 
-                    unit_options,
-                    help="The unit of measurement for the quantity"
-                )
-                if unit == 'Other':
-                    unit = st.text_input(t('custom_unit'), placeholder="Enter custom unit")
-                    
-                # Emission factor auto-population based on country and category
-                emission_factors = {
-                    'India': {
-                        'Electricity': 0.82, 'Mobile Combustion': 2.31, 'Stationary Combustion': 1.85, 'Other': 0.0
-                    },
-                    'United States': {
-                        'Electricity': 0.42,
-                        'Mobile Combustion': 2.32,
-                        'Stationary Combustion': 2.01,
-                        'Business Travel': 0.12,
-                        'Employee Commuting': 0.15
-                    }
-                }
-                default_factor = emission_factors.get(country, {}).get(category, 0.0) if country != 'Other' else 0.0
-                
-                # Now that default_factor is defined, show AI suggestion
-                st.info(f"💡 AI Suggestion: Based on your selections, a typical emission factor for {category} in {country} would be around {default_factor:.4f} kgCO2e per unit.")
-                
-                emission_factor = st.number_input(
-                    t('emission_factor'), 
-                    min_value=0.0, 
-                    value=default_factor, 
-                    format="%.4f",
-                    help=f"Emission factor in kgCO2e per unit. Typical range: {max(0.1, default_factor*0.8):.4f} to {default_factor*1.2:.4f}"
-                )
-                
-                # Add data quality indicator with color-coded help
-                data_quality = st.select_slider(
-                    "Data Quality",
-                    options=["Low", "Medium", "High"],
-                    value="Medium",
-                    help="🔴 Low: Estimated or proxy data\n🟡 Medium: Calculated from bills or invoices\n🟢 High: Directly measured or metered data"
-                )
-                
-                # Add verification status with detailed help
-                verification_status = st.selectbox(
-                    "Verification Status",
-                    ["Unverified", "Internally Verified", "Third-Party Verified"],
-                    help="Unverified: No verification process applied\nInternally Verified: Checked by internal team\nThird-Party Verified: Validated by external auditor"
-                )
-                
-                # Enhanced notes field with better guidance
-                notes = st.text_area(
-                    t('notes'), 
-                    placeholder="Additional information, data sources, calculation methods, etc.",
-                    help="Include information about data sources, calculation methodology, assumptions made, and any other relevant context"
-                )
-                
-                # Add cost field for financial impact tracking (optional)
-                cost = st.number_input(
-                    "Cost (Optional)", 
-                    min_value=0.0, 
-                    value=0.0,
-                    format="%.2f",
-                    help="Optional: Associated cost in your local currency"
-                )
-                
-                # Add cost currency if cost is entered
-                if cost > 0:
-                    currency = st.selectbox(
-                        "Currency",
-                        ["USD", "EUR", "INR", "GBP", "JPY", "Other"],
-                        help="Currency for the entered cost"
-                    )
-            
-            # Form submission buttons
-            col1, col2 = st.columns([1, 1])
-            with col1:
-                submitted = st.form_submit_button(t('add_entry'), type="primary", use_container_width=True)
-            with col2:
-                clear = st.form_submit_button(t('clear_form'), type="secondary", use_container_width=True)
-            
-            if submitted:
-                # Basic validation
-                if quantity <= 0:
-                    st.error("Quantity must be greater than zero.")
-                elif not facility.strip():
-                    st.warning("Facility/Location is recommended for enterprise tracking.")
-                else:
-                    try:
-                        # Include cost in the entry if provided
-                        cost_value = cost if 'cost' in locals() and cost > 0 else 0.0
-                        currency_value = currency if 'currency' in locals() and cost > 0 else ""
-                        
-                        add_emission_entry(
-                            date, business_unit, project, scope, category, activity, country, facility,
-                            responsible_person, quantity, unit, emission_factor, data_quality, verification_status, notes
-                        )
-                        st.success(t('entry_added'))
-                        # Redirect to Dashboard after successful entry
-                        st.session_state.active_page = "Dashboard"
-                        st.rerun()
-                    except Exception as e:
-                        st.error(f"{t('entry_failed')} {str(e)}")
-    
-    # Show existing data table
-    if len(st.session_state.emissions_data) > 0:
-        st.markdown("<h3>Existing Emissions Data</h3>", unsafe_allow_html=True)
+        st.markdown("<h3>Add New Resource Entry</h3>", unsafe_allow_html=True)
+        st.markdown("<br>", unsafe_allow_html=True) # Replaces the st.form to allow real-time dropdown updates
         
-        # Create a copy of the dataframe with an action column
-        display_df = st.session_state.emissions_data.copy()
-        
-        # Add a column for the delete action
-        col1, col2 = st.columns([3, 1])
+        col1, col2 = st.columns(2)
         
         with col1:
-            # Display the dataframe
+            date = st.date_input(t('date'), datetime.now(), help="Date when the activity occurred")
+            
+            # The GTU Pivot: Replaces "Scope"
+            resource_category = st.selectbox(
+                "Sustainability Category", 
+                ["Energy Consumption", "Waste Management", "Carbon Emissions"],
+                help="GTU Domain 3: Select the specific resource you are tracking."
+            )
+            
+            # Dynamic Activities based on Resource Category
+            if resource_category == "Energy Consumption":
+                activity_list = ['Grid Electricity', 'Solar Power', 'Wind Power', 'Diesel Generator', 'Other']
+            elif resource_category == "Waste Management":
+                activity_list = ['Plastic Waste', 'E-Waste', 'Industrial Solid Waste', 'Organic Waste', 'Other']
+            else:
+                activity_list = ['Stationary Combustion', 'Mobile Combustion', 'Fugitive Emissions', 'Other']
+                
+            activity = st.selectbox("Specific Activity", activity_list)
+            # The GTU Requirement: Renewable vs Non-Renewable Tracking
+            if resource_category == "Energy Consumption":
+                if activity in ['Solar Power', 'Wind Power']:
+                    energy_type = "Renewable (Clean)"
+                    st.success("🌱 Auto-locked to Renewable Energy")
+                elif activity == 'Diesel Generator':
+                    energy_type = "Non-Renewable (Fossil)"
+                    st.warning("🛢️ Auto-locked to Fossil Fuels")
+                else:
+                    # For Grid or Custom options where it could be either
+                    energy_type = st.radio(
+                        "Energy Source Type", 
+                        ["Non-Renewable (Fossil)", "Renewable (Clean)"]
+                    )
+            else:
+                energy_type = "N/A"# Handled automatically if it's waste or direct carbon
+            if activity == 'Other':
+                activity = st.text_input("Custom Activity", placeholder="Enter custom activity")
+                
+            facility = st.text_input("Facility/Location", placeholder="e.g., Main Campus, Factory A")
+            
+            # Keep the business context for the enterprise look
+            business_unit = st.selectbox(
+                "Business Unit", 
+                ["Corporate", "Manufacturing", "Sales", "Logistics", "Other"]
+            )
+            if business_unit == "Other":
+                business_unit = st.text_input("Custom Business Unit", placeholder="Enter unit name")
+
+            project = st.text_input("Project Name (Optional)", placeholder="e.g., Q3 Manufacturing")
+
+        with col2:
+            country_options = ['India', 'United States', 'United Kingdom', 'Japan', 'Indonesia', 'Other']
+            country = st.selectbox("Country", country_options)
+            if country == 'Other':
+                country = st.text_input("Custom Country", placeholder="Enter country name")
+                
+            responsible_person = st.text_input("Responsible Person", placeholder="Person accountable")
+
+            # Quantity and dynamic Units
+            quantity = st.number_input(t('quantity'), min_value=0.0, format="%.2f")
+            
+            if resource_category == "Waste Management":
+                unit_options = ['kg', 'tonnes']
+            elif resource_category == "Energy Consumption":
+                unit_options = ['kWh', 'MWh', 'GJ']
+            else:
+                unit_options = ['liter', 'gallon', 'kg', 'Other']
+                
+            unit = st.selectbox(t('unit'), unit_options)
+            if unit == 'Other':
+                unit = st.text_input(t('custom_unit'), placeholder="Enter custom unit")
+                
+            # Simplified Default Factor to prevent the dictionary crash
+            default_factor = 0.82 if country == 'India' and resource_category == 'Energy Consumption' else 0.5
+            st.info(f"💡 AI Suggestion: Typical impact factor for {resource_category} in {country} is ~{default_factor} per unit.")
+            
+            emission_factor = st.number_input("Impact Factor", min_value=0.0, value=default_factor, format="%.4f")
+            
+            data_quality = st.select_slider("Data Quality", options=["Low", "Medium", "High"], value="Medium")
+            verification_status = st.selectbox("Verification Status", ["Unverified", "Internally Verified", "Third-Party Verified"])
+            notes = st.text_area(t('notes'), placeholder="Additional context...")
+
+        # --- THE SUBMIT BUTTON LOGIC (Outside the columns) ---
+        st.markdown("<br>", unsafe_allow_html=True)
+        submitted = st.button(t('add_entry'), type="primary", use_container_width=True)
+        
+        if submitted:
+            if quantity <= 0:
+                st.error("Quantity must be greater than zero.")
+            else:
+                try:
+                    # THE ADAPTER: Trick the old backend by passing our new variables into the old slots
+                    add_emission_entry(
+                        date=date, 
+                        business_unit=business_unit, 
+                        project=project, 
+                        scope=resource_category,     # Dashboard pie chart uses this
+                        category=energy_type,        # Dashboard bar chart uses this
+                        activity=activity, 
+                        country=country, 
+                        facility=facility,
+                        responsible_person=responsible_person, 
+                        quantity=quantity, 
+                        unit=unit, 
+                        emission_factor=emission_factor, 
+                        data_quality=data_quality, 
+                        verification_status=verification_status, 
+                        notes=notes
+                    )
+                    st.success(t('entry_added'))
+                    time.sleep(1) # Visual feedback pause
+                    st.session_state.active_page = "Dashboard"
+                    st.rerun()
+                except Exception as e:
+                    st.error(f"{t('entry_failed')} {str(e)}")
+                    
+    # --- TABLE AND CSV TABS (Kept mostly intact, updated headers for clarity) ---
+    if len(st.session_state.emissions_data) > 0:
+        st.markdown("<h3>Existing Resource Data</h3>", unsafe_allow_html=True)
+        display_df = st.session_state.emissions_data.copy()
+        col_tab1, col_tab2 = st.columns([3, 1])
+        
+        with col_tab1:
             st.dataframe(
                 display_df,
                 column_config={
                     "date": st.column_config.DateColumn("Date"),
                     "business_unit": st.column_config.TextColumn("Business Unit"),
                     "project": st.column_config.TextColumn("Project"),
-                    "scope": st.column_config.TextColumn("Scope"),
-                    "category": st.column_config.TextColumn("Category"),
+                    "scope": st.column_config.TextColumn("Resource Category"), # Renamed header
+                    "category": st.column_config.TextColumn("Energy Type"),    # Renamed header
                     "activity": st.column_config.TextColumn("Activity"),
                     "country": st.column_config.TextColumn("Country"),
                     "facility": st.column_config.TextColumn("Facility"),
                     "responsible_person": st.column_config.TextColumn("Responsible Person"),
                     "quantity": st.column_config.NumberColumn("Quantity", format="%.2f"),
                     "unit": st.column_config.TextColumn("Unit"),
-                    "emission_factor": st.column_config.NumberColumn("Emission Factor", format="%.4f"),
-                    "emissions_kgCO2e": st.column_config.NumberColumn("Emissions (kgCO2e)", format="%.2f"),
+                    "emission_factor": st.column_config.NumberColumn("Impact Factor", format="%.4f"),
+                    "emissions_kgCO2e": st.column_config.NumberColumn("Total Impact", format="%.2f"),
                     "data_quality": st.column_config.TextColumn("Data Quality"),
                     "verification_status": st.column_config.TextColumn("Verification"),
                     "notes": st.column_config.TextColumn("Notes"),
@@ -1082,13 +979,14 @@ elif st.session_state.active_page == "Data Entry":
                 hide_index=False
             )
         
-        with col2:
-            # Add delete functionality
+        with col_tab2:
             st.markdown("### Delete Entry")
-            entry_to_delete = st.number_input("Select entry number to delete", min_value=0, 
-                                           max_value=len(display_df)-1 if len(display_df) > 0 else 0, 
-                                           step=1, 
-                                           help="Enter the index number of the entry you want to delete")
+            entry_to_delete = st.number_input(
+                            "Select entry number to delete", 
+                            min_value=0, 
+                            step=1, 
+                            help="Enter the exact row index shown in the table."
+                        )
             
             if st.button("🗑️ Delete Selected Entry", type="primary"):
                 if delete_emission_entry(entry_to_delete):
@@ -1097,47 +995,16 @@ elif st.session_state.active_page == "Data Entry":
                 else:
                     st.error(f"Failed to delete entry {entry_to_delete}")
         
-    
     with tabs[1]:
         st.markdown("<h3>Upload CSV File</h3>", unsafe_allow_html=True)
-        
         uploaded_file = st.file_uploader(t('upload_csv'), type='csv')
         if uploaded_file is not None:
             if process_csv(uploaded_file):
                 st.success(t('csv_uploaded'))
-                # Redirect to Dashboard after successful upload
                 st.session_state.active_page = "Dashboard"
                 st.rerun()
             else:
                 st.error("Failed to process CSV file. Please check the format.")
-        
-        # Sample CSV download with enterprise-grade fields
-        sample_data = {
-            'date': ['2025-01-15', '2025-01-20'],
-            'business_unit': ['Corporate', 'Logistics'],
-            'project': ['Carbon Reduction Initiative', 'Operational'],
-            'scope': ['Scope 2', 'Scope 1'],
-            'category': ['Electricity', 'Mobile Combustion'],
-            'activity': ['Office Electricity', 'Company Vehicle'],
-            'country': ['India', 'United States'],
-            'facility': ['Mumbai HQ', 'Chicago Distribution Center'],
-            'responsible_person': ['Rahul Sharma', 'John Smith'],
-            'quantity': [1000, 50],
-            'unit': ['kWh', 'liter'],
-            'emission_factor': [0.82, 2.31495],
-            'data_quality': ['High', 'Medium'],
-            'verification_status': ['Internally Verified', 'Unverified'],
-            'notes': ['Monthly electricity bill', 'Fleet vehicle fuel consumption']
-        }
-        sample_df = pd.DataFrame(sample_data)
-        csv = sample_df.to_csv(index=False).encode('utf-8')
-        
-        st.download_button(
-            label="Download Sample CSV",
-            data=csv,
-            file_name="sample_emissions.csv",
-            mime="text/csv",
-        )
 
 # Reports page removed - focusing on AI features only
 
