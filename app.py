@@ -70,8 +70,8 @@ if 'active_page' not in st.session_state:
 # Translation dictionary
 translations = {
     'English': {
-        'title': 'YourCarbonFootprint',
-        'subtitle': 'Carbon Accounting & Reporting Tool for SMEs',
+        'title': 'GreenOps',
+        'subtitle': 'Sustainability Accounting Tool for SMEs',
         'dashboard': 'Dashboard',
         'data_entry': 'Data Entry',
         'reports': 'Reports',
@@ -106,14 +106,14 @@ translations = {
         'report_downloaded': 'Report downloaded successfully!',
         'settings_saved': 'Settings saved successfully!',
         'no_data': 'No data available.',
-        'welcome_message': 'Welcome to YourCarbonFootprint! Start by adding your emissions data or uploading a CSV file.',
+        'welcome_message': 'Welcome to GreenOps! Start by adding your emissions data or uploading a CSV file.',
         'custom_category': 'Custom Category',
         'custom_activity': 'Custom Activity',
         'custom_unit': 'Custom Unit',
         'entry_failed': 'Failed to add entry.'
     },
     'Hindi': {
-        'title': 'आपका कार्बन फुटप्रिंट',
+        'title': 'GreenOps',
         'subtitle': 'एसएमई के लिए कार्बन अकाउंटिंग और रिपोर्टिंग टूल',
         'dashboard': 'डैशबोर्ड',
         'data_entry': 'डेटा प्रविष्टि',
@@ -178,30 +178,31 @@ def save_emissions_data():
                 # Continue even if backup fails
                 pass
         
-        # Save data to JSON file with proper formatting
+# Save data to JSON file with proper formatting
         with open('data/emissions.json', 'w') as f:
             if len(st.session_state.emissions_data) > 0:
-                json.dump(st.session_state.emissions_data.to_dict(orient='records'), f, indent=2)
+                # Nuke-proof: Force dates to strings before saving to prevent Timestamp crashes
+                temp_df = st.session_state.emissions_data.copy()
+                if 'date' in temp_df.columns:
+                    temp_df['date'] = pd.to_datetime(temp_df['date']).dt.strftime('%Y-%m-%d')
+                json.dump(temp_df.to_dict('records'), f, indent=2)
             else:
                 # Write empty array if no data
-                f.write('[]')               
+                f.write('[]')              
         return True
     except Exception as e:
         st.error(f"Error saving data: {str(e)}")
         return False
 
 # Function to add new emission entry
-def add_emission_entry(date, business_unit, project, scope, category, activity, country, facility, responsible_person, quantity, unit, emission_factor, data_quality, verification_status, notes):
-    """Add a new emission entry to the emissions data."""
+def add_emission_entry(date, business_unit, scope, category, activity, country, facility, responsible_person, quantity, unit, emission_factor):
+    """Add a new lean emission entry."""
     try:
-        # Calculate emissions
         emissions_kgCO2e = float(quantity) * float(emission_factor)
         
-        # Create new entry
         new_entry = pd.DataFrame([{
             'date': date.strftime('%Y-%m-%d'),
             'business_unit': business_unit,
-            'project': project,
             'scope': scope,
             'category': category,
             'activity': activity,
@@ -211,16 +212,10 @@ def add_emission_entry(date, business_unit, project, scope, category, activity, 
             'quantity': float(quantity),
             'unit': unit,
             'emission_factor': float(emission_factor),
-            'emissions_kgCO2e': emissions_kgCO2e,
-            'data_quality': data_quality,
-            'verification_status': verification_status,
-            'notes': notes
+            'emissions_kgCO2e': emissions_kgCO2e
         }])
         
-        # Add to existing data
         st.session_state.emissions_data = pd.concat([st.session_state.emissions_data, new_entry], ignore_index=True)
-        
-        # Save data and return success/failure
         return save_emissions_data()
     except Exception as e:
         st.error(f"Error adding entry: {str(e)}")
@@ -271,20 +266,17 @@ def process_csv(uploaded_file):
         if 'emissions_kgCO2e' not in df.columns:
             df['emissions_kgCO2e'] = df['quantity'] * df['emission_factor']
         
-        # Add enterprise fields if not present
-        enterprise_fields = {
-            'business_unit': 'Corporate',
-            'project': 'Not Applicable',
-            'country': 'India',
-            'facility': '',
-            'responsible_person': '',
-            'data_quality': 'Medium',
-            'verification_status': 'Unverified',
-            'notes': ''
+        # Add minimal enterprise context if missing from CSV
+        cs = st.session_state.get('company_settings', {})
+        context_fields = {
+            'business_unit': cs.get("company_name", "Corporate"),
+            'country': cs.get("location", "India"), # Will use location or default to India
+            'facility': cs.get("location", "HQ"),
+            'responsible_person': cs.get("contact_person", "Admin")
         }
         
         # Add missing columns with default values
-        for field, default_value in enterprise_fields.items():
+        for field, default_value in context_fields.items():
             if field not in df.columns:
                 df[field] = default_value
         
@@ -302,7 +294,7 @@ def process_csv(uploaded_file):
         st.error(f"Error processing CSV: {str(e)}")
         return False
 
-# Function to generate PDF report
+# Function to generate report
 def generate_report():
     # Create a BytesIO object
     buffer = BytesIO()
@@ -637,13 +629,6 @@ def metric_card(title, value, description=None, icon=None, prefix="", suffix="")
     </div>
     ''', unsafe_allow_html=True)
 
-# Card component
-def card(content, title=None):
-    if title:
-        st.markdown(f"<div class='stCard'><h3>{title}</h3>{content}</div>", unsafe_allow_html=True)
-    else:
-        st.markdown(f"<div class='stCard'>{content}</div>", unsafe_allow_html=True)
-
 # Apply custom CSS
 local_css()
 
@@ -669,7 +654,7 @@ with st.sidebar:
     
     # Footer
     st.markdown(
-        "<div class='footer' style='color: #555555;'> 2025 YourCarbonFootprint<br>Product Owner: Sonu Kumar<br>sonu@aianytime.net</div>",
+        "<div class='footer' style='color: #555555;'> 2026 GreenOps<br>Product Owner: GTU<br>abc123@gmail.com</div>",
         unsafe_allow_html=True
     )
 
@@ -822,221 +807,197 @@ if st.session_state.active_page == "Dashboard":
                 st.info("No emissions data available for time series chart.")
 
 elif st.session_state.active_page == "Data Entry":
-    st.markdown(f"<h1> {t('data_entry')}</h1>", unsafe_allow_html=True)
+    st.markdown("<h1>Add New Sustainability Entry</h1>", unsafe_allow_html=True)
     
-    tabs = st.tabs([" Manual Entry", " CSV Upload"])
+    # Global context for the manual entry session
+    region = st.selectbox("Operating Region", ["India", "EU", "UK", "USA", "Japan", "China", "Other"])
     
+    tabs = st.tabs(["Energy", "Waste", "Carbon", "CSV Upload"])
+    
+    # Dynamic defaults pulling from Settings
+    cs = st.session_state.get('company_settings', {})
+    defaults = {
+        "business_unit": cs.get("company_name", "Main Office"), 
+        "country": region, 
+        "facility": cs.get("location", "HQ"), 
+        "responsible_person": cs.get("contact_person", "Admin"), 
+    }
+
+    # ==========================================
+    # TAB 1: ENERGY
+    # ==========================================
     with tabs[0]:
-        st.markdown("<h3>Add New Resource Entry</h3>", unsafe_allow_html=True)
-        st.markdown("<br>", unsafe_allow_html=True) # Replaces the st.form to allow real-time dropdown updates
+        st.markdown("### Log Energy Consumption")
+        e_date = st.date_input("Date", key="e_date")
+        e_activity = st.selectbox("Energy Source", ["Grid Electricity", "Solar Power", "Wind Power", "Diesel Generator"])
         
-        col1, col2 = st.columns(2)
+        # Dynamic unit and factor routing
+        if e_activity == "Diesel Generator":
+            e_unit, e_cat = "Liters", "Non-Renewable (Fossil)"
+            e_factor = 2.68 # Global constant for Diesel
+        elif e_activity in ["Solar Power", "Wind Power"]:
+            e_unit, e_cat = "kWh", "Renewable (Clean)"
+            e_factor = 0.0 # Zero operational emissions
+        else: 
+            e_unit, e_cat = "kWh", "Non-Renewable (Fossil)"
+            # Regional Grid Carbon Intensity (Approximate kgCO2e/kWh)
+            grid_factors = {
+                "India": 0.82, "China": 0.58, "Japan": 0.45, 
+                "USA": 0.38, "EU": 0.23, "UK": 0.21, "Other": 0.45
+            }
+            e_factor = grid_factors.get(region, 0.45)
+            
+        e_qty = st.number_input(f"Quantity ({e_unit})", min_value=0.0, format="%.2f", key="e_qty")
+        st.info(f"**GHG Protocol Factor:** {e_factor} kgCO2e/{e_unit}")
         
-        with col1:
-            date = st.date_input(t('date'), datetime.now(), help="Date when the activity occurred")
-            
-            # The GTU Pivot: Replaces "Scope"
-            resource_category = st.selectbox(
-                "Sustainability Category", 
-                ["Energy Consumption", "Waste Management", "Carbon Emissions"],
-                help="GTU Domain 3: Select the specific resource you are tracking."
-            )
-            
-            # Dynamic Activities based on Resource Category
-            if resource_category == "Energy Consumption":
-                activity_list = ['Grid Electricity', 'Solar Power', 'Wind Power', 'Diesel Generator', 'Other']
-            elif resource_category == "Waste Management":
-                activity_list = ['Plastic Waste', 'E-Waste', 'Industrial Solid Waste', 'Organic Waste', 'Other']
-            else:
-                activity_list = ['Stationary Combustion', 'Mobile Combustion', 'Fugitive Emissions', 'Other']
-                
-            activity = st.selectbox("Specific Activity", activity_list)
-            # The GTU Requirement: Renewable vs Non-Renewable Tracking
-            if resource_category == "Energy Consumption":
-                if activity in ['Solar Power', 'Wind Power']:
-                    energy_type = "Renewable (Clean)"
-                    st.success("🌱 Auto-locked to Renewable Energy")
-                elif activity == 'Diesel Generator':
-                    energy_type = "Non-Renewable (Fossil)"
-                    st.warning("🛢️ Auto-locked to Fossil Fuels")
-                else:
-                    # For Grid or Custom options where it could be either
-                    energy_type = st.radio(
-                        "Energy Source Type", 
-                        ["Non-Renewable (Fossil)", "Renewable (Clean)"]
-                    )
-            else:
-                energy_type = "N/A"# Handled automatically if it's waste or direct carbon
-            if activity == 'Other':
-                activity = st.text_input("Custom Activity", placeholder="Enter custom activity")
-                
-            facility = st.text_input("Facility/Location", placeholder="e.g., Main Campus, Factory A")
-            
-            # Keep the business context for the enterprise look
-            business_unit = st.selectbox(
-                "Business Unit", 
-                ["Corporate", "Manufacturing", "Sales", "Logistics", "Other"]
-            )
-            if business_unit == "Other":
-                business_unit = st.text_input("Custom Business Unit", placeholder="Enter unit name")
+        if st.button("Log Energy Data", type="primary"):
+            if add_emission_entry(e_date, defaults['business_unit'],"Energy Consumption", e_cat, e_activity, defaults['country'], defaults['facility'], defaults['responsible_person'], e_qty, e_unit, e_factor):
+                st.success(f"Logged {e_qty} {e_unit} of {e_activity}!")
 
-            project = st.text_input("Project Name (Optional)", placeholder="e.g., Q3 Manufacturing")
-
-        with col2:
-            country_options = ['India', 'United States', 'United Kingdom', 'Japan', 'Indonesia', 'Other']
-            country = st.selectbox("Country", country_options)
-            if country == 'Other':
-                country = st.text_input("Custom Country", placeholder="Enter country name")
-                
-            responsible_person = st.text_input("Responsible Person", placeholder="Person accountable")
-
-            # Quantity and dynamic Units
-            quantity = st.number_input(t('quantity'), min_value=0.0, format="%.2f")
-            
-            if resource_category == "Waste Management":
-                unit_options = ['kg', 'tonnes']
-            elif resource_category == "Energy Consumption":
-                unit_options = ['kWh', 'MWh', 'GJ']
-            else:
-                unit_options = ['liter', 'gallon', 'kg', 'Other']
-                
-            unit = st.selectbox(t('unit'), unit_options)
-            if unit == 'Other':
-                unit = st.text_input(t('custom_unit'), placeholder="Enter custom unit")
-                
-            # Simplified Default Factor to prevent the dictionary crash
-            default_factor = 0.82 if country == 'India' and resource_category == 'Energy Consumption' else 0.5
-            st.info(f"💡 AI Suggestion: Typical impact factor for {resource_category} in {country} is ~{default_factor} per unit.")
-            
-            emission_factor = st.number_input("Impact Factor", min_value=0.0, value=default_factor, format="%.4f")
-            
-            data_quality = st.select_slider("Data Quality", options=["Low", "Medium", "High"], value="Medium")
-            verification_status = st.selectbox("Verification Status", ["Unverified", "Internally Verified", "Third-Party Verified"])
-            notes = st.text_area(t('notes'), placeholder="Additional context...")
-
-        # --- THE SUBMIT BUTTON LOGIC (Outside the columns) ---
-        st.markdown("<br>", unsafe_allow_html=True)
-        submitted = st.button(t('add_entry'), type="primary", use_container_width=True)
-        
-        if submitted:
-            if quantity <= 0:
-                st.error("Quantity must be greater than zero.")
-            else:
-                try:
-                    # THE ADAPTER: Trick the old backend by passing our new variables into the old slots
-                    add_emission_entry(
-                        date=date, 
-                        business_unit=business_unit, 
-                        project=project, 
-                        scope=resource_category,     # Dashboard pie chart uses this
-                        category=energy_type,        # Dashboard bar chart uses this
-                        activity=activity, 
-                        country=country, 
-                        facility=facility,
-                        responsible_person=responsible_person, 
-                        quantity=quantity, 
-                        unit=unit, 
-                        emission_factor=emission_factor, 
-                        data_quality=data_quality, 
-                        verification_status=verification_status, 
-                        notes=notes
-                    )
-                    st.success(t('entry_added'))
-                    time.sleep(1) # Visual feedback pause
-                    st.session_state.active_page = "Dashboard"
-                    st.rerun()
-                except Exception as e:
-                    st.error(f"{t('entry_failed')} {str(e)}")
-                    
-    # --- TABLE AND CSV TABS (Kept mostly intact, updated headers for clarity) ---
-    if len(st.session_state.emissions_data) > 0:
-        st.markdown("<h3>Existing Resource Data</h3>", unsafe_allow_html=True)
-        display_df = st.session_state.emissions_data.copy()
-        col_tab1, col_tab2 = st.columns([3, 1])
-        
-        with col_tab1:
-            st.dataframe(
-                display_df,
-                column_config={
-                    "date": st.column_config.DateColumn("Date"),
-                    "business_unit": st.column_config.TextColumn("Business Unit"),
-                    "project": st.column_config.TextColumn("Project"),
-                    "scope": st.column_config.TextColumn("Resource Category"), # Renamed header
-                    "category": st.column_config.TextColumn("Energy Type"),    # Renamed header
-                    "activity": st.column_config.TextColumn("Activity"),
-                    "country": st.column_config.TextColumn("Country"),
-                    "facility": st.column_config.TextColumn("Facility"),
-                    "responsible_person": st.column_config.TextColumn("Responsible Person"),
-                    "quantity": st.column_config.NumberColumn("Quantity", format="%.2f"),
-                    "unit": st.column_config.TextColumn("Unit"),
-                    "emission_factor": st.column_config.NumberColumn("Impact Factor", format="%.4f"),
-                    "emissions_kgCO2e": st.column_config.NumberColumn("Total Impact", format="%.2f"),
-                    "data_quality": st.column_config.TextColumn("Data Quality"),
-                    "verification_status": st.column_config.TextColumn("Verification"),
-                    "notes": st.column_config.TextColumn("Notes"),
-                },
-                use_container_width=True,
-                hide_index=False
-            )
-        
-        with col_tab2:
-            st.markdown("### Delete Entry")
-            entry_to_delete = st.number_input(
-                            "Select entry number to delete", 
-                            min_value=0, 
-                            step=1, 
-                            help="Enter the exact row index shown in the table."
-                        )
-            
-            if st.button("🗑️ Delete Selected Entry", type="primary"):
-                if delete_emission_entry(entry_to_delete):
-                    st.success(f"Entry {entry_to_delete} deleted successfully!")
-                    st.rerun()
-                else:
-                    st.error(f"Failed to delete entry {entry_to_delete}")
-        
+    # ==========================================
+    # TAB 2: WASTE
+    # ==========================================
     with tabs[1]:
-        st.markdown("<h3>Upload CSV File</h3>", unsafe_allow_html=True)
-        uploaded_file = st.file_uploader(t('upload_csv'), type='csv')
-        if uploaded_file is not None:
-            if process_csv(uploaded_file):
-                st.success(t('csv_uploaded'))
-                st.session_state.active_page = "Dashboard"
-                st.rerun()
-            else:
-                st.error("Failed to process CSV file. Please check the format.")
+        st.markdown("### Log Waste Management")
+        w_date = st.date_input("Date", key="w_date")
+        w_activity = st.selectbox("Waste Material", ["Organic Waste", "Plastic Packaging", "Paper/Cardboard", "E-Waste"])
+        w_method = st.radio("Disposal Method", ["Landfill", "Recycled/Composted"])
+        w_qty = st.number_input("Quantity (kg)", min_value=0.0, format="%.2f", key="w_qty")
+        
+        # Universal waste factors (kgCO2e/kg)
+        w_factor = 0.0
+        if w_method == "Landfill":
+            factors = {"Organic Waste": 1.5, "Plastic Packaging": 0.05, "Paper/Cardboard": 0.5, "E-Waste": 0.1}
+            w_factor = factors.get(w_activity, 0.0)
+        else: # Recycled
+            factors = {"Organic Waste": 0.1, "Plastic Packaging": 0.02, "Paper/Cardboard": 0.02, "E-Waste": 0.01}
+            w_factor = factors.get(w_activity, 0.0)
 
-# Reports page removed - focusing on AI features only
+        st.info(f"**GHG Protocol Factor:** {w_factor} kgCO2e/kg")
+        
+        if st.button("Log Waste Data", type="primary"):
+            detailed_activity = f"{w_activity} ({w_method})"
+            if add_emission_entry(w_date, defaults['business_unit'], "Waste Management", w_method, detailed_activity, defaults['country'], defaults['facility'], defaults['responsible_person'], w_qty, "kg", w_factor):
+                st.success(f"Logged {w_qty}kg of {w_activity}!")
+
+    # ==========================================
+    # TAB 3: DIRECT CARBON
+    # ==========================================
+    with tabs[2]:
+        st.markdown("### Log Direct Carbon Emissions")
+        c_date = st.date_input("Date", key="c_date")
+        c_activity = st.selectbox("Activity", ["Petrol Vehicle Commute", "EV Commute", "Business Flight", "AC Refrigerant Leak (R410a)"])
+        
+        # Dynamic unit and factor routing
+        if c_activity == "AC Refrigerant Leak (R410a)":
+            c_unit, c_factor = "kg", 2088.0
+        elif c_activity == "EV Commute":
+            c_unit, c_factor = "km", 0.0
+        elif c_activity == "Business Flight":
+            c_unit, c_factor = "km", 0.25
+        else: # Petrol
+            c_unit, c_factor = "km", 0.19
+            
+        c_qty = st.number_input(f"Quantity ({c_unit})", min_value=0.0, format="%.2f", key="c_qty")
+        st.info(f"**GHG Protocol Factor:** {c_factor} kgCO2e/{c_unit}")
+        
+        if st.button("Log Carbon Data", type="primary"):
+            if add_emission_entry(c_date, defaults['business_unit'], "Carbon Emissions", "Direct Emission", c_activity, defaults['country'], defaults['facility'], defaults['responsible_person'], c_qty, c_unit, c_factor):
+                st.success(f"Logged {c_activity}!")
+
+    # ==========================================
+    # TAB 4: CSV UPLOAD
+    # ==========================================
+    with tabs[3]:
+        st.markdown("### Bulk Data Upload")
+        st.warning("Ensure your CSV includes the legally correct `emission_factor` for your operating region. The system will trust your uploaded math.")
+        uploaded_file = st.file_uploader("Upload CSV file", type=['csv'])
+        if uploaded_file is not None:
+            if st.button("Process CSV", type="primary"):
+                process_csv(uploaded_file)
+
+    # ==========================================
+    # DATA VIEWER & DELETION CONTROLS
+    # ==========================================
+    st.divider()
+    st.markdown("### Logged Database Entries")
+    
+    if len(st.session_state.emissions_data) > 0:
+        # Display the table
+        display_df = st.session_state.emissions_data.copy()
+        st.dataframe(display_df, use_container_width=True)
+        
+        # Deletion controls
+        st.markdown("#### Delete an Entry")
+        col_del1, col_del2 = st.columns([1, 2])
+        with col_del1:
+            entry_to_delete = st.number_input(
+                "Row Index to Delete", 
+                min_value=0, 
+                step=1, 
+                help="Enter the exact index number from the far-left column of the table."
+            )
+        with col_del2:
+            st.markdown("<br>", unsafe_allow_html=True) # alignment spacer
+            if st.button("🗑️ Delete Row", type="primary"):
+                if delete_emission_entry(entry_to_delete):
+                    st.success(f"Row {entry_to_delete} purged from database!")
+                    st.rerun()
+    else:
+        st.info("Database is currently empty. Add entries above or upload a CSV.")
 
 elif st.session_state.active_page == "Settings":
-    st.markdown(f"<h1> {t('settings')}</h1>", unsafe_allow_html=True)
+    st.markdown("<h1>System Configuration</h1>", unsafe_allow_html=True)
     
-    st.markdown("<h3>Company Information</h3>", unsafe_allow_html=True)
+    # Initialize settings in session state if missing
+    if 'company_settings' not in st.session_state:
+        try:
+            with open('data/settings.json', 'r') as f:
+                st.session_state.company_settings = json.load(f)
+        except (FileNotFoundError, json.JSONDecodeError):
+            st.session_state.company_settings = {
+                "company_name": "", "industry": "", "location": "",
+                "contact_person": "", "email": "", "phone": "",
+                "export_eu": False, "export_japan": False, "export_usa": False
+            }
+            
+    cs = st.session_state.company_settings
+
+    st.markdown("<h3>Enterprise Context</h3>", unsafe_allow_html=True)
+    st.info("These settings act as global defaults for database entries and provide context for the AI Insights engine.")
         
-    # Company info form
     with st.form("company_info_form"):
         col1, col2 = st.columns(2)
         with col1:
-            company_name = st.text_input("Company Name")
-            industry = st.text_input("Industry")
-            location = st.text_input("Location")
+            company_name = st.text_input("Company Name", value=cs.get("company_name", ""))
+            industry = st.text_input("Industry Sector", value=cs.get("industry", ""))
+            location = st.text_input("Primary Facility Location", value=cs.get("location", ""))
         with col2:
-            contact_person = st.text_input("Contact Person")
-            email = st.text_input("Email")
-            phone = st.text_input("Phone")
+            contact_person = st.text_input("Responsible Data Officer", value=cs.get("contact_person", ""))
+            email = st.text_input("Contact Email", value=cs.get("email", ""))
+            phone = st.text_input("Contact Phone", value=cs.get("phone", ""))
         
-        st.markdown("<h4>Export Markets</h4>", unsafe_allow_html=True)
+        st.markdown("<h4>Target Export Markets</h4>", unsafe_allow_html=True)
         col1, col2, col3 = st.columns(3)
         with col1:
-            eu_market = st.checkbox("European Union")
+            export_eu = st.checkbox("European Union (CBAM Compliance)", value=cs.get("export_eu", False))
         with col2:
-            japan_market = st.checkbox("Japan")
+            export_japan = st.checkbox("Japan", value=cs.get("export_japan", False))
         with col3:
-            indonesia_market = st.checkbox("Indonesia")
+            export_usa = st.checkbox("United States", value=cs.get("export_usa", False))
         
-        submitted = st.form_submit_button("Save Settings")
-        if submitted:
-            st.success("Settings saved successfully!")
+        if st.form_submit_button("Save Global Configuration", type="primary"):
+            # Update session state
+            st.session_state.company_settings = {
+                "company_name": company_name, "industry": industry, "location": location,
+                "contact_person": contact_person, "email": email, "phone": phone,
+                "export_eu": export_eu, "export_japan": export_japan, "export_usa": export_usa
+            }
+            # Save to disk
+            os.makedirs('data', exist_ok=True)
+            with open('data/settings.json', 'w') as f:
+                json.dump(st.session_state.company_settings, f, indent=2)
+            st.success("Configuration locked and saved to database.")
 
 elif st.session_state.active_page == "AI Insights":
     st.markdown(f"<h1>🤖 AI Insights</h1>", unsafe_allow_html=True)
