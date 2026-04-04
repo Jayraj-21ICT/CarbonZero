@@ -1,0 +1,137 @@
+/* --- 1. BASE APP & BACKGROUND --- */
+/* Kill the default header/footer */
+#MainMenu {visibility: hidden;}
+footer {visibility: hidden;}
+
+/* Inject a subtle off-white/gray background to break the "plain white" stock look */
+.stApp {
+    background-color: #F8FAFC; 
+}
+html, body, [class*="css"] { 
+    font-family: 'Inter', 'Segoe UI', 'Roboto', sans-serif; 
+    color: #1E293B;
+}
+            
+/* --- THE SLEDGEHAMMER FIX --- */
+/* Force all text to stay dark regardless of system theme */
+.stApp, .stApp p, .stApp h1, .stApp h2, .stApp h3, .stApp h4, .stApp span, .stApp label {
+    color: #1A1A1A !important;
+}
+
+/* Keep metric values and labels consistent */
+.metric-value { color: #0F172A !important; }
+.metric-label { color: #64748B !important; }
+
+/* Ensure sidebar text stays visible */
+[data-testid="stSidebarNav"] a span {
+    color: #475569 !important;
+}
+
+/* Active sidebar text should be green */
+[data-testid="stSidebarNav"] a[aria-current="page"] span {
+    color: #166534 !important;
+}
+
+/* Kill the annoying anchor link chain icons on all headers */
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, .stMarkdown a.anchor-link {
+    display: none !important;
+}
+
+/* Inject a subtle off-white/gray background */
+.stApp {
+    background-color: #F8FAFC; 
+}
+
+/* --- 2. SIDEBAR OVERHAUL --- */
+/* Style the sidebar container */
+[data-testid="stSidebar"] {
+    background-color: #FFFFFF !important;
+    border-right: 1px solid #E2E8F0;
+}
+
+/* Target the native Streamlit page navigation links */
+[data-testid="stSidebarNav"] {
+    padding-top: 1rem;
+}
+[data-testid="stSidebarNav"] ul {
+    gap: 0.5rem;
+}
+[data-testid="stSidebarNav"] a {
+    border-radius: 8px;
+    margin: 0 1rem;
+    padding: 0.5rem 1rem;
+    color: #475569 !important;
+    transition: all 0.2s ease;
+}
+/* Hover effect for sidebar links */
+[data-testid="stSidebarNav"] a:hover {
+    background-color: #F1F5F9 !important;
+    color: #0F172A !important;
+}
+/* Active page highlight */
+[data-testid="stSidebarNav"] a[aria-current="page"] {
+    background-color: #E6F4EA !important; /* Soft Green */
+    color: #166534 !important; /* Dark Green Text */
+    font-weight: 600;
+    border-left: 4px solid #166534;
+    border-radius: 4px 8px 8px 4px;
+}
+
+/* --- 3. TYPOGRAPHY --- */
+h1, h2, h3, h4, h5, h6 { 
+    color: #0F172A; 
+    font-weight: 700; 
+    letter-spacing: -0.02em;
+}
+h1 { font-size: 2.2rem; padding-bottom: 1rem; border-bottom: 1px solid #E2E8F0; margin-bottom: 2rem;}
+
+/* --- 4. CARDS & ELEVATION --- */    
+/* Custom Metric Cards */
+.metric-card {
+    background-color: #FFFFFF; 
+    border-radius: 12px; 
+    padding: 1.5rem;
+    text-align: center; 
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    border-bottom: 4px solid #10B981; /* Emerald Green Bottom border */
+    margin-bottom: 1.5rem;
+    border-top: 1px solid #E2E8F0;
+    border-left: 1px solid #E2E8F0;
+    border-right: 1px solid #E2E8F0;
+}
+.metric-value { font-size: 28px; font-weight: 800; margin: 0.5rem 0; color: #0F172A; }
+.metric-label { font-size: 13px; color: #64748B; text-transform: uppercase; letter-spacing: 1.2px; font-weight: 600; }
+
+/* --- 5. BUTTONS & INPUTS --- */
+.stButton>button {
+    background-color: #10B981; /* Primary Emerald */
+    color: white; 
+    border-radius: 8px;
+    border: none; 
+    padding: 0.5rem 1rem; 
+    font-weight: 600; 
+    transition: all 0.2s ease;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+.stButton>button:hover { 
+    background-color: #059669; 
+    box-shadow: 0 4px 6px -1px rgba(16, 185, 129, 0.2); 
+}
+
+/* Tabs styling to make them look less 'stock' */
+.stTabs [data-baseweb="tab-list"] { gap: 8px; border-bottom: 2px solid #E2E8F0; padding-bottom: 0px; }
+.stTabs [data-baseweb="tab"] { 
+    background-color: transparent; 
+    border-radius: 8px 8px 0px 0px; 
+    padding: 12px 16px; 
+    font-weight: 600; 
+    color: #64748B;
+}
+.stTabs [aria-selected="true"] { 
+    background-color: transparent !important; 
+    color: #10B981 !important; 
+    border-bottom: 3px solid #10B981;
+}
+
+/* Clean up inputs */
+[data-baseweb="input"], [data-baseweb="select"] { border-radius: 8px; }

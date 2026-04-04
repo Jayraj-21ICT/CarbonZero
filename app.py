@@ -1,14 +1,15 @@
 import streamlit as st
-import utils
 from dotenv import load_dotenv
+import data_store as ds
+import ui_components as ui
 
 # Initialize environment and page config MUST be the first Streamlit command
 load_dotenv()
 st.set_page_config(page_title="GreenOps | ESG Analytics", page_icon="🌱", layout="wide")
 
 # Load global state and base CSS
-utils.init_session_state()
-utils.local_css()
+ds.init_session_state()
+ui.load_css()
 
 # --- LANDING PAGE SPECIFIC CSS (ANIMATIONS & HOVER EFFECTS) ---
 st.markdown("""

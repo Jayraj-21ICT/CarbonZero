@@ -10,14 +10,12 @@ from crewai import Agent, Task, Crew, LLM
 # Load environment variables
 load_dotenv()
 
-# Force Groq API key into the exact variable LiteLLM demands
-os.environ["GROQ_API_KEY"] = os.getenv("GROQ_API_KEY", "")
-
 def get_llm():
     """Initialize and return the Groq LLM instance."""
     return LLM(
         model="groq/llama-3.3-70b-versatile",
-        temperature=0.4 # Lowered from 0.7. We want factual analytics, not creative writing.
+        temperature=0.4, # Lowered from 0.7. We want factual analytics, not creative writing.
+        api_key=os.getenv("GROQ_API_KEY")
     )
 
 class GreenOpsAgents:
