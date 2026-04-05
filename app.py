@@ -5,7 +5,7 @@ import ui_components as ui
 
 # Initialize environment and page config MUST be the first Streamlit command
 load_dotenv()
-st.set_page_config(page_title="GreenOps | ESG Analytics", page_icon="🌱", layout="wide")
+st.set_page_config(page_title="GreenOps - ESG Analytics", page_icon="🌱", layout="wide")
 
 # Load global state and base CSS
 ds.init_session_state()

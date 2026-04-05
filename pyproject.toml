@@ -5,7 +5,6 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
-    "crewai>=0.140.0",
     "crewai[litellm]>=0.140.0",
     "plotly>=6.2.0",
     "python-dotenv>=1.1.1",

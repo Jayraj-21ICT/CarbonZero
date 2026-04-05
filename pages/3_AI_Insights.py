@@ -4,9 +4,9 @@ import os
 import data_store as ds
 import ui_components as ui
 
+st.set_page_config(page_title="AI Insights - GreenOps", page_icon="🌱", layout="wide")
 ds.init_session_state()
 ui.load_css()
-st.set_page_config(page_title="GreenOps | ESG Analytics", page_icon="🌱", layout="wide")
 
 st.markdown("<h1>🤖 AI Insights & Advisory</h1>", unsafe_allow_html=True)
 
@@ -35,17 +35,26 @@ if len(st.session_state.emissions_data) > 0:
     df_ai['date'] = pd.to_datetime(df_ai['date'])
     
     st.markdown("### 📅 AI Analysis Timeframe")
-    min_date, max_date = df_ai['date'].min().date(), df_ai['date'].max().date()
+    min_date = df_ai['date'].min().date()
+    max_date = df_ai['date'].max().date()
     default_start = max_date - pd.Timedelta(days=365) if (max_date - min_date).days > 365 else min_date
     
-    col1, _ = st.columns([1, 2])
-    with col1:
-        date_selection = st.date_input("Date Range for AI:", value=(default_start, max_date), min_value=min_date, max_value=max_date)
+    if "global_date_range" not in st.session_state:
+        st.session_state.global_date_range = (default_start, max_date)
         
-    if len(date_selection) == 2:
-        filtered_df = df_ai[(df_ai['date'].dt.date >= date_selection[0]) & (df_ai['date'].dt.date <= date_selection[1])]
-    else:
-        filtered_df = pd.DataFrame()
+    col1, col2, _ = st.columns([1, 1, 2])
+    with col1:
+        start_date = st.date_input("Start Date", value=st.session_state.global_date_range[0], min_value=min_date, max_value=max_date, key="ai_start")
+    with col2:
+        end_date = st.date_input("End Date", value=st.session_state.global_date_range[1], min_value=min_date, max_value=max_date, key="ai_end")
+        
+    if start_date > end_date:
+        st.error("Invalid range: Start Date cannot be after End Date.")
+        st.stop()
+        
+    # Synchronize state and apply filter
+    st.session_state.global_date_range = (start_date, end_date)
+    filtered_df = df_ai[(df_ai['date'].dt.date >= start_date) & (df_ai['date'].dt.date <= end_date)]
 else:
     filtered_df = pd.DataFrame()
 

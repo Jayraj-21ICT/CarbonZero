@@ -18,6 +18,13 @@ def generate_esg_pdf(df, cs, date_range_str):
         except Exception as e:
             print(f"Font load warning: {e}")
 
+    # --- THE FIX: DYNAMIC TEXT SANITIZER ---
+    def safe_text(text):
+        """Forces latin-1 compliance only if the fallback font is active."""
+        if base_font == "Helvetica":
+            return str(text).encode('latin-1', errors='replace').decode('latin-1')
+        return str(text)
+
     # 2. BRANDED HEADER
     pdf.set_fill_color(16, 185, 129) # GreenOps Emerald
     pdf.rect(0, 0, 210, 25, 'F')
@@ -37,26 +44,24 @@ def generate_esg_pdf(df, cs, date_range_str):
     pdf.set_font(base_font, "B", 10)
     pdf.cell(35, 6, "Entity Name:")
     pdf.set_font(base_font, "", 10)
-    pdf.cell(70, 6, str(cs.get('company_name', 'Enterprise')))
+    pdf.cell(70, 6, safe_text(cs.get('company_name', 'Enterprise')))
     
     pdf.set_font(base_font, "B", 10)
     pdf.cell(35, 6, "Reporting Period:")
     pdf.set_font(base_font, "", 10)
-    pdf.cell(0, 6, str(date_range_str), ln=1)
+    pdf.cell(0, 6, safe_text(date_range_str), ln=1)
 
     pdf.set_font(base_font, "B", 10)
     pdf.cell(35, 6, "Location:")
     pdf.set_font(base_font, "", 10)
-    pdf.cell(70, 6, str(cs.get('location', 'Not Specified')))
+    pdf.cell(70, 6, safe_text(cs.get('location', 'Not Specified')))
 
     # --- EXPORT MARKETS FIX ---
     pdf.set_font(base_font, "B", 10)
-    pdf.cell(30, 6, "Export Markets:") # Reduced from 35 to 30 to close the gap
+    pdf.cell(30, 6, "Export Markets:") 
     pdf.set_font(base_font, "", 10)
     
     markets_list = cs.get('export_markets', [])
-    
-    # Clean logic: Show exactly 1 market + remainder count
     if not markets_list:
         markets_str = "None"
     elif len(markets_list) == 1:
@@ -64,9 +69,8 @@ def generate_esg_pdf(df, cs, date_range_str):
     else:
         markets_str = f"{markets_list[0]} (+{len(markets_list) - 1} more)"
         
-    pdf.cell(0, 6, markets_str, ln=1)
+    pdf.cell(0, 6, safe_text(markets_str), ln=1)
     pdf.ln(8)
-    # --------------------------
 
     # 4. EXECUTIVE SUMMARY
     total_emissions = df['emissions_kgCO2e'].sum()
@@ -90,7 +94,7 @@ def generate_esg_pdf(df, cs, date_range_str):
     scope_data = df.groupby('scope')['emissions_kgCO2e'].sum()
     for scope, val in scope_data.items():
         percentage = (val / total_emissions * 100) if total_emissions > 0 else 0
-        pdf.cell(95, 8, f" {scope}", border=1)
+        pdf.cell(95, 8, f" {safe_text(scope)}", border=1)
         pdf.cell(50, 8, f" {val:,.2f}", border=1, align="R")
         pdf.cell(45, 8, f" {percentage:.1f}%", border=1, align="R", ln=1)
     pdf.ln(5)
@@ -103,7 +107,7 @@ def generate_esg_pdf(df, cs, date_range_str):
     top_offenders = df.groupby('activity')['emissions_kgCO2e'].sum().nlargest(5)
     if not top_offenders.empty:
         for idx, (act, val) in enumerate(top_offenders.items(), 1):
-            pdf.cell(145, 8, f" {idx}. {act}", border=1)
+            pdf.cell(145, 8, f" {idx}. {safe_text(act)}", border=1)
             pdf.cell(45, 8, f" {val:,.2f} kgCO2e", border=1, align="R", ln=1)
     else:
         pdf.cell(0, 8, " No quantifiable bottleneck data available.", border=1, ln=1)

@@ -143,20 +143,20 @@ class GreenOpsAgents:
     # --- Execution Wrappers ---
     def run_data_entry_crew(self, data_description):
         task = self.create_data_entry_task(data_description)
-        return Crew(agents=[self.data_entry_assistant], tasks=[task], verbose=False).kickoff()
+        return Crew(agents=[self.data_entry_assistant], tasks=[task], verbose=False).kickoff().raw
     
     def run_report_summary_crew(self, emissions_data):
         task = self.create_report_summary_task(emissions_data)
-        return Crew(agents=[self.report_generator], tasks=[task], verbose=False).kickoff()
+        return Crew(agents=[self.report_generator], tasks=[task], verbose=False).kickoff().raw
     
     def run_offset_advice_crew(self, emissions_total, location, industry):
         task = self.create_offset_advice_task(emissions_total, location, industry)
-        return Crew(agents=[self.offset_advisor], tasks=[task], verbose=False).kickoff()
+        return Crew(agents=[self.offset_advisor], tasks=[task], verbose=False).kickoff().raw
     
     def run_regulation_check_crew(self, location, industry, export_markets):
         task = self.create_regulation_check_task(location, industry, export_markets)
-        return Crew(agents=[self.regulation_radar], tasks=[task], verbose=False).kickoff()
+        return Crew(agents=[self.regulation_radar], tasks=[task], verbose=False).kickoff().raw
     
     def run_optimization_crew(self, emissions_data):
         task = self.create_optimization_task(emissions_data)
-        return Crew(agents=[self.emission_optimizer], tasks=[task], verbose=False).kickoff()
+        return Crew(agents=[self.emission_optimizer], tasks=[task], verbose=False).kickoff().raw

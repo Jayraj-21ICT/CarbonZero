@@ -4,9 +4,9 @@ import os
 import data_store as ds
 import ui_components as ui
 
+st.set_page_config(page_title="Settings - GreenOps", page_icon="🌱", layout="wide")
 ds.init_session_state()
 ui.load_css()
-st.set_page_config(page_title="GreenOps | ESG Analytics", page_icon="🌱", layout="wide")
 
 st.markdown("<h1>System Configuration</h1>", unsafe_allow_html=True)
 cs = st.session_state.company_settings

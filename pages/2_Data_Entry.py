@@ -4,9 +4,9 @@ import emission_factors as ef
 import data_store as ds
 import ui_components as ui  
 
+st.set_page_config(page_title="Data Entry - GreenOps", page_icon="🌱", layout="wide")
 ds.init_session_state()
 ui.load_css()
-st.set_page_config(page_title="GreenOps | ESG Analytics", page_icon="🌱", layout="wide")
 
 st.markdown("<h1>Add New Sustainability Entry</h1>", unsafe_allow_html=True)
 
@@ -78,7 +78,9 @@ with tabs[0]:
         if e_qty <= 0:
             st.error("❌ Quantity must be greater than 0. Ghost entries are not allowed.")
         else:
-            if ds.add_emission_entry(e_date, defaults["business_unit"], "Energy Consumption", e_cat, e_activity, defaults["country"], defaults["facility"], defaults["responsible_person"], e_qty, e_unit, e_factor):
+            # Force mapping to correct GHG Scope
+            mapped_scope = "Scope 2" if e_cat == "Electricity" else "Scope 1"
+            if ds.add_emission_entry(e_date, defaults["business_unit"], mapped_scope, e_cat, e_activity, defaults["country"], defaults["facility"], defaults["responsible_person"], e_qty, e_unit, e_factor):
                 st.success(f"✅ Logged {e_qty} {e_unit} of {e_activity}!")
 
 # ── Tab: Waste ──
@@ -100,7 +102,8 @@ with tabs[1]:
         if w_qty <= 0:
             st.error("❌ Quantity must be greater than 0. Ghost entries are not allowed.")
         else:
-            if ds.add_emission_entry(w_date, defaults["business_unit"], "Waste Management", w_cat, w_activity, defaults["country"], defaults["facility"], defaults["responsible_person"], w_qty, w_unit, w_factor):
+            # Waste is strictly Scope 3
+            if ds.add_emission_entry(w_date, defaults["business_unit"], "Scope 3", w_cat, w_activity, defaults["country"], defaults["facility"], defaults["responsible_person"], w_qty, w_unit, w_factor):
                 st.success(f"Logged {w_qty} {w_unit} of {w_activity} waste!")
 
 # ── Tab: Carbon & Travel ──
@@ -131,7 +134,11 @@ with tabs[2]:
         if c_qty <= 0:
             st.error("❌ Quantity must be greater than 0. Ghost entries are not allowed.")
         else:
-            if ds.add_emission_entry(c_date, defaults["business_unit"], "Carbon Emissions", c_cat, c_activity, defaults["country"], defaults["facility"], defaults["responsible_person"], c_qty, c_unit, c_factor):
+            # Map categories to their respective scopes dynamically
+            scope_1_cats = ["Mobile Combustion", "Refrigerants"]
+            mapped_scope = "Scope 1" if c_cat in scope_1_cats else "Scope 3"
+            
+            if ds.add_emission_entry(c_date, defaults["business_unit"], mapped_scope, c_cat, c_activity, defaults["country"], defaults["facility"], defaults["responsible_person"], c_qty, c_unit, c_factor):
                 st.success(f"Logged {c_qty} {c_unit} for {c_activity}!")
 
 # ── Tab: CSV Upload ──
