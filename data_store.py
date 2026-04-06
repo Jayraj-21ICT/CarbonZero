@@ -123,7 +123,7 @@ def process_csv(uploaded_file) -> bool:
             st.success(f"✅ {len(df)} new row(s) added successfully.")
             return True
         return False
-    except Exception as exc:
+    except Exception as exc: 
         st.error(f"Error processing CSV: {exc}")
         return False
 
