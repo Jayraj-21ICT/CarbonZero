@@ -1,11 +1,11 @@
-# 🌱 GreenOps: AI-Driven ESG & Carbon Accounting Engine
+# 🌱 CarbonZero: AI-Driven ESG & Carbon Accounting Engine
 
 ![Python](https://img.shields.io/badge/Python-3.12+-blue.svg)
 ![Streamlit](https://img.shields.io/badge/Streamlit-Native_Multi--Page-FF4B4B.svg)
 ![AI](https://img.shields.io/badge/AI_Engine-Llama--3_(Groq)-purple.svg)
 ![License](https://img.shields.io/badge/License-MIT-green.svg)
 
-GreenOps is an enterprise-grade Environmental, Social, and Governance (ESG) compliance and predictive analytics engine. Engineered specifically for SMEs (Small and Medium-sized Enterprises), it digitizes the GHG Protocol to track Scope 1, 2, and 3 emissions while utilizing autonomous AI agents to ensure international regulatory compliance (e.g., EU CBAM).
+CarbonZero is an enterprise-grade Environmental, Social, and Governance (ESG) compliance and predictive analytics engine. Engineered specifically for SMEs (Small and Medium-sized Enterprises), it digitizes the GHG Protocol to track Scope 1, 2, and 3 emissions while utilizing autonomous AI agents to ensure international regulatory compliance (e.g., EU CBAM).
 
 ## 🚀 Core Capabilities
 
@@ -32,10 +32,10 @@ GreenOps is an enterprise-grade Environmental, Social, and Governance (ESG) comp
 
 ## 🏗️ System Architecture
 
-GreenOps utilizes Streamlit's native multi-page architecture to isolate memory and ensure zero-latency routing.
+CarbonZero utilizes Streamlit's native multi-page architecture to isolate memory and ensure zero-latency routing.
 
 ```text
-GreenOps/
+CarbonZero/
 ├── Home.py                     # UI Landing Page & SaaS Hero Section
 ├── data_store.py               # Session State Management & Data Persistence
 ├── ui_components.py            # Reusable UI Components & CSS Styling
@@ -105,28 +105,30 @@ streamlit run Home.py
 Local persistence utilizes flat JSON files mapped to Pandas DataFrames for rapid SME deployment.
 
 ### Example `emissions.json` Schema
-
-```json
-[
-  {
-    "date": "2026-04-04",
-    "business_unit": "Main Office",
-    "scope": "Scope 2",
-    "category": "Electricity",
-    "activity": "India Grid",
-    "country": "India",
-    "facility": "Ahmedabad HQ",
-    "responsible_person": "Data Officer",
-    "quantity": 1500.0,
-    "unit": "kWh",
-    "emission_factor": 0.82,
-    "emissions_kgCO2e": 1230.0
-  }
-]
-```
-
----
+{
+  "project": "CarbonZero",
+  "date": "2026-04-06",
+  "location": "Ahmedabad, India",
+  "emissions": [
+    {
+      "source": "vehicle",
+      "type": "petrol",
+      "distance_km": 50,
+      "mileage_kmpl": 15,
+      "fuel_used_liters": 3.33,
+      "emission_factor": 2.31,
+      "co2_kg": 7.69
+    },
+    {
+      "source": "electricity",
+      "units_kwh": 30,
+      "emission_factor": 0.82,
+      "co2_kg": 24.6
+    }
+  ],
+  "total_co2_kg": 32.29
+}
 
 ### Acknowledgments
 
-This project was developed starting from an initial architectural reference by AI Anytime. It has since been >95% rewritten, modularized, and enhanced with enterprise-grade ESG physics, cryptographic data guards, and FPDF reporting capabilities.
+This project was developed starting from an initial architectural reference by AI Anytime. It has since been >90% rewritten, modularized, and enhanced with enterprise-grade ESG physics, cryptographic data guards, and FPDF reporting capabilities.
