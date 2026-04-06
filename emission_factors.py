@@ -1,5 +1,5 @@
 """
-Emission factors database for GreenOps application.
+Emission factors database for CarbonZero application.
 Based on DEFRA/IPCC datasets for common emission sources.
 """
 
