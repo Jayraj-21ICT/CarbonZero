@@ -26,7 +26,7 @@ def page_header(eyebrow: str, title: str, subtitle: str = ""):
         <h1 class="go-page-h1">{title}</h1>
         {sub_html}
     </div>
-    """, unsafe_allow_html=True)
+    """, unsafe_allow_html=True) 
 
 
 def sep(label: str, small: bool = False):
