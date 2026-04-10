@@ -72,14 +72,14 @@ exp_col1, exp_col2 = st.columns(2)
 with exp_col1:
     csv_export = df.to_csv(index=False).encode("utf-8")
     st.download_button("Download Raw Data (CSV)", data=csv_export,
-                       file_name="GreenOps_Data.csv", mime="text/csv",
+                       file_name="CarbonZero_Data.csv", mime="text/csv",
                        use_container_width=True)
 with exp_col2:
     date_range_str = f"{df['date'].min().date()} to {df['date'].max().date()}"
     try:
         pdf_bytes = rg.generate_esg_pdf(df, st.session_state.get("company_settings", {}), date_range_str)
         st.download_button("Download Executive Report (PDF)", data=pdf_bytes,
-                           file_name="GreenOps_Report.pdf", mime="application/pdf",
+                           file_name="CarbonZero_Report.pdf", mime="application/pdf",
                            use_container_width=True)
     except Exception as e:
         st.error(f"PDF generation failed: {e}")

@@ -5,7 +5,7 @@ import random
 
 def generate_indian_sme_data():
     start_date = date(2024, 1, 1)
-    end_date = date(2026, 4, 4) # Up to current date
+    end_date = date(2026, 4, 6) # Up to current date
     total_days = (end_date - start_date).days
     
     data = []
