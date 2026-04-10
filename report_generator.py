@@ -26,7 +26,7 @@ def generate_esg_pdf(df, cs, date_range_str):
         return str(text)
 
     # 2. BRANDED HEADER
-    pdf.set_fill_color(16, 45, 29) # GreenOps Emerald
+    pdf.set_fill_color(16, 45, 29) # CarbonZero Emerald
     pdf.rect(0, 0, 210, 25, 'F')
     pdf.set_y(8)
     pdf.set_text_color(255, 255, 255)

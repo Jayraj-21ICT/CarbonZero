@@ -9,7 +9,7 @@ load_dotenv()
 
 # set_page_config MUST be first Streamlit call
 st.set_page_config(
-    page_title="GreenOps — Carbon Intelligence",
+    page_title="CarbonZero — Carbon Intelligence",
     page_icon="🌱",
     layout="wide",
     initial_sidebar_state="expanded",

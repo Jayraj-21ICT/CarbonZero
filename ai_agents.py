@@ -1,5 +1,5 @@
 """
-AI Agents for GreenOps application.
+AI Agents for CarbonZero application.
 Uses CrewAI to create context-aware ESG agents.
 """
 
@@ -18,9 +18,9 @@ def get_llm():
         api_key=os.getenv("GROQ_API_KEY")
     )
 
-class GreenOpsAgents:
+class CarbonZeroAgents:
     def __init__(self):
-        """Initialize the GreenOpsAgents class and instantiate the Llama-3 brain."""
+        """Initialize the CarbonZeroAgents class and instantiate the Llama-3 brain."""
         self.llm = get_llm()
         self._create_agents()
     

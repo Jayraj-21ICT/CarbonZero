@@ -4,7 +4,7 @@ import emission_factors as ef
 import data_store as ds
 import ui_components as ui
 
-st.set_page_config(page_title="Data Entry - GreenOps", page_icon="🌱", layout="wide")
+st.set_page_config(page_title="Data Entry - CarbonZero", page_icon="🌱", layout="wide")
 ds.init_session_state()
 ui.load_css()
 

@@ -5,7 +5,7 @@ import data_store as ds
 import ui_components as ui
 import report_generator as rg
 
-st.set_page_config(page_title="Dashboard - GreenOps", page_icon="🌱", layout="wide")
+st.set_page_config(page_title="Dashboard - CarbonZero", page_icon="🌱", layout="wide")
 ds.init_session_state()
 ui.load_css()
 

@@ -4,7 +4,7 @@ import os
 import data_store as ds
 import ui_components as ui
 
-st.set_page_config(page_title="AI Insights - GreenOps", page_icon="🌱", layout="wide")
+st.set_page_config(page_title="AI Insights - CarbonZero", page_icon="🌱", layout="wide")
 ds.init_session_state()
 ui.load_css()
 
@@ -18,12 +18,12 @@ if not os.getenv("GROQ_API_KEY"):
     st.error("**GROQ_API_KEY not set.** Add it to your `.env` file and restart the application.")
     st.stop()
 
-from ai_agents import GreenOpsAgents
+from ai_agents import CarbonZeroAgents
 
 
 @st.cache_resource
 def load_agents():
-    return GreenOpsAgents()
+    return CarbonZeroAgents()
 
 
 agents = load_agents()
