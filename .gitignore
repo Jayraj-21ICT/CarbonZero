@@ -1,0 +1,90 @@
+# ==========================================
+# PYTHON CORE
+# ==========================================
+__pycache__/
+*.py[codz]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# ==========================================
+# ENVIRONMENTS & SECRETS (CRITICAL)
+# ==========================================
+.env
+.envrc
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# ==========================================
+# GREENOPS SPECIFIC: STREAMLIT & DATA
+# ==========================================
+# Ignore Streamlit secrets but keep config.toml for UI themes
+.streamlit/secrets.toml
+
+# Ignore all local JSON databases and backups
+data/
+*.json
+*backup*.json
+
+# ==========================================
+# GREENOPS SPECIFIC: AI & VECTOR DATABASES
+# ==========================================
+# CrewAI / LangChain local storage
+chroma_db/
+.chroma/
+lancedb/
+.lancedb/
+vector_store/
+faiss_index/
+knowledge_base/
+
+# ==========================================
+# OS GENERATED JUNK
+# ==========================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# ==========================================
+# TOOLS & CACHES
+# ==========================================
+.ruff_cache/
+.pytest_cache/
+.mypy_cache/
+.cursorignore
+.cursorindexingignore
+.idea/
+.vscode/
+*.log
+pip-log.txt
+
+# ==========================================
+# EXEMPTIONS (Files that MUST be tracked)
+# ==========================================
+!requirements.txt
+!uv.lock
