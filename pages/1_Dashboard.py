@@ -1,6 +1,6 @@
-import streamlit as st
-import pandas as pd
-import plotly.express as px
+import streamlit as st # pyright: ignore[reportMissingImports]
+import pandas as pd # pyright: ignore[reportMissingModuleSource]
+import plotly.express as px # pyright: ignore[reportMissingImports]
 import data_store as ds
 import ui_components as ui
 import report_generator as rg
