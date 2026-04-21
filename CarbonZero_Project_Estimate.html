@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>CarbonZero — Project Estimate</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet"/>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bg:        #0a0f0d;
+    --surface:   #111a14;
+    --surface2:  #162019;
+    --border:    #1e3022;
+    --accent:    #4ade80;
+    --accent2:   #86efac;
+    --amber:     #fbbf24;
+    --red:       #f87171;
+    --text:      #e2ffe8;
+    --text-dim:  #7da888;
+    --text-mute: #3d5c44;
+    --mono:      'DM Mono', monospace;
+    --serif:     'DM Serif Display', serif;
+    --sans:      'Syne', sans-serif;
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--sans);
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  /* NOISE TEXTURE */
+  body::before {
+    content: '';
+    position: fixed; inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");
+    pointer-events: none; z-index: 0; opacity: 0.4;
+  }
+
+  /* GRID BACKGROUND */
+  .grid-bg {
+    position: fixed; inset: 0; z-index: 0; pointer-events: none;
+    background-image:
+      linear-gradient(var(--border) 1px, transparent 1px),
+      linear-gradient(90deg, var(--border) 1px, transparent 1px);
+    background-size: 40px 40px;
+    mask-image: radial-gradient(ellipse 80% 80% at 50% 50%, black 30%, transparent 100%);
+    opacity: 0.3;
+  }
+
+  .wrap { max-width: 960px; margin: 0 auto; padding: 0 24px; position: relative; z-index: 1; }
+
+  /* ── HEADER ── */
+  header {
+    border-bottom: 1px solid var(--border);
+    padding: 20px 0;
+    position: sticky; top: 0; z-index: 100;
+    background: rgba(10,15,13,0.92);
+    backdrop-filter: blur(12px);
+  }
+  .header-inner {
+    display: flex; align-items: center; justify-content: space-between;
+  }
+  .logo {
+    display: flex; align-items: center; gap: 10px;
+    font-family: var(--sans); font-weight: 800; font-size: 1rem; letter-spacing: 0.05em;
+    color: var(--accent);
+  }
+  .logo-dot {
+    width: 8px; height: 8px; background: var(--accent);
+    border-radius: 50%; animation: pulse 2s ease infinite;
+  }
+  @keyframes pulse {
+    0%,100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.5; transform: scale(1.4); }
+  }
+  .header-badge {
+    font-family: var(--mono); font-size: 0.7rem; color: var(--text-dim);
+    border: 1px solid var(--border); padding: 4px 10px; border-radius: 4px;
+    letter-spacing: 0.08em;
+  }
+
+  /* ── HERO ── */
+  .hero { padding: 80px 0 60px; }
+  .hero-eyebrow {
+    font-family: var(--mono); font-size: 0.7rem; color: var(--accent);
+    letter-spacing: 0.15em; text-transform: uppercase; margin-bottom: 20px;
+    display: flex; align-items: center; gap: 10px;
+  }
+  .hero-eyebrow::before { content: ''; display: block; width: 28px; height: 1px; background: var(--accent); }
+  .hero h1 {
+    font-family: var(--serif); font-size: clamp(2.8rem, 6vw, 4.5rem);
+    line-height: 1.1; margin-bottom: 12px;
+    background: linear-gradient(135deg, var(--text) 0%, var(--accent2) 100%);
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+  }
+  .hero h1 em { font-style: italic; }
+  .hero-sub {
+    font-size: 1rem; color: var(--text-dim); max-width: 520px; line-height: 1.7;
+    margin-bottom: 40px;
+  }
+  .hero-meta {
+    display: flex; gap: 32px; flex-wrap: wrap;
+  }
+  .hero-meta-item { display: flex; flex-direction: column; gap: 4px; }
+  .hero-meta-label {
+    font-family: var(--mono); font-size: 0.65rem; color: var(--text-mute);
+    text-transform: uppercase; letter-spacing: 0.1em;
+  }
+  .hero-meta-val {
+    font-family: var(--mono); font-size: 0.9rem; color: var(--accent);
+    font-weight: 500;
+  }
+
+  /* ── SECTION ── */
+  section { padding: 60px 0; border-top: 1px solid var(--border); }
+  .section-label {
+    font-family: var(--mono); font-size: 0.65rem; color: var(--text-mute);
+    text-transform: uppercase; letter-spacing: 0.15em; margin-bottom: 8px;
+  }
+  .section-title {
+    font-family: var(--serif); font-size: 1.9rem; margin-bottom: 32px;
+    color: var(--text);
+  }
+
+  /* ── SUMMARY CARDS ── */
+  .summary-grid {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px;
+    background: var(--border); border: 1px solid var(--border);
+    border-radius: 8px; overflow: hidden; margin-bottom: 40px;
+  }
+  .summary-card {
+    background: var(--surface); padding: 28px 24px;
+    transition: background 0.2s;
+  }
+  .summary-card:hover { background: var(--surface2); }
+  .summary-card-label {
+    font-family: var(--mono); font-size: 0.65rem; color: var(--text-mute);
+    text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 10px;
+  }
+  .summary-card-val {
+    font-family: var(--serif); font-size: 2rem; line-height: 1;
+    margin-bottom: 6px;
+  }
+  .summary-card-val.accent { color: var(--accent); }
+  .summary-card-val.amber  { color: var(--amber); }
+  .summary-card-val.red    { color: var(--red); }
+  .summary-card-sub { font-size: 0.78rem; color: var(--text-dim); }
+
+  /* ── PHASE TABLE ── */
+  .phase-block { margin-bottom: 32px; }
+  .phase-header {
+    display: flex; align-items: center; gap: 14px;
+    padding: 16px 20px; background: var(--surface);
+    border: 1px solid var(--border); border-bottom: none;
+    border-radius: 8px 8px 0 0; cursor: pointer;
+    transition: background 0.2s;
+  }
+  .phase-header:hover { background: var(--surface2); }
+  .phase-num {
+    font-family: var(--mono); font-size: 0.65rem; color: var(--text-mute);
+    min-width: 24px;
+  }
+  .phase-name { font-weight: 700; font-size: 0.95rem; flex: 1; }
+  .phase-hrs {
+    font-family: var(--mono); font-size: 0.85rem; color: var(--accent);
+    margin-right: 8px;
+  }
+  .phase-cost {
+    font-family: var(--mono); font-size: 0.85rem; color: var(--amber);
+  }
+  .phase-toggle { color: var(--text-mute); font-size: 0.8rem; transition: transform 0.3s; }
+  .phase-toggle.open { transform: rotate(180deg); }
+
+  .phase-rows {
+    border: 1px solid var(--border); border-top: none;
+    border-radius: 0 0 8px 8px; overflow: hidden;
+    display: none;
+  }
+  .phase-rows.open { display: block; }
+
+  .task-row {
+    display: grid;
+    grid-template-columns: 1fr 80px 90px 110px 120px;
+    gap: 0; border-bottom: 1px solid var(--border);
+    background: var(--bg);
+  }
+  .task-row:last-child { border-bottom: none; }
+  .task-row:hover { background: var(--surface); }
+  .task-row > * { padding: 13px 16px; font-size: 0.82rem; display: flex; align-items: center; }
+  .task-name { color: var(--text); }
+  .task-scope { font-family: var(--mono); font-size: 0.72rem; color: var(--text-dim); }
+  .task-hrs { font-family: var(--mono); font-size: 0.78rem; color: var(--text); }
+  .task-cost { font-family: var(--mono); font-size: 0.78rem; color: var(--amber); }
+  .task-risk { }
+
+  .risk-badge {
+    display: inline-flex; align-items: center; gap: 5px;
+    font-family: var(--mono); font-size: 0.65rem; padding: 3px 8px;
+    border-radius: 4px; text-transform: uppercase; letter-spacing: 0.05em;
+  }
+  .risk-low  { background: rgba(74,222,128,0.12); color: var(--accent); border: 1px solid rgba(74,222,128,0.25); }
+  .risk-med  { background: rgba(251,191,36,0.12);  color: var(--amber);  border: 1px solid rgba(251,191,36,0.25); }
+  .risk-high { background: rgba(248,113,113,0.12); color: var(--red);    border: 1px solid rgba(248,113,113,0.25); }
+
+  .table-head {
+    display: grid;
+    grid-template-columns: 1fr 80px 90px 110px 120px;
+    gap: 0; background: var(--surface2);
+    border: 1px solid var(--border); border-bottom: 1px solid var(--border);
+  }
+  .table-head > * {
+    padding: 10px 16px; font-family: var(--mono); font-size: 0.62rem;
+    color: var(--text-mute); text-transform: uppercase; letter-spacing: 0.1em;
+  }
+
+  /* ── RATE SETTINGS ── */
+  .rate-bar {
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: 8px; padding: 24px 28px; margin-bottom: 32px;
+    display: flex; gap: 40px; align-items: center; flex-wrap: wrap;
+  }
+  .rate-group { display: flex; flex-direction: column; gap: 6px; min-width: 160px; }
+  .rate-label {
+    font-family: var(--mono); font-size: 0.65rem; color: var(--text-mute);
+    text-transform: uppercase; letter-spacing: 0.1em;
+  }
+  .rate-controls { display: flex; align-items: center; gap: 10px; }
+  .rate-btn {
+    width: 28px; height: 28px; background: var(--surface2); border: 1px solid var(--border);
+    color: var(--text-dim); border-radius: 4px; cursor: pointer;
+    font-size: 1rem; display: flex; align-items: center; justify-content: center;
+    transition: all 0.15s;
+  }
+  .rate-btn:hover { background: var(--border); color: var(--text); }
+  .rate-val {
+    font-family: var(--mono); font-size: 1.1rem; color: var(--accent);
+    min-width: 60px; text-align: center;
+  }
+  .rate-note { font-size: 0.75rem; color: var(--text-dim); line-height: 1.5; max-width: 260px; }
+
+  /* ── RISK MATRIX ── */
+  .risk-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  .risk-item {
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: 8px; padding: 20px;
+  }
+  .risk-item-head {
+    display: flex; align-items: center; gap: 10px; margin-bottom: 10px;
+  }
+  .risk-icon { font-size: 1.1rem; }
+  .risk-title { font-weight: 700; font-size: 0.88rem; }
+  .risk-desc { font-size: 0.8rem; color: var(--text-dim); line-height: 1.6; }
+  .risk-item.high-risk { border-color: rgba(248,113,113,0.3); }
+  .risk-item.med-risk  { border-color: rgba(251,191,36,0.3); }
+
+  /* ── STACK ── */
+  .stack-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+  .stack-item {
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: 6px; padding: 16px;
+    display: flex; align-items: flex-start; gap: 12px;
+  }
+  .stack-bullet {
+    width: 6px; height: 6px; border-radius: 50%;
+    background: var(--accent); margin-top: 6px; flex-shrink: 0;
+  }
+  .stack-name { font-size: 0.82rem; font-weight: 700; margin-bottom: 4px; }
+  .stack-role { font-family: var(--mono); font-size: 0.68rem; color: var(--text-dim); }
+
+  /* ── RECOMMENDATIONS ── */
+  .rec-list { display: flex; flex-direction: column; gap: 16px; }
+  .rec-item {
+    display: flex; gap: 20px; padding: 20px 24px;
+    background: var(--surface); border: 1px solid var(--border); border-radius: 8px;
+    transition: border-color 0.2s;
+  }
+  .rec-item:hover { border-color: var(--accent); }
+  .rec-num {
+    font-family: var(--mono); font-size: 0.7rem; color: var(--text-mute);
+    min-width: 28px; padding-top: 2px;
+  }
+  .rec-content {}
+  .rec-title { font-weight: 700; font-size: 0.9rem; margin-bottom: 6px; }
+  .rec-body { font-size: 0.8rem; color: var(--text-dim); line-height: 1.65; }
+  .rec-tag {
+    display: inline-block; margin-top: 8px;
+    font-family: var(--mono); font-size: 0.62rem; color: var(--accent);
+    border: 1px solid rgba(74,222,128,0.3); padding: 2px 8px; border-radius: 4px;
+  }
+
+  /* ── TOTALS ── */
+  .totals-box {
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: 8px; overflow: hidden;
+  }
+  .totals-row {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 16px 24px; border-bottom: 1px solid var(--border);
+  }
+  .totals-row:last-child { border-bottom: none; }
+  .totals-row.total-final {
+    background: rgba(74,222,128,0.08);
+    padding: 22px 24px;
+  }
+  .totals-label { font-size: 0.85rem; color: var(--text-dim); }
+  .totals-label strong { color: var(--text); font-weight: 700; }
+  .totals-val { font-family: var(--mono); font-size: 0.95rem; color: var(--text); }
+  .totals-val.big { font-family: var(--serif); font-size: 2rem; color: var(--accent); }
+  .totals-val.amber { color: var(--amber); }
+
+  /* ── FOOTER ── */
+  footer {
+    border-top: 1px solid var(--border); padding: 32px 0; margin-top: 60px;
+  }
+  .footer-inner {
+    display: flex; justify-content: space-between; align-items: center;
+    flex-wrap: wrap; gap: 12px;
+  }
+  .footer-brand { font-family: var(--mono); font-size: 0.75rem; color: var(--text-mute); }
+  .footer-note { font-family: var(--mono); font-size: 0.65rem; color: var(--text-mute); }
+
+  /* ── EXPORT BTN ── */
+  .export-btn {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: var(--accent); color: #0a0f0d;
+    font-family: var(--sans); font-weight: 700; font-size: 0.82rem;
+    padding: 12px 24px; border-radius: 6px; border: none; cursor: pointer;
+    text-transform: uppercase; letter-spacing: 0.08em;
+    transition: opacity 0.2s;
+    text-decoration: none;
+  }
+  .export-btn:hover { opacity: 0.85; }
+
+  /* ── CHART ── */
+  .bar-chart { margin: 24px 0; }
+  .bar-row {
+    display: flex; align-items: center; gap: 12px; margin-bottom: 10px;
+  }
+  .bar-phase-name {
+    font-family: var(--mono); font-size: 0.7rem; color: var(--text-dim);
+    min-width: 200px; text-align: right;
+  }
+  .bar-track {
+    flex: 1; height: 10px; background: var(--surface);
+    border-radius: 2px; overflow: hidden;
+  }
+  .bar-fill {
+    height: 100%; background: var(--accent); border-radius: 2px;
+    transition: width 1s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .bar-label {
+    font-family: var(--mono); font-size: 0.7rem; color: var(--text-dim);
+    min-width: 48px;
+  }
+
+  /* Animations */
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  .hero, section { animation: fadeUp 0.6s ease both; }
+  section:nth-child(2) { animation-delay: 0.1s; }
+  section:nth-child(3) { animation-delay: 0.2s; }
+  section:nth-child(4) { animation-delay: 0.3s; }
+
+  @media(max-width: 700px) {
+    .summary-grid { grid-template-columns: 1fr; }
+    .task-row { grid-template-columns: 1fr 70px; }
+    .task-scope, .task-hrs, .task-risk { display: none; }
+    .table-head > *:not(:first-child):not(:last-child) { display: none; }
+    .table-head { grid-template-columns: 1fr 70px; }
+    .risk-grid, .stack-grid { grid-template-columns: 1fr; }
+    .rate-bar { flex-direction: column; gap: 16px; }
+    .totals-val.big { font-size: 1.5rem; }
+  }
+</style>
+</head>
+<body>
+<div class="grid-bg"></div>
+
+<!-- HEADER -->
+<header>
+  <div class="wrap header-inner">
+    <div class="logo">
+      <div class="logo-dot"></div>
+      CARBONZERO ESTIMATE
+    </div>
+    <span class="header-badge">v3.0.0 · GreenOps ESG Platform</span>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="hero-eyebrow">Project Scoping Document</div>
+    <h1>Scope. Build.<br><em>Ship Carbon-Zero.</em></h1>
+    <p class="hero-sub">
+      Full-stack cost and timeline estimate for the CarbonZero / GreenOps ESG carbon accounting platform — covering data ingestion, AI agent integration, dashboard, PDF reporting, and compliance radar.
+    </p>
+    <div class="hero-meta">
+      <div class="hero-meta-item">
+        <span class="hero-meta-label">Prepared</span>
+        <span class="hero-meta-val">April 2026</span>
+      </div>
+      <div class="hero-meta-item">
+        <span class="hero-meta-label">Platform</span>
+        <span class="hero-meta-val">Streamlit + CrewAI</span>
+      </div>
+      <div class="hero-meta-item">
+        <span class="hero-meta-label">Target Market</span>
+        <span class="hero-meta-val">Indian SMEs</span>
+      </div>
+      <div class="hero-meta-item">
+        <span class="hero-meta-label">LLM Backend</span>
+        <span class="hero-meta-val">Groq / Llama-3</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- RATE CONTROLS -->
+  <section id="rates">
+    <div class="section-label">Configuration</div>
+    <div class="section-title">Hourly Rate Settings</div>
+    <div class="rate-bar">
+      <div class="rate-group">
+        <span class="rate-label">Dev Rate (₹/hr)</span>
+        <div class="rate-controls">
+          <button class="rate-btn" onclick="changeRate('dev',-200)">−</button>
+          <span class="rate-val" id="devRateDisplay">₹1,500</span>
+          <button class="rate-btn" onclick="changeRate('dev',200)">+</button>
+        </div>
+      </div>
+      <div class="rate-group">
+        <span class="rate-label">AI/ML Rate (₹/hr)</span>
+        <div class="rate-controls">
+          <button class="rate-btn" onclick="changeRate('ai',-200)">−</button>
+          <span class="rate-val" id="aiRateDisplay">₹2,000</span>
+          <button class="rate-btn" onclick="changeRate('ai',200)">+</button>
+        </div>
+      </div>
+      <div class="rate-group">
+        <span class="rate-label">UI/UX Rate (₹/hr)</span>
+        <div class="rate-controls">
+          <button class="rate-btn" onclick="changeRate('ui',-200)">−</button>
+          <span class="rate-val" id="uiRateDisplay">₹1,200</span>
+          <button class="rate-btn" onclick="changeRate('ui',200)">+</button>
+        </div>
+      </div>
+      <p class="rate-note">Adjust rates to match your team's pricing. All phase and total costs update instantly.</p>
+    </div>
+  </section>
+
+  <!-- SUMMARY -->
+  <section id="summary">
+    <div class="section-label">At a Glance</div>
+    <div class="section-title">Project Summary</div>
+    <div class="summary-grid">
+      <div class="summary-card">
+        <div class="summary-card-label">Total Hours</div>
+        <div class="summary-card-val accent" id="totalHrs">—</div>
+        <div class="summary-card-sub">across 6 phases</div>
+      </div>
+      <div class="summary-card">
+        <div class="summary-card-label">Total Estimate</div>
+        <div class="summary-card-val amber" id="totalCost">—</div>
+        <div class="summary-card-sub">excl. API / infra costs</div>
+      </div>
+      <div class="summary-card">
+        <div class="summary-card-label">Timeline</div>
+        <div class="summary-card-val accent">10–14 wks</div>
+        <div class="summary-card-sub">2 dev · 1 AI/ML · 1 UI</div>
+      </div>
+    </div>
+
+    <!-- Bar Chart -->
+    <div class="bar-chart" id="barChart"></div>
+  </section>
+
+  <!-- PHASES -->
+  <section id="phases">
+    <div class="section-label">Work Breakdown Structure</div>
+    <div class="section-title">Phases & Tasks</div>
+    <div id="phases-container"></div>
+  </section>
+
+  <!-- TOTALS -->
+  <section id="totals">
+    <div class="section-label">Financial Summary</div>
+    <div class="section-title">Cost Breakdown</div>
+    <div class="totals-box" id="totalsBox"></div>
+  </section>
+
+  <!-- RISKS -->
+  <section id="risks">
+    <div class="section-label">Risk Register</div>
+    <div class="section-title">Risks & Mitigations</div>
+    <div class="risk-grid">
+      <div class="risk-item high-risk">
+        <div class="risk-item-head"><span class="risk-icon">⚠️</span><span class="risk-title">CrewAI Agent Latency</span></div>
+        <span class="risk-badge risk-high" style="margin-bottom:8px">High</span>
+        <p class="risk-desc">Groq Llama-3 multi-agent chains can run 15–45s. Without streaming or progress indicators, UX degrades sharply. Mitigation: add async task queuing and Streamlit spinner skeletons per agent call.</p>
+      </div>
+      <div class="risk-item high-risk">
+        <div class="risk-item-head"><span class="risk-icon">⚠️</span><span class="risk-title">Emission Factor Accuracy</span></div>
+        <span class="risk-badge risk-high" style="margin-bottom:8px">High</span>
+        <p class="risk-desc">Hardcoded EF_GRID (0.716 vs 0.82 between files) inconsistency exists. India CEA factors change annually. Mitigation: centralise all factors in emission_factors.py, add version/source metadata.</p>
+      </div>
+      <div class="risk-item med-risk">
+        <div class="risk-item-head"><span class="risk-icon">🔶</span><span class="risk-title">Streamlit State Management</span></div>
+        <span class="risk-badge risk-med" style="margin-bottom:8px">Medium</span>
+        <p class="risk-desc">JSON flat-file storage will hit concurrency limits with multiple users. Mitigation: migrate to SQLite or Supabase Postgres before beta, keeping the existing schema.</p>
+      </div>
+      <div class="risk-item med-risk">
+        <div class="risk-item-head"><span class="risk-icon">🔶</span><span class="risk-title">CBAM Regulation Changes</span></div>
+        <span class="risk-badge risk-med" style="margin-bottom:8px">Medium</span>
+        <p class="risk-desc">EU CBAM thresholds and covered sectors are evolving. The regulation_radar agent relies on LLM knowledge, not live feeds. Mitigation: add a web_search tool to the regulation agent or a quarterly data update process.</p>
+      </div>
+      <div class="risk-item">
+        <div class="risk-item-head"><span class="risk-icon">🟢</span><span class="risk-title">Groq API Rate Limits</span></div>
+        <span class="risk-badge risk-low" style="margin-bottom:8px">Low</span>
+        <p class="risk-desc">Free tier Groq limits are generous for SME single-tenant usage. Mitigation: implement request caching for identical emission summaries and exponential back-off on 429s.</p>
+      </div>
+      <div class="risk-item">
+        <div class="risk-item-head"><span class="risk-icon">🟢</span><span class="risk-title">PDF Unicode / Font Gaps</span></div>
+        <span class="risk-badge risk-low" style="margin-bottom:8px">Low</span>
+        <p class="risk-desc">report_generator.py has a DejaVu font fallback but the fonts/ directory isn't in the repo. Mitigation: bundle DejaVuSans.ttf or switch to ReportLab which bundles fonts natively.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TECH STACK -->
+  <section id="stack">
+    <div class="section-label">Technology</div>
+    <div class="section-title">Stack Inventory</div>
+    <div class="stack-grid">
+      <div class="stack-item"><div class="stack-bullet"></div><div><div class="stack-name">Streamlit ≥1.46</div><div class="stack-role">Frontend / App Shell</div></div></div>
+      <div class="stack-item"><div class="stack-bullet"></div><div><div class="stack-name">CrewAI ≥0.140</div><div class="stack-role">AI Agent Orchestration</div></div></div>
+      <div class="stack-item"><div class="stack-bullet"></div><div><div class="stack-name">Groq / Llama-3.3-70B</div><div class="stack-role">LLM Backend</div></div></div>
+      <div class="stack-item"><div class="stack-bullet"></div><div><div class="stack-name">Pandas + NumPy</div><div class="stack-role">Data Processing</div></div></div>
+      <div class="stack-item"><div class="stack-bullet"></div><div><div class="stack-name">Plotly ≥6.2</div><div class="stack-role">Charts & Visualisation</div></div></div>
+      <div class="stack-item"><div class="stack-bullet"></div><div><div class="stack-name">fpdf2</div><div class="stack-role">ESG PDF Report Export</div></div></div>
+      <div class="stack-item"><div class="stack-bullet"></div><div><div class="stack-name">python-dotenv</div><div class="stack-role">Secrets Management</div></div></div>
+      <div class="stack-item"><div class="stack-bullet"></div><div><div class="stack-name">DEFRA / IPCC EF DB</div><div class="stack-role">Emission Factors Source</div></div></div>
+      <div class="stack-item"><div class="stack-bullet"></div><div><div class="stack-name">GHG Protocol</div><div class="stack-role">Accounting Standard</div></div></div>
+    </div>
+  </section>
+
+  <!-- RECOMMENDATIONS -->
+  <section id="recs">
+    <div class="section-label">Strategic Guidance</div>
+    <div class="section-title">Recommendations</div>
+    <div class="rec-list">
+      <div class="rec-item">
+        <div class="rec-num">01</div>
+        <div class="rec-content">
+          <div class="rec-title">Unify Emission Factors — One Source of Truth</div>
+          <p class="rec-body">data_generator.py uses EF_GRID = 0.716 while emission_factors.py has 0.82 for India Grid. This creates silent calculation divergence between the demo data generator and the live app. Centralise all factors in emission_factors.py and import from it everywhere. Estimated fix: 4 hrs.</p>
+          <span class="rec-tag">Bug / Data Integrity</span>
+        </div>
+      </div>
+      <div class="rec-item">
+        <div class="rec-num">02</div>
+        <div class="rec-content">
+          <div class="rec-title">Replace JSON Flat File Storage with SQLite</div>
+          <p class="rec-body">data/emissions.json will break under concurrent writes and grows unbounded. A local SQLite database via SQLAlchemy is a zero-cost, zero-infrastructure swap that adds transactions, indexing, and proper queries. Migration preserves the existing schema 1:1.</p>
+          <span class="rec-tag">Architecture</span>
+        </div>
+      </div>
+      <div class="rec-item">
+        <div class="rec-num">03</div>
+        <div class="rec-content">
+          <div class="rec-title">Add Streaming Output to AI Agents</div>
+          <p class="rec-body">The five CrewAI agents currently block until completion with no visible progress. Using Streamlit's st.write_stream() or a custom token-streaming callback will dramatically improve perceived performance for report generation and offset advisor tasks (typically 10–30s).</p>
+          <span class="rec-tag">UX / Performance</span>
+        </div>
+      </div>
+      <div class="rec-item">
+        <div class="rec-num">04</div>
+        <div class="rec-content">
+          <div class="rec-title">Bundle DejaVuSans.ttf in the Repository</div>
+          <p class="rec-body">report_generator.py has a full Unicode fallback path that loads fonts/DejaVuSans.ttf, but this directory is absent from the uploaded codebase. When missing, all Devanagari/special characters in company names silently corrupt. Add the font file and include it in requirements/setup docs.</p>
+          <span class="rec-tag">Bug</span>
+        </div>
+      </div>
+      <div class="rec-item">
+        <div class="rec-num">05</div>
+        <div class="rec-content">
+          <div class="rec-title">Scope the BRSR Automation Module as a Paid Add-On</div>
+          <p class="rec-body">BRSR (Business Responsibility and Sustainability Reporting) is mandatory for India's top 1,000 listed companies and increasingly adopted by SME supply chains. A structured BRSR data-to-template export would differentiate CarbonZero commercially and justify a SaaS pricing tier.</p>
+          <span class="rec-tag">Product Opportunity</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRINT / EXPORT -->
+  <section id="export" style="border-top:1px solid var(--border); padding: 40px 0;">
+    <button class="export-btn" onclick="window.print()">⬇ Print / Save as PDF</button>
+  </section>
+
+</div><!-- /wrap -->
+
+<footer>
+  <div class="wrap footer-inner">
+    <span class="footer-brand">CARBONZERO · GreenOps ESG Platform · Estimate v1.0</span>
+    <span class="footer-note">Generated April 2026 · All figures in Indian Rupees (₹) · Hours are estimates ±20%</span>
+  </div>
+</footer>
+
+<script>
+// ── DATA ──────────────────────────────────────────────────────────────────────
+const PHASES = [
+  {
+    name: "Project Setup & Architecture",
+    color: "#4ade80",
+    tasks: [
+      { name: "Repo structure, venv, uv.lock audit", scope: "Dev", hrs: 4,  rateType: "dev",  risk: "low" },
+      { name: "Resolve dependency conflicts (requirements.txt vs pyproject.toml)", scope: "Dev", hrs: 6, rateType: "dev", risk: "med" },
+      { name: "Environment config (.env, secrets management)", scope: "Dev", hrs: 3, rateType: "dev", risk: "low" },
+      { name: "Data storage migration: JSON → SQLite", scope: "Dev", hrs: 12, rateType: "dev", risk: "med" },
+      { name: "CI/CD pipeline (GitHub Actions → Streamlit Cloud)", scope: "Dev", hrs: 8, rateType: "dev", risk: "low" },
+    ]
+  },
+  {
+    name: "Data Layer & Emission Engine",
+    color: "#86efac",
+    tasks: [
+      { name: "Unify emission factors (fix EF_GRID discrepancy)", scope: "Dev", hrs: 4, rateType: "dev", risk: "high" },
+      { name: "Expand emission_factors.py (India-specific factors)", scope: "Dev", hrs: 10, rateType: "dev", risk: "low" },
+      { name: "CSV ingestion hardening (XSS sanitisation, duplicate check)", scope: "Dev", hrs: 8, rateType: "dev", risk: "med" },
+      { name: "data_store.py refactor: UUID, batch ops, error handling", scope: "Dev", hrs: 10, rateType: "dev", risk: "low" },
+      { name: "data_generator.py sync with live emission factors", scope: "Dev", hrs: 5, rateType: "dev", risk: "low" },
+    ]
+  },
+  {
+    name: "AI Agent System (CrewAI + Groq)",
+    color: "#fbbf24",
+    tasks: [
+      { name: "LLM config + Groq API key management", scope: "AI/ML", hrs: 4, rateType: "ai", risk: "low" },
+      { name: "Data Entry Assistant agent tuning + test suite", scope: "AI/ML", hrs: 10, rateType: "ai", risk: "med" },
+      { name: "Report Summary Generator + streaming output", scope: "AI/ML", hrs: 14, rateType: "ai", risk: "med" },
+      { name: "Carbon Offset Advisor (VCS/Gold Standard sourcing)", scope: "AI/ML", hrs: 12, rateType: "ai", risk: "med" },
+      { name: "Regulation Radar (CBAM/BRSR + web_search tool)", scope: "AI/ML", hrs: 16, rateType: "ai", risk: "high" },
+      { name: "Emission Optimizer agent + CapEx/OpEx templates", scope: "AI/ML", hrs: 12, rateType: "ai", risk: "med" },
+    ]
+  },
+  {
+    name: "Dashboard & Visualisation",
+    color: "#60a5fa",
+    tasks: [
+      { name: "Scope 1/2/3 breakdown charts (Plotly)", scope: "UI/Dev", hrs: 12, rateType: "ui", risk: "low" },
+      { name: "Time-series trend chart with solar vs grid overlay", scope: "UI/Dev", hrs: 10, rateType: "ui", risk: "low" },
+      { name: "Top emitters table + filter/sort UX", scope: "UI/Dev", hrs: 8, rateType: "ui", risk: "low" },
+      { name: "KPI cards (total footprint, dominant scope, entries)", scope: "UI/Dev", hrs: 6, rateType: "ui", risk: "low" },
+      { name: "Date-range + scope filter sidebar", scope: "UI/Dev", hrs: 8, rateType: "ui", risk: "low" },
+    ]
+  },
+  {
+    name: "PDF Report & UI Polish",
+    color: "#c084fc",
+    tasks: [
+      { name: "Bundle DejaVuSans.ttf + font fallback fix", scope: "Dev", hrs: 3, rateType: "dev", risk: "low" },
+      { name: "ESG PDF report: header, scope table, bottlenecks", scope: "Dev", hrs: 12, rateType: "dev", risk: "low" },
+      { name: "CSS design system (style.css) — full component build", scope: "UI/Dev", hrs: 20, rateType: "ui", risk: "low" },
+      { name: "Responsive mobile layout (narrow viewport)", scope: "UI/Dev", hrs: 10, rateType: "ui", risk: "low" },
+      { name: "Home.py hero, capabilities, navigation sections", scope: "UI/Dev", hrs: 8, rateType: "ui", risk: "low" },
+    ]
+  },
+  {
+    name: "QA, Testing & Launch",
+    color: "#f87171",
+    tasks: [
+      { name: "Unit tests: emission calculations, CSV hashing, deduplication", scope: "Dev", hrs: 12, rateType: "dev", risk: "low" },
+      { name: "Agent integration tests (mock Groq responses)", scope: "AI/ML", hrs: 10, rateType: "ai", risk: "med" },
+      { name: "UAT with 3 Indian SME pilot companies", scope: "Dev", hrs: 16, rateType: "dev", risk: "med" },
+      { name: "Performance profiling (agent latency, data load)", scope: "Dev", hrs: 8, rateType: "dev", risk: "low" },
+      { name: "Documentation (README, .env guide, CSV template)", scope: "Dev", hrs: 8, rateType: "dev", risk: "low" },
+    ]
+  }
+];
+
+// ── STATE ─────────────────────────────────────────────────────────────────────
+let rates = { dev: 1500, ai: 2000, ui: 1200 };
+
+// ── RENDER ────────────────────────────────────────────────────────────────────
+function fmt(n) { return '₹' + n.toLocaleString('en-IN'); }
+function riskLabel(r) {
+  const map = { low: ['Low','risk-low'], med: ['Medium','risk-med'], high: ['High','risk-high'] };
+  const [label, cls] = map[r];
+  return `<span class="risk-badge ${cls}">${label}</span>`;
+}
+
+function renderPhases() {
+  const container = document.getElementById('phases-container');
+  container.innerHTML = '';
+
+  PHASES.forEach((phase, pi) => {
+    const phaseHrs  = phase.tasks.reduce((s, t) => s + t.hrs, 0);
+    const phaseCost = phase.tasks.reduce((s, t) => s + t.hrs * rates[t.rateType], 0);
+
+    const block = document.createElement('div');
+    block.className = 'phase-block';
+    block.innerHTML = `
+      <div class="phase-header" onclick="togglePhase(${pi})">
+        <span class="phase-num">P${String(pi+1).padStart(2,'0')}</span>
+        <span class="phase-name">${phase.name}</span>
+        <span class="phase-hrs" id="phrs-${pi}">${phaseHrs} hrs</span>
+        <span class="phase-cost" id="pcost-${pi}">${fmt(phaseCost)}</span>
+        <span class="phase-toggle" id="ptoggle-${pi}">▼</span>
+      </div>
+      <div class="table-head">
+        <span>Task</span><span>Scope</span><span>Hours</span><span>Cost</span><span>Risk</span>
+      </div>
+      <div class="phase-rows" id="prows-${pi}">
+        ${phase.tasks.map(t => `
+          <div class="task-row">
+            <span class="task-name">${t.name}</span>
+            <span class="task-scope">${t.scope}</span>
+            <span class="task-hrs task-hrs-val" data-hrs="${t.hrs}" data-rate="${t.rateType}">${t.hrs} h</span>
+            <span class="task-cost task-cost-val" data-hrs="${t.hrs}" data-rate="${t.rateType}">${fmt(t.hrs * rates[t.rateType])}</span>
+            <span class="task-risk">${riskLabel(t.risk)}</span>
+          </div>
+        `).join('')}
+      </div>
+    `;
+    container.appendChild(block);
+  });
+}
+
+function togglePhase(pi) {
+  const rows   = document.getElementById(`prows-${pi}`);
+  const toggle = document.getElementById(`ptoggle-${pi}`);
+  rows.classList.toggle('open');
+  toggle.classList.toggle('open');
+}
+
+function renderSummary() {
+  const totalHrs  = PHASES.reduce((s, ph) => s + ph.tasks.reduce((a, t) => a + t.hrs, 0), 0);
+  const totalCost = PHASES.reduce((s, ph) => s + ph.tasks.reduce((a, t) => a + t.hrs * rates[t.rateType], 0), 0);
+  document.getElementById('totalHrs').textContent  = totalHrs + ' hrs';
+  document.getElementById('totalCost').textContent = fmt(totalCost);
+}
+
+function renderBars() {
+  const maxHrs = Math.max(...PHASES.map(ph => ph.tasks.reduce((s,t)=>s+t.hrs,0)));
+  const chart = document.getElementById('barChart');
+  chart.innerHTML = PHASES.map((ph, pi) => {
+    const hrs = ph.tasks.reduce((s,t)=>s+t.hrs,0);
+    const pct = (hrs / maxHrs * 100).toFixed(1);
+    return `
+      <div class="bar-row">
+        <span class="bar-phase-name">P${String(pi+1).padStart(2,'0')} ${ph.name.split('&')[0].trim()}</span>
+        <div class="bar-track"><div class="bar-fill" style="width:${pct}%; background:${ph.color}"></div></div>
+        <span class="bar-label">${hrs} h</span>
+      </div>
+    `;
+  }).join('');
+}
+
+function renderTotals() {
+  const devHrs   = PHASES.reduce((s, ph) => s + ph.tasks.filter(t=>t.rateType==='dev').reduce((a,t)=>a+t.hrs,0), 0);
+  const aiHrs    = PHASES.reduce((s, ph) => s + ph.tasks.filter(t=>t.rateType==='ai').reduce((a,t)=>a+t.hrs,0), 0);
+  const uiHrs    = PHASES.reduce((s, ph) => s + ph.tasks.filter(t=>t.rateType==='ui').reduce((a,t)=>a+t.hrs,0), 0);
+  const devCost  = devHrs * rates.dev;
+  const aiCost   = aiHrs  * rates.ai;
+  const uiCost   = uiHrs  * rates.ui;
+  const subtotal = devCost + aiCost + uiCost;
+  const buffer   = Math.round(subtotal * 0.15);
+  const total    = subtotal + buffer;
+
+  document.getElementById('totalsBox').innerHTML = `
+    <div class="totals-row">
+      <span class="totals-label">Development (${devHrs} hrs × ${fmt(rates.dev)}/hr)</span>
+      <span class="totals-val">${fmt(devCost)}</span>
+    </div>
+    <div class="totals-row">
+      <span class="totals-label">AI / ML Engineering (${aiHrs} hrs × ${fmt(rates.ai)}/hr)</span>
+      <span class="totals-val">${fmt(aiCost)}</span>
+    </div>
+    <div class="totals-row">
+      <span class="totals-label">UI / UX Design & Frontend (${uiHrs} hrs × ${fmt(rates.ui)}/hr)</span>
+      <span class="totals-val">${fmt(uiCost)}</span>
+    </div>
+    <div class="totals-row">
+      <span class="totals-label">Subtotal</span>
+      <span class="totals-val amber">${fmt(subtotal)}</span>
+    </div>
+    <div class="totals-row">
+      <span class="totals-label">Contingency Buffer (15% — scope creep, agent tuning, UAT rework)</span>
+      <span class="totals-val">${fmt(buffer)}</span>
+    </div>
+    <div class="totals-row total-final">
+      <span class="totals-label"><strong>Total Project Estimate</strong> &nbsp;·&nbsp; excl. Groq API, Streamlit Cloud, domain</span>
+      <span class="totals-val big">${fmt(total)}</span>
+    </div>
+  `;
+}
+
+function renderAll() {
+  renderPhases();
+  renderSummary();
+  renderBars();
+  renderTotals();
+}
+
+// ── RATE CONTROLS ─────────────────────────────────────────────────────────────
+function changeRate(type, delta) {
+  rates[type] = Math.max(200, rates[type] + delta);
+  document.getElementById(`${type}RateDisplay`).textContent = fmt(rates[type]);
+  renderAll();
+}
+
+// ── INIT ──────────────────────────────────────────────────────────────────────
+renderAll();
+// Open first phase by default
+document.addEventListener('DOMContentLoaded', () => {});
+togglePhase(0);
+</script>
+</body>
+</html>
