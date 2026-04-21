@@ -78,7 +78,7 @@ A lightweight, multilingual carbon accounting and reporting tool for SMEs in Asi
 
 ### Prerequisites
 - Python 3.9+
-- Groq API key (for AI features)
+- Groq key (for AI features)
 
 ### Setup
 
@@ -99,7 +99,7 @@ source .venv/bin/activate  # On Windows: .venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-4. Create a `.env` file in the project root with your Groq API key:
+4. Create a `.env` file in the project root with your Groq key:
 ```
 GROQ_API_KEY=your_groq_api_key_here
 ```
@@ -107,7 +107,7 @@ GROQ_API_KEY=your_groq_api_key_here
 ## ⚙️ Configuration
 
 ### Environment Variables
-- `GROQ_API_KEY`: Your Groq API key for AI agent functionality
+- `GROQ_API_KEY`: Your Groq key for AI agent functionality
 
 ### Data Storage
 - Emissions data is stored in `data/emissions.json`
