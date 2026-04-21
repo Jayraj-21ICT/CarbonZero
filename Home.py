@@ -19,6 +19,7 @@ ds.init_session_state()
 ui.load_css()
 
 
+
 # ─── LIVE DATA PULL ───────────────────────────────────────────────────────────
 df_raw = st.session_state.emissions_data
 has_data = len(df_raw) > 0
