@@ -15,7 +15,7 @@ def get_llm():
     return LLM(
         model="groq/llama-3.3-70b-versatile",
         temperature=0.3, # Lowered further to enforce highly factual, non-creative, critical outputs.
-        api_key=os.getenv("GROQ_API_KEY")
+        api_key=os.getenv("CarbonZero_API_KEY")
     )
 
 class CarbonZeroAgents:

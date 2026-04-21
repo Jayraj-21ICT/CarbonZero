@@ -58,7 +58,7 @@ else:
     stat_period    = "No data loaded"
     updated_str    = "—"
 
-today_str = datetime.now().strftime("%-d %b %Y, %H:%M")
+today_str = datetime.now().strftime("%d %b %Y, %H:%M")
 
 
 # ─── HERO SECTION ─────────────────────────────────────────────────────────────

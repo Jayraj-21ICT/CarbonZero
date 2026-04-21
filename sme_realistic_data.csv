@@ -1,0 +1,1837 @@
+date,scope,category,activity,quantity,unit,emission_factor
+2024-01-01,Scope 2,Purchased Electricity,State Grid,398.6694805228212,kWh,0.716
+2024-01-02,Scope 2,Purchased Electricity,State Grid,465.9196403782324,kWh,0.716
+2024-01-03,Scope 2,Purchased Electricity,State Grid,402.91406525496745,kWh,0.716
+2024-01-04,Scope 2,Purchased Electricity,State Grid,459.9095531075216,kWh,0.716
+2024-01-05,Scope 2,Purchased Electricity,State Grid,516.7811256932034,kWh,0.716
+2024-01-05,Scope 3,Waste Generated,Mixed Municipal Waste,97.81697948136627,kg,0.45
+2024-01-05,Scope 3,Waste Generated,Scrap Metal & Cardboard,54.35749708820061,kg,0.02
+2024-01-06,Scope 2,Purchased Electricity,State Grid,445.685102617007,kWh,0.716
+2024-01-06,Scope 1,Mobile Combustion,Delivery Truck (Diesel),39.15362855131287,Liter,2.68
+2024-01-06,Scope 1,Mobile Combustion,Company Cars (Petrol),24.97441114465135,Liter,2.31
+2024-01-07,Scope 2,Purchased Electricity,State Grid,477.5082248138103,kWh,0.716
+2024-01-08,Scope 2,Purchased Electricity,State Grid,408.2947044679576,kWh,0.716
+2024-01-09,Scope 2,Purchased Electricity,State Grid,432.61306250314385,kWh,0.716
+2024-01-10,Scope 2,Purchased Electricity,State Grid,535.1908568257198,kWh,0.716
+2024-01-11,Scope 2,Purchased Electricity,State Grid,463.12820245882034,kWh,0.716
+2024-01-11,Scope 1,Stationary Combustion,DG Set (Diesel),11.343298669494324,Liter,2.68
+2024-01-12,Scope 2,Purchased Electricity,State Grid,465.43793612767195,kWh,0.716
+2024-01-12,Scope 3,Waste Generated,Mixed Municipal Waste,97.69132619804378,kg,0.45
+2024-01-12,Scope 3,Waste Generated,Scrap Metal & Cardboard,47.53968607246971,kg,0.02
+2024-01-13,Scope 2,Purchased Electricity,State Grid,444.1295870902569,kWh,0.716
+2024-01-13,Scope 1,Mobile Combustion,Delivery Truck (Diesel),38.155520988630514,Liter,2.68
+2024-01-13,Scope 1,Mobile Combustion,Company Cars (Petrol),23.234802214021702,Liter,2.31
+2024-01-14,Scope 2,Purchased Electricity,State Grid,453.1281452074568,kWh,0.716
+2024-01-15,Scope 2,Purchased Electricity,State Grid,404.19544803340995,kWh,0.716
+2024-01-16,Scope 2,Purchased Electricity,State Grid,459.4957836517041,kWh,0.716
+2024-01-17,Scope 2,Purchased Electricity,State Grid,447.55339390684736,kWh,0.716
+2024-01-18,Scope 2,Purchased Electricity,State Grid,420.0489496664385,kWh,0.716
+2024-01-19,Scope 2,Purchased Electricity,State Grid,405.7816562102992,kWh,0.716
+2024-01-19,Scope 1,Stationary Combustion,DG Set (Diesel),18.903606695059835,Liter,2.68
+2024-01-19,Scope 3,Waste Generated,Mixed Municipal Waste,68.2042783471576,kg,0.45
+2024-01-19,Scope 3,Waste Generated,Scrap Metal & Cardboard,54.86887469087006,kg,0.02
+2024-01-20,Scope 2,Purchased Electricity,State Grid,455.00742772163284,kWh,0.716
+2024-01-20,Scope 1,Mobile Combustion,Delivery Truck (Diesel),44.34445246453811,Liter,2.68
+2024-01-20,Scope 1,Mobile Combustion,Company Cars (Petrol),23.16606226490219,Liter,2.31
+2024-01-21,Scope 2,Purchased Electricity,State Grid,463.7651914751947,kWh,0.716
+2024-01-22,Scope 2,Purchased Electricity,State Grid,416.1991302899333,kWh,0.716
+2024-01-23,Scope 2,Purchased Electricity,State Grid,444.75133272294084,kWh,0.716
+2024-01-24,Scope 2,Purchased Electricity,State Grid,486.8404710840945,kWh,0.716
+2024-01-25,Scope 2,Purchased Electricity,State Grid,455.5995491905666,kWh,0.716
+2024-01-26,Scope 2,Purchased Electricity,State Grid,415.9501420637434,kWh,0.716
+2024-01-26,Scope 3,Waste Generated,Mixed Municipal Waste,86.048216120178,kg,0.45
+2024-01-26,Scope 3,Waste Generated,Scrap Metal & Cardboard,44.62270317830678,kg,0.02
+2024-01-27,Scope 2,Purchased Electricity,State Grid,406.5377489077818,kWh,0.716
+2024-01-27,Scope 1,Mobile Combustion,Delivery Truck (Diesel),40.34922158608203,Liter,2.68
+2024-01-27,Scope 1,Mobile Combustion,Company Cars (Petrol),32.46815543445255,Liter,2.31
+2024-01-28,Scope 2,Purchased Electricity,State Grid,424.2153775905967,kWh,0.716
+2024-01-29,Scope 2,Purchased Electricity,State Grid,445.0151311379984,kWh,0.716
+2024-01-30,Scope 2,Purchased Electricity,State Grid,476.16704587204686,kWh,0.716
+2024-01-31,Scope 2,Purchased Electricity,State Grid,363.14796335513785,kWh,0.716
+2024-02-01,Scope 2,Purchased Electricity,State Grid,425.4331073136106,kWh,0.716
+2024-02-02,Scope 2,Purchased Electricity,State Grid,484.3711544985099,kWh,0.716
+2024-02-02,Scope 3,Waste Generated,Mixed Municipal Waste,68.21755179602694,kg,0.45
+2024-02-02,Scope 3,Waste Generated,Scrap Metal & Cardboard,49.829670302487564,kg,0.02
+2024-02-03,Scope 2,Purchased Electricity,State Grid,452.876723296559,kWh,0.716
+2024-02-03,Scope 1,Mobile Combustion,Delivery Truck (Diesel),44.872914811136106,Liter,2.68
+2024-02-03,Scope 1,Mobile Combustion,Company Cars (Petrol),30.032369769158056,Liter,2.31
+2024-02-04,Scope 2,Purchased Electricity,State Grid,518.0107938250187,kWh,0.716
+2024-02-05,Scope 2,Purchased Electricity,State Grid,437.2840584300855,kWh,0.716
+2024-02-06,Scope 2,Purchased Electricity,State Grid,440.81759525303266,kWh,0.716
+2024-02-06,Scope 1,Stationary Combustion,DG Set (Diesel),7.343638293110306,Liter,2.68
+2024-02-07,Scope 2,Purchased Electricity,State Grid,418.87820269612365,kWh,0.716
+2024-02-08,Scope 2,Purchased Electricity,State Grid,458.4474906753841,kWh,0.716
+2024-02-09,Scope 2,Purchased Electricity,State Grid,490.5959152950158,kWh,0.716
+2024-02-09,Scope 3,Waste Generated,Mixed Municipal Waste,81.72655692425931,kg,0.45
+2024-02-09,Scope 3,Waste Generated,Scrap Metal & Cardboard,46.18861402920589,kg,0.02
+2024-02-10,Scope 2,Purchased Electricity,State Grid,456.37074928531763,kWh,0.716
+2024-02-10,Scope 1,Mobile Combustion,Delivery Truck (Diesel),31.037631351298984,Liter,2.68
+2024-02-10,Scope 1,Mobile Combustion,Company Cars (Petrol),27.43887639496215,Liter,2.31
+2024-02-11,Scope 2,Purchased Electricity,State Grid,447.6352381794296,kWh,0.716
+2024-02-12,Scope 2,Purchased Electricity,State Grid,472.3254038665277,kWh,0.716
+2024-02-13,Scope 2,Purchased Electricity,State Grid,447.04095059764234,kWh,0.716
+2024-02-13,Scope 1,Stationary Combustion,DG Set (Diesel),15.688550864747585,Liter,2.68
+2024-02-14,Scope 2,Purchased Electricity,State Grid,464.47803371923527,kWh,0.716
+2024-02-15,Scope 2,Purchased Electricity,State Grid,437.01491625002717,kWh,0.716
+2024-02-16,Scope 2,Purchased Electricity,State Grid,445.3865772250781,kWh,0.716
+2024-02-16,Scope 3,Waste Generated,Mixed Municipal Waste,76.47661272313628,kg,0.45
+2024-02-16,Scope 3,Waste Generated,Scrap Metal & Cardboard,48.72080674196973,kg,0.02
+2024-02-17,Scope 2,Purchased Electricity,State Grid,440.57721376296774,kWh,0.716
+2024-02-17,Scope 1,Mobile Combustion,Delivery Truck (Diesel),43.02777565343175,Liter,2.68
+2024-02-17,Scope 1,Mobile Combustion,Company Cars (Petrol),27.454075982453446,Liter,2.31
+2024-02-18,Scope 2,Purchased Electricity,State Grid,492.7467686719144,kWh,0.716
+2024-02-19,Scope 2,Purchased Electricity,State Grid,442.7851605321864,kWh,0.716
+2024-02-20,Scope 2,Purchased Electricity,State Grid,445.46512916802106,kWh,0.716
+2024-02-21,Scope 2,Purchased Electricity,State Grid,439.97173337864746,kWh,0.716
+2024-02-22,Scope 2,Purchased Electricity,State Grid,471.22294812904755,kWh,0.716
+2024-02-23,Scope 2,Purchased Electricity,State Grid,439.8620177068407,kWh,0.716
+2024-02-23,Scope 3,Waste Generated,Mixed Municipal Waste,74.08054894235558,kg,0.45
+2024-02-23,Scope 3,Waste Generated,Scrap Metal & Cardboard,55.778833655215344,kg,0.02
+2024-02-24,Scope 2,Purchased Electricity,State Grid,406.05741776112706,kWh,0.716
+2024-02-24,Scope 1,Mobile Combustion,Delivery Truck (Diesel),40.034642649245804,Liter,2.68
+2024-02-24,Scope 1,Mobile Combustion,Company Cars (Petrol),23.599184178956303,Liter,2.31
+2024-02-25,Scope 2,Purchased Electricity,State Grid,404.215197637326,kWh,0.716
+2024-02-26,Scope 2,Purchased Electricity,State Grid,428.67901040926387,kWh,0.716
+2024-02-27,Scope 2,Purchased Electricity,State Grid,477.95121490537935,kWh,0.716
+2024-02-28,Scope 2,Purchased Electricity,State Grid,447.60783693820593,kWh,0.716
+2024-02-29,Scope 2,Purchased Electricity,State Grid,473.4852462402879,kWh,0.716
+2024-03-01,Scope 2,Purchased Electricity,State Grid,569.3844689771885,kWh,0.716
+2024-03-01,Scope 3,Waste Generated,Mixed Municipal Waste,83.66572026028244,kg,0.45
+2024-03-01,Scope 3,Waste Generated,Scrap Metal & Cardboard,49.13242035331211,kg,0.02
+2024-03-02,Scope 2,Purchased Electricity,State Grid,595.6049637617483,kWh,0.716
+2024-03-02,Scope 1,Mobile Combustion,Delivery Truck (Diesel),37.23078525286644,Liter,2.68
+2024-03-02,Scope 1,Mobile Combustion,Company Cars (Petrol),17.707141757897336,Liter,2.31
+2024-03-03,Scope 2,Purchased Electricity,State Grid,576.403997362178,kWh,0.716
+2024-03-04,Scope 2,Purchased Electricity,State Grid,584.4671256701047,kWh,0.716
+2024-03-05,Scope 2,Purchased Electricity,State Grid,594.1459504053106,kWh,0.716
+2024-03-05,Scope 1,Stationary Combustion,DG Set (Diesel),13.524089616310594,Liter,2.68
+2024-03-06,Scope 2,Purchased Electricity,State Grid,544.1311674029107,kWh,0.716
+2024-03-07,Scope 2,Purchased Electricity,State Grid,618.1430157174746,kWh,0.716
+2024-03-08,Scope 2,Purchased Electricity,State Grid,600.3551831757977,kWh,0.716
+2024-03-08,Scope 3,Waste Generated,Mixed Municipal Waste,89.15162169159122,kg,0.45
+2024-03-08,Scope 3,Waste Generated,Scrap Metal & Cardboard,48.90452131022581,kg,0.02
+2024-03-09,Scope 2,Purchased Electricity,State Grid,595.039763572493,kWh,0.716
+2024-03-09,Scope 1,Stationary Combustion,DG Set (Diesel),16.57054643854203,Liter,2.68
+2024-03-09,Scope 1,Mobile Combustion,Delivery Truck (Diesel),36.06938131510847,Liter,2.68
+2024-03-09,Scope 1,Mobile Combustion,Company Cars (Petrol),21.548701926964014,Liter,2.31
+2024-03-10,Scope 2,Purchased Electricity,State Grid,538.3379353836268,kWh,0.716
+2024-03-11,Scope 2,Purchased Electricity,State Grid,622.9290175451447,kWh,0.716
+2024-03-12,Scope 2,Purchased Electricity,State Grid,638.9961995949091,kWh,0.716
+2024-03-13,Scope 2,Purchased Electricity,State Grid,603.8941504163406,kWh,0.716
+2024-03-14,Scope 2,Purchased Electricity,State Grid,622.558605173353,kWh,0.716
+2024-03-15,Scope 2,Purchased Electricity,State Grid,557.1798210931962,kWh,0.716
+2024-03-15,Scope 3,Waste Generated,Mixed Municipal Waste,70.8673450760577,kg,0.45
+2024-03-15,Scope 3,Waste Generated,Scrap Metal & Cardboard,43.62011149692134,kg,0.02
+2024-03-15,Scope 1,Fugitive Emissions,AC Refrigerant (R-32),1.1690048691971155,kg,675.0
+2024-03-16,Scope 2,Purchased Electricity,State Grid,615.499574276697,kWh,0.716
+2024-03-16,Scope 1,Mobile Combustion,Delivery Truck (Diesel),36.939162084918166,Liter,2.68
+2024-03-16,Scope 1,Mobile Combustion,Company Cars (Petrol),24.7019159421148,Liter,2.31
+2024-03-17,Scope 2,Purchased Electricity,State Grid,589.9275984483118,kWh,0.716
+2024-03-18,Scope 2,Purchased Electricity,State Grid,621.7945044107882,kWh,0.716
+2024-03-19,Scope 2,Purchased Electricity,State Grid,604.5423847572215,kWh,0.716
+2024-03-20,Scope 2,Purchased Electricity,State Grid,609.0901406901686,kWh,0.716
+2024-03-21,Scope 2,Purchased Electricity,State Grid,622.2201756251625,kWh,0.716
+2024-03-22,Scope 2,Purchased Electricity,State Grid,592.0265521881108,kWh,0.716
+2024-03-22,Scope 3,Waste Generated,Mixed Municipal Waste,84.8340683401033,kg,0.45
+2024-03-22,Scope 3,Waste Generated,Scrap Metal & Cardboard,50.44993868498016,kg,0.02
+2024-03-23,Scope 2,Purchased Electricity,State Grid,595.3301915984302,kWh,0.716
+2024-03-23,Scope 1,Mobile Combustion,Delivery Truck (Diesel),38.173622243324196,Liter,2.68
+2024-03-23,Scope 1,Mobile Combustion,Company Cars (Petrol),28.324254528885273,Liter,2.31
+2024-03-24,Scope 2,Purchased Electricity,State Grid,634.3888689579877,kWh,0.716
+2024-03-25,Scope 2,Purchased Electricity,State Grid,603.2827991218119,kWh,0.716
+2024-03-26,Scope 2,Purchased Electricity,State Grid,657.6544845147035,kWh,0.716
+2024-03-27,Scope 2,Purchased Electricity,State Grid,616.199801917301,kWh,0.716
+2024-03-28,Scope 2,Purchased Electricity,State Grid,651.6753430717388,kWh,0.716
+2024-03-29,Scope 2,Purchased Electricity,State Grid,572.9036367822249,kWh,0.716
+2024-03-29,Scope 3,Waste Generated,Mixed Municipal Waste,80.29719567515882,kg,0.45
+2024-03-29,Scope 3,Waste Generated,Scrap Metal & Cardboard,52.02784964403695,kg,0.02
+2024-03-30,Scope 2,Purchased Electricity,State Grid,572.0475264180969,kWh,0.716
+2024-03-30,Scope 1,Mobile Combustion,Delivery Truck (Diesel),41.17635315379672,Liter,2.68
+2024-03-30,Scope 1,Mobile Combustion,Company Cars (Petrol),26.394789456610514,Liter,2.31
+2024-03-31,Scope 2,Purchased Electricity,State Grid,527.4536102581002,kWh,0.716
+2024-04-01,Scope 2,Purchased Electricity,State Grid,588.654007393624,kWh,0.716
+2024-04-02,Scope 2,Purchased Electricity,State Grid,590.5279656277916,kWh,0.716
+2024-04-03,Scope 2,Purchased Electricity,State Grid,592.0411207444856,kWh,0.716
+2024-04-04,Scope 2,Purchased Electricity,State Grid,601.797887703896,kWh,0.716
+2024-04-05,Scope 2,Purchased Electricity,State Grid,607.1450871159876,kWh,0.716
+2024-04-05,Scope 3,Waste Generated,Mixed Municipal Waste,71.39762241477564,kg,0.45
+2024-04-05,Scope 3,Waste Generated,Scrap Metal & Cardboard,52.74172630730976,kg,0.02
+2024-04-06,Scope 2,Purchased Electricity,State Grid,638.1481414291909,kWh,0.716
+2024-04-06,Scope 1,Mobile Combustion,Delivery Truck (Diesel),33.82476593123717,Liter,2.68
+2024-04-06,Scope 1,Mobile Combustion,Company Cars (Petrol),28.538425651671062,Liter,2.31
+2024-04-07,Scope 2,Purchased Electricity,State Grid,615.0196031201457,kWh,0.716
+2024-04-08,Scope 2,Purchased Electricity,State Grid,583.5698434132116,kWh,0.716
+2024-04-09,Scope 2,Purchased Electricity,State Grid,630.2911704566426,kWh,0.716
+2024-04-09,Scope 1,Stationary Combustion,DG Set (Diesel),17.298084260689734,Liter,2.68
+2024-04-10,Scope 2,Purchased Electricity,State Grid,592.7191914655446,kWh,0.716
+2024-04-10,Scope 1,Stationary Combustion,DG Set (Diesel),10.631564654527896,Liter,2.68
+2024-04-11,Scope 2,Purchased Electricity,State Grid,564.1140291698812,kWh,0.716
+2024-04-12,Scope 2,Purchased Electricity,State Grid,653.3506401312309,kWh,0.716
+2024-04-12,Scope 1,Stationary Combustion,DG Set (Diesel),14.700774917395735,Liter,2.68
+2024-04-12,Scope 3,Waste Generated,Mixed Municipal Waste,84.7707139082535,kg,0.45
+2024-04-12,Scope 3,Waste Generated,Scrap Metal & Cardboard,48.13552832228703,kg,0.02
+2024-04-13,Scope 2,Purchased Electricity,State Grid,589.7177922925646,kWh,0.716
+2024-04-13,Scope 1,Mobile Combustion,Delivery Truck (Diesel),35.344887752734365,Liter,2.68
+2024-04-13,Scope 1,Mobile Combustion,Company Cars (Petrol),29.475990748705808,Liter,2.31
+2024-04-14,Scope 2,Purchased Electricity,State Grid,602.6222767919157,kWh,0.716
+2024-04-15,Scope 2,Purchased Electricity,State Grid,549.446177848626,kWh,0.716
+2024-04-16,Scope 2,Purchased Electricity,State Grid,662.8586500470108,kWh,0.716
+2024-04-17,Scope 2,Purchased Electricity,State Grid,651.0520923450317,kWh,0.716
+2024-04-18,Scope 2,Purchased Electricity,State Grid,560.7908026311952,kWh,0.716
+2024-04-19,Scope 2,Purchased Electricity,State Grid,525.6709360519097,kWh,0.716
+2024-04-19,Scope 3,Waste Generated,Mixed Municipal Waste,73.11276728849596,kg,0.45
+2024-04-19,Scope 3,Waste Generated,Scrap Metal & Cardboard,55.33778133860904,kg,0.02
+2024-04-20,Scope 2,Purchased Electricity,State Grid,622.0046946357636,kWh,0.716
+2024-04-20,Scope 1,Mobile Combustion,Delivery Truck (Diesel),41.08164700885217,Liter,2.68
+2024-04-20,Scope 1,Mobile Combustion,Company Cars (Petrol),24.07596191709639,Liter,2.31
+2024-04-21,Scope 2,Purchased Electricity,State Grid,624.6068923851244,kWh,0.716
+2024-04-22,Scope 2,Purchased Electricity,State Grid,591.1899414176096,kWh,0.716
+2024-04-23,Scope 2,Purchased Electricity,State Grid,636.2145126340738,kWh,0.716
+2024-04-24,Scope 2,Purchased Electricity,State Grid,608.4826343375678,kWh,0.716
+2024-04-25,Scope 2,Purchased Electricity,State Grid,559.1551290970149,kWh,0.716
+2024-04-26,Scope 2,Purchased Electricity,State Grid,532.0732149195599,kWh,0.716
+2024-04-26,Scope 3,Waste Generated,Mixed Municipal Waste,84.20121423674271,kg,0.45
+2024-04-26,Scope 3,Waste Generated,Scrap Metal & Cardboard,45.35885190022526,kg,0.02
+2024-04-27,Scope 2,Purchased Electricity,State Grid,611.1304175695657,kWh,0.716
+2024-04-27,Scope 1,Mobile Combustion,Delivery Truck (Diesel),38.862490721685056,Liter,2.68
+2024-04-27,Scope 1,Mobile Combustion,Company Cars (Petrol),21.35753573585346,Liter,2.31
+2024-04-28,Scope 2,Purchased Electricity,State Grid,620.9991097869377,kWh,0.716
+2024-04-29,Scope 2,Purchased Electricity,State Grid,690.8664670577876,kWh,0.716
+2024-04-30,Scope 2,Purchased Electricity,State Grid,647.6683922030445,kWh,0.716
+2024-05-01,Scope 2,Purchased Electricity,State Grid,670.4378398556605,kWh,0.716
+2024-05-02,Scope 2,Purchased Electricity,State Grid,663.9379423308026,kWh,0.716
+2024-05-03,Scope 2,Purchased Electricity,State Grid,607.0083668997709,kWh,0.716
+2024-05-03,Scope 3,Waste Generated,Mixed Municipal Waste,74.00368770855384,kg,0.45
+2024-05-03,Scope 3,Waste Generated,Scrap Metal & Cardboard,45.94594288043923,kg,0.02
+2024-05-04,Scope 2,Purchased Electricity,State Grid,625.033929277388,kWh,0.716
+2024-05-04,Scope 1,Mobile Combustion,Delivery Truck (Diesel),42.19620223310889,Liter,2.68
+2024-05-04,Scope 1,Mobile Combustion,Company Cars (Petrol),24.933093399457032,Liter,2.31
+2024-05-05,Scope 2,Purchased Electricity,State Grid,595.2455102799697,kWh,0.716
+2024-05-05,Scope 1,Stationary Combustion,DG Set (Diesel),17.86370880622575,Liter,2.68
+2024-05-06,Scope 2,Purchased Electricity,State Grid,536.0686288173741,kWh,0.716
+2024-05-06,Scope 1,Stationary Combustion,DG Set (Diesel),18.810857835578773,Liter,2.68
+2024-05-07,Scope 2,Purchased Electricity,State Grid,548.0927046065831,kWh,0.716
+2024-05-07,Scope 1,Stationary Combustion,DG Set (Diesel),17.821627781700375,Liter,2.68
+2024-05-08,Scope 2,Purchased Electricity,State Grid,600.01024273849,kWh,0.716
+2024-05-09,Scope 2,Purchased Electricity,State Grid,606.1332152062852,kWh,0.716
+2024-05-10,Scope 2,Purchased Electricity,State Grid,598.6389537179066,kWh,0.716
+2024-05-10,Scope 3,Waste Generated,Mixed Municipal Waste,72.51107516458781,kg,0.45
+2024-05-10,Scope 3,Waste Generated,Scrap Metal & Cardboard,54.07874515832615,kg,0.02
+2024-05-11,Scope 2,Purchased Electricity,State Grid,509.8593578367918,kWh,0.716
+2024-05-11,Scope 1,Mobile Combustion,Delivery Truck (Diesel),38.84357746722883,Liter,2.68
+2024-05-11,Scope 1,Mobile Combustion,Company Cars (Petrol),22.266199183957973,Liter,2.31
+2024-05-12,Scope 2,Purchased Electricity,State Grid,661.3049288518225,kWh,0.716
+2024-05-13,Scope 2,Purchased Electricity,State Grid,589.2534356733361,kWh,0.716
+2024-05-14,Scope 2,Purchased Electricity,State Grid,600.0666334754951,kWh,0.716
+2024-05-15,Scope 2,Purchased Electricity,State Grid,597.5500859846088,kWh,0.716
+2024-05-15,Scope 1,Stationary Combustion,DG Set (Diesel),10.602524414599015,Liter,2.68
+2024-05-16,Scope 2,Purchased Electricity,State Grid,575.1794157497663,kWh,0.716
+2024-05-17,Scope 2,Purchased Electricity,State Grid,580.9089284980997,kWh,0.716
+2024-05-17,Scope 1,Stationary Combustion,DG Set (Diesel),22.621196298126563,Liter,2.68
+2024-05-17,Scope 3,Waste Generated,Mixed Municipal Waste,74.16684346004855,kg,0.45
+2024-05-17,Scope 3,Waste Generated,Scrap Metal & Cardboard,49.126232642916165,kg,0.02
+2024-05-18,Scope 2,Purchased Electricity,State Grid,588.3888727478682,kWh,0.716
+2024-05-18,Scope 1,Mobile Combustion,Delivery Truck (Diesel),41.30075284315684,Liter,2.68
+2024-05-18,Scope 1,Mobile Combustion,Company Cars (Petrol),22.48799499446037,Liter,2.31
+2024-05-19,Scope 2,Purchased Electricity,State Grid,590.4627037159057,kWh,0.716
+2024-05-19,Scope 1,Stationary Combustion,DG Set (Diesel),16.774532771767877,Liter,2.68
+2024-05-20,Scope 2,Purchased Electricity,State Grid,565.2051675535165,kWh,0.716
+2024-05-21,Scope 2,Purchased Electricity,State Grid,614.8601565085951,kWh,0.716
+2024-05-22,Scope 2,Purchased Electricity,State Grid,661.8006151695691,kWh,0.716
+2024-05-22,Scope 1,Stationary Combustion,DG Set (Diesel),19.243756890983835,Liter,2.68
+2024-05-23,Scope 2,Purchased Electricity,State Grid,593.0411328732692,kWh,0.716
+2024-05-23,Scope 1,Stationary Combustion,DG Set (Diesel),21.41568826128472,Liter,2.68
+2024-05-24,Scope 2,Purchased Electricity,State Grid,581.7569153261862,kWh,0.716
+2024-05-24,Scope 1,Stationary Combustion,DG Set (Diesel),15.521313226583386,Liter,2.68
+2024-05-24,Scope 3,Waste Generated,Mixed Municipal Waste,73.19442010397565,kg,0.45
+2024-05-24,Scope 3,Waste Generated,Scrap Metal & Cardboard,49.16524127994556,kg,0.02
+2024-05-25,Scope 2,Purchased Electricity,State Grid,557.2375455119084,kWh,0.716
+2024-05-25,Scope 1,Mobile Combustion,Delivery Truck (Diesel),33.49901541510732,Liter,2.68
+2024-05-25,Scope 1,Mobile Combustion,Company Cars (Petrol),26.57054717641359,Liter,2.31
+2024-05-26,Scope 2,Purchased Electricity,State Grid,616.1622861111275,kWh,0.716
+2024-05-27,Scope 2,Purchased Electricity,State Grid,587.2375603929439,kWh,0.716
+2024-05-28,Scope 2,Purchased Electricity,State Grid,564.8003061629323,kWh,0.716
+2024-05-29,Scope 2,Purchased Electricity,State Grid,610.399803107985,kWh,0.716
+2024-05-30,Scope 2,Purchased Electricity,State Grid,596.6788847901647,kWh,0.716
+2024-05-31,Scope 2,Purchased Electricity,State Grid,627.8788913807432,kWh,0.716
+2024-05-31,Scope 3,Waste Generated,Mixed Municipal Waste,88.26882121424904,kg,0.45
+2024-05-31,Scope 3,Waste Generated,Scrap Metal & Cardboard,46.212559753102646,kg,0.02
+2024-06-01,Scope 2,Purchased Electricity,State Grid,583.2161941576894,kWh,0.716
+2024-06-01,Scope 1,Mobile Combustion,Delivery Truck (Diesel),36.62521960516212,Liter,2.68
+2024-06-01,Scope 1,Mobile Combustion,Company Cars (Petrol),23.044165551377937,Liter,2.31
+2024-06-02,Scope 2,Purchased Electricity,State Grid,564.9549804144757,kWh,0.716
+2024-06-03,Scope 2,Purchased Electricity,State Grid,635.8015612940445,kWh,0.716
+2024-06-04,Scope 2,Purchased Electricity,State Grid,555.3528062463904,kWh,0.716
+2024-06-05,Scope 2,Purchased Electricity,State Grid,561.4308205818016,kWh,0.716
+2024-06-05,Scope 1,Stationary Combustion,DG Set (Diesel),23.627215155602094,Liter,2.68
+2024-06-06,Scope 2,Purchased Electricity,State Grid,631.9017983590545,kWh,0.716
+2024-06-07,Scope 2,Purchased Electricity,State Grid,635.6510988140013,kWh,0.716
+2024-06-07,Scope 3,Waste Generated,Mixed Municipal Waste,92.21184660874864,kg,0.45
+2024-06-07,Scope 3,Waste Generated,Scrap Metal & Cardboard,48.81535155907051,kg,0.02
+2024-06-08,Scope 2,Purchased Electricity,State Grid,592.9155318729648,kWh,0.716
+2024-06-08,Scope 1,Mobile Combustion,Delivery Truck (Diesel),38.39693341360248,Liter,2.68
+2024-06-08,Scope 1,Mobile Combustion,Company Cars (Petrol),26.680166060747005,Liter,2.31
+2024-06-09,Scope 2,Purchased Electricity,State Grid,555.4985733850899,kWh,0.716
+2024-06-09,Scope 1,Stationary Combustion,DG Set (Diesel),20.69281048403816,Liter,2.68
+2024-06-10,Scope 2,Purchased Electricity,State Grid,608.8571382296966,kWh,0.716
+2024-06-11,Scope 2,Purchased Electricity,State Grid,634.9735587419095,kWh,0.716
+2024-06-12,Scope 2,Purchased Electricity,State Grid,617.7223804904246,kWh,0.716
+2024-06-13,Scope 2,Purchased Electricity,State Grid,550.4184229992566,kWh,0.716
+2024-06-14,Scope 2,Purchased Electricity,State Grid,493.5577972951463,kWh,0.716
+2024-06-14,Scope 1,Stationary Combustion,DG Set (Diesel),14.41433796778474,Liter,2.68
+2024-06-14,Scope 3,Waste Generated,Mixed Municipal Waste,66.25469013317264,kg,0.45
+2024-06-14,Scope 3,Waste Generated,Scrap Metal & Cardboard,48.29612845619985,kg,0.02
+2024-06-15,Scope 2,Purchased Electricity,State Grid,614.9827711990118,kWh,0.716
+2024-06-15,Scope 1,Mobile Combustion,Delivery Truck (Diesel),36.145683652847225,Liter,2.68
+2024-06-15,Scope 1,Mobile Combustion,Company Cars (Petrol),23.582455708922,Liter,2.31
+2024-06-16,Scope 2,Purchased Electricity,State Grid,610.1017632586388,kWh,0.716
+2024-06-16,Scope 1,Stationary Combustion,DG Set (Diesel),12.923609892513204,Liter,2.68
+2024-06-17,Scope 2,Purchased Electricity,State Grid,647.2832954326329,kWh,0.716
+2024-06-18,Scope 2,Purchased Electricity,State Grid,681.8785051623312,kWh,0.716
+2024-06-19,Scope 2,Purchased Electricity,State Grid,656.4292580458149,kWh,0.716
+2024-06-20,Scope 2,Purchased Electricity,State Grid,620.2876341348647,kWh,0.716
+2024-06-20,Scope 1,Stationary Combustion,DG Set (Diesel),25.92023534079484,Liter,2.68
+2024-06-21,Scope 2,Purchased Electricity,State Grid,585.9496004152787,kWh,0.716
+2024-06-21,Scope 3,Waste Generated,Mixed Municipal Waste,64.8759441071877,kg,0.45
+2024-06-21,Scope 3,Waste Generated,Scrap Metal & Cardboard,54.129103969819916,kg,0.02
+2024-06-22,Scope 2,Purchased Electricity,State Grid,536.4898685383331,kWh,0.716
+2024-06-22,Scope 1,Mobile Combustion,Delivery Truck (Diesel),34.47054939882841,Liter,2.68
+2024-06-22,Scope 1,Mobile Combustion,Company Cars (Petrol),26.906996912414314,Liter,2.31
+2024-06-23,Scope 2,Purchased Electricity,State Grid,628.015998887375,kWh,0.716
+2024-06-24,Scope 2,Purchased Electricity,State Grid,627.8337795352552,kWh,0.716
+2024-06-24,Scope 1,Stationary Combustion,DG Set (Diesel),18.805173757453794,Liter,2.68
+2024-06-25,Scope 2,Purchased Electricity,State Grid,603.6759450453804,kWh,0.716
+2024-06-26,Scope 2,Purchased Electricity,State Grid,650.1289323105468,kWh,0.716
+2024-06-27,Scope 2,Purchased Electricity,State Grid,666.6902075282741,kWh,0.716
+2024-06-28,Scope 2,Purchased Electricity,State Grid,597.5848126725925,kWh,0.716
+2024-06-28,Scope 3,Waste Generated,Mixed Municipal Waste,76.0124516266369,kg,0.45
+2024-06-28,Scope 3,Waste Generated,Scrap Metal & Cardboard,58.820518825039706,kg,0.02
+2024-06-29,Scope 2,Purchased Electricity,State Grid,618.2666159706208,kWh,0.716
+2024-06-29,Scope 1,Mobile Combustion,Delivery Truck (Diesel),40.040695383081854,Liter,2.68
+2024-06-29,Scope 1,Mobile Combustion,Company Cars (Petrol),19.37996859136708,Liter,2.31
+2024-06-30,Scope 2,Purchased Electricity,State Grid,616.1994852376095,kWh,0.716
+2024-07-01,Scope 2,Purchased Electricity,State Grid,491.67916464807325,kWh,0.716
+2024-07-02,Scope 2,Purchased Electricity,State Grid,482.65321710352396,kWh,0.716
+2024-07-03,Scope 2,Purchased Electricity,State Grid,467.5834779541365,kWh,0.716
+2024-07-04,Scope 2,Purchased Electricity,State Grid,422.25864209261476,kWh,0.716
+2024-07-05,Scope 2,Purchased Electricity,State Grid,453.532011683666,kWh,0.716
+2024-07-05,Scope 3,Waste Generated,Mixed Municipal Waste,65.98654917821267,kg,0.45
+2024-07-05,Scope 3,Waste Generated,Scrap Metal & Cardboard,50.345161104003886,kg,0.02
+2024-07-06,Scope 2,Purchased Electricity,State Grid,451.94844226814405,kWh,0.716
+2024-07-06,Scope 1,Mobile Combustion,Delivery Truck (Diesel),36.91769691934412,Liter,2.68
+2024-07-06,Scope 1,Mobile Combustion,Company Cars (Petrol),19.96896914929944,Liter,2.31
+2024-07-07,Scope 2,Purchased Electricity,State Grid,454.8533749033164,kWh,0.716
+2024-07-08,Scope 2,Purchased Electricity,State Grid,489.1822832819453,kWh,0.716
+2024-07-09,Scope 2,Purchased Electricity,State Grid,514.0540801181811,kWh,0.716
+2024-07-10,Scope 2,Purchased Electricity,State Grid,490.7503137558301,kWh,0.716
+2024-07-11,Scope 2,Purchased Electricity,State Grid,478.54713168635374,kWh,0.716
+2024-07-12,Scope 2,Purchased Electricity,State Grid,377.06279274875675,kWh,0.716
+2024-07-12,Scope 1,Stationary Combustion,DG Set (Diesel),14.735090449736134,Liter,2.68
+2024-07-12,Scope 3,Waste Generated,Mixed Municipal Waste,91.18156822020141,kg,0.45
+2024-07-12,Scope 3,Waste Generated,Scrap Metal & Cardboard,42.84515123340779,kg,0.02
+2024-07-13,Scope 2,Purchased Electricity,State Grid,455.3154398084235,kWh,0.716
+2024-07-13,Scope 1,Stationary Combustion,DG Set (Diesel),20.787617772913062,Liter,2.68
+2024-07-13,Scope 1,Mobile Combustion,Delivery Truck (Diesel),35.68221498737301,Liter,2.68
+2024-07-13,Scope 1,Mobile Combustion,Company Cars (Petrol),23.891859918957753,Liter,2.31
+2024-07-14,Scope 2,Purchased Electricity,State Grid,408.6644460769712,kWh,0.716
+2024-07-15,Scope 2,Purchased Electricity,State Grid,421.8947614443136,kWh,0.716
+2024-07-16,Scope 2,Purchased Electricity,State Grid,480.95540886379314,kWh,0.716
+2024-07-17,Scope 2,Purchased Electricity,State Grid,483.57045909333044,kWh,0.716
+2024-07-17,Scope 1,Stationary Combustion,DG Set (Diesel),20.680143639107396,Liter,2.68
+2024-07-18,Scope 2,Purchased Electricity,State Grid,438.68285529351226,kWh,0.716
+2024-07-19,Scope 2,Purchased Electricity,State Grid,444.9398455417869,kWh,0.716
+2024-07-19,Scope 3,Waste Generated,Mixed Municipal Waste,81.53419732751341,kg,0.45
+2024-07-19,Scope 3,Waste Generated,Scrap Metal & Cardboard,53.38130693564889,kg,0.02
+2024-07-20,Scope 2,Purchased Electricity,State Grid,452.20364311024326,kWh,0.716
+2024-07-20,Scope 1,Mobile Combustion,Delivery Truck (Diesel),45.29938121219078,Liter,2.68
+2024-07-20,Scope 1,Mobile Combustion,Company Cars (Petrol),21.881732943725755,Liter,2.31
+2024-07-21,Scope 2,Purchased Electricity,State Grid,433.4686085637283,kWh,0.716
+2024-07-22,Scope 2,Purchased Electricity,State Grid,433.208624166215,kWh,0.716
+2024-07-23,Scope 2,Purchased Electricity,State Grid,441.3365767981787,kWh,0.716
+2024-07-24,Scope 2,Purchased Electricity,State Grid,466.11050878296675,kWh,0.716
+2024-07-25,Scope 2,Purchased Electricity,State Grid,445.54570787805864,kWh,0.716
+2024-07-26,Scope 2,Purchased Electricity,State Grid,438.42785456019107,kWh,0.716
+2024-07-26,Scope 3,Waste Generated,Mixed Municipal Waste,85.76467724504957,kg,0.45
+2024-07-26,Scope 3,Waste Generated,Scrap Metal & Cardboard,54.22969401682533,kg,0.02
+2024-07-27,Scope 2,Purchased Electricity,State Grid,462.1452900075979,kWh,0.716
+2024-07-27,Scope 1,Mobile Combustion,Delivery Truck (Diesel),35.738299395431724,Liter,2.68
+2024-07-27,Scope 1,Mobile Combustion,Company Cars (Petrol),20.608173998873095,Liter,2.31
+2024-07-28,Scope 2,Purchased Electricity,State Grid,397.89997596041906,kWh,0.716
+2024-07-29,Scope 2,Purchased Electricity,State Grid,477.5972167700407,kWh,0.716
+2024-07-30,Scope 2,Purchased Electricity,State Grid,423.7562376838735,kWh,0.716
+2024-07-31,Scope 2,Purchased Electricity,State Grid,419.38826488829005,kWh,0.716
+2024-08-01,Scope 2,Purchased Electricity,State Grid,442.5190010966061,kWh,0.716
+2024-08-02,Scope 2,Purchased Electricity,State Grid,401.08301150419425,kWh,0.716
+2024-08-02,Scope 3,Waste Generated,Mixed Municipal Waste,62.507896156952796,kg,0.45
+2024-08-02,Scope 3,Waste Generated,Scrap Metal & Cardboard,47.70319122457218,kg,0.02
+2024-08-03,Scope 2,Purchased Electricity,State Grid,442.8335089464625,kWh,0.716
+2024-08-03,Scope 1,Mobile Combustion,Delivery Truck (Diesel),51.869161562333375,Liter,2.68
+2024-08-03,Scope 1,Mobile Combustion,Company Cars (Petrol),27.469400332386616,Liter,2.31
+2024-08-04,Scope 2,Purchased Electricity,State Grid,462.8149891974208,kWh,0.716
+2024-08-05,Scope 2,Purchased Electricity,State Grid,496.72365952510137,kWh,0.716
+2024-08-06,Scope 2,Purchased Electricity,State Grid,487.003364208729,kWh,0.716
+2024-08-07,Scope 2,Purchased Electricity,State Grid,429.3037877151008,kWh,0.716
+2024-08-08,Scope 2,Purchased Electricity,State Grid,448.4216076439508,kWh,0.716
+2024-08-09,Scope 2,Purchased Electricity,State Grid,407.8157935006467,kWh,0.716
+2024-08-09,Scope 3,Waste Generated,Mixed Municipal Waste,91.90021351812244,kg,0.45
+2024-08-09,Scope 3,Waste Generated,Scrap Metal & Cardboard,45.34139495992027,kg,0.02
+2024-08-10,Scope 2,Purchased Electricity,State Grid,444.925101260947,kWh,0.716
+2024-08-10,Scope 1,Mobile Combustion,Delivery Truck (Diesel),37.6624705415179,Liter,2.68
+2024-08-10,Scope 1,Mobile Combustion,Company Cars (Petrol),23.69814152380948,Liter,2.31
+2024-08-11,Scope 2,Purchased Electricity,State Grid,412.9769323149765,kWh,0.716
+2024-08-12,Scope 2,Purchased Electricity,State Grid,450.5777701906744,kWh,0.716
+2024-08-13,Scope 2,Purchased Electricity,State Grid,454.11792139301707,kWh,0.716
+2024-08-14,Scope 2,Purchased Electricity,State Grid,431.89195288356916,kWh,0.716
+2024-08-15,Scope 2,Purchased Electricity,State Grid,425.3767662002543,kWh,0.716
+2024-08-15,Scope 1,Stationary Combustion,DG Set (Diesel),13.238303512180545,Liter,2.68
+2024-08-16,Scope 2,Purchased Electricity,State Grid,493.74733762267465,kWh,0.716
+2024-08-16,Scope 3,Waste Generated,Mixed Municipal Waste,73.39052009259639,kg,0.45
+2024-08-16,Scope 3,Waste Generated,Scrap Metal & Cardboard,51.39294550203743,kg,0.02
+2024-08-17,Scope 2,Purchased Electricity,State Grid,491.0353057797518,kWh,0.716
+2024-08-17,Scope 1,Mobile Combustion,Delivery Truck (Diesel),41.341359734335924,Liter,2.68
+2024-08-17,Scope 1,Mobile Combustion,Company Cars (Petrol),24.757880799017187,Liter,2.31
+2024-08-18,Scope 2,Purchased Electricity,State Grid,450.17912727490364,kWh,0.716
+2024-08-19,Scope 2,Purchased Electricity,State Grid,432.1238591357297,kWh,0.716
+2024-08-20,Scope 2,Purchased Electricity,State Grid,462.8276147464633,kWh,0.716
+2024-08-21,Scope 2,Purchased Electricity,State Grid,428.13937119227137,kWh,0.716
+2024-08-22,Scope 2,Purchased Electricity,State Grid,477.1400310330448,kWh,0.716
+2024-08-23,Scope 2,Purchased Electricity,State Grid,468.846508849157,kWh,0.716
+2024-08-23,Scope 3,Waste Generated,Mixed Municipal Waste,80.32007312861408,kg,0.45
+2024-08-23,Scope 3,Waste Generated,Scrap Metal & Cardboard,46.23985173883437,kg,0.02
+2024-08-24,Scope 2,Purchased Electricity,State Grid,451.8247159154096,kWh,0.716
+2024-08-24,Scope 1,Mobile Combustion,Delivery Truck (Diesel),35.030165560295664,Liter,2.68
+2024-08-24,Scope 1,Mobile Combustion,Company Cars (Petrol),20.84282281335912,Liter,2.31
+2024-08-25,Scope 2,Purchased Electricity,State Grid,421.9798791160795,kWh,0.716
+2024-08-26,Scope 2,Purchased Electricity,State Grid,420.73128675361284,kWh,0.716
+2024-08-27,Scope 2,Purchased Electricity,State Grid,427.0903298009629,kWh,0.716
+2024-08-28,Scope 2,Purchased Electricity,State Grid,417.7266239659904,kWh,0.716
+2024-08-29,Scope 2,Purchased Electricity,State Grid,457.44898570697785,kWh,0.716
+2024-08-30,Scope 2,Purchased Electricity,State Grid,452.22985471606404,kWh,0.716
+2024-08-30,Scope 3,Waste Generated,Mixed Municipal Waste,70.82679284601839,kg,0.45
+2024-08-30,Scope 3,Waste Generated,Scrap Metal & Cardboard,57.21772176046935,kg,0.02
+2024-08-31,Scope 2,Purchased Electricity,State Grid,479.81515322548984,kWh,0.716
+2024-08-31,Scope 1,Mobile Combustion,Delivery Truck (Diesel),45.129583971952634,Liter,2.68
+2024-08-31,Scope 1,Mobile Combustion,Company Cars (Petrol),27.441853472244958,Liter,2.31
+2024-09-01,Scope 2,Purchased Electricity,State Grid,453.7344597110068,kWh,0.716
+2024-09-02,Scope 2,Purchased Electricity,State Grid,433.44020847201506,kWh,0.716
+2024-09-03,Scope 2,Purchased Electricity,State Grid,445.46941041374794,kWh,0.716
+2024-09-03,Scope 1,Stationary Combustion,DG Set (Diesel),14.063212947264017,Liter,2.68
+2024-09-04,Scope 2,Purchased Electricity,State Grid,432.4906218467842,kWh,0.716
+2024-09-05,Scope 2,Purchased Electricity,State Grid,469.6506474194201,kWh,0.716
+2024-09-06,Scope 2,Purchased Electricity,State Grid,446.8950948978704,kWh,0.716
+2024-09-06,Scope 3,Waste Generated,Mixed Municipal Waste,74.99638202923795,kg,0.45
+2024-09-06,Scope 3,Waste Generated,Scrap Metal & Cardboard,50.476635709961734,kg,0.02
+2024-09-07,Scope 2,Purchased Electricity,State Grid,465.3154056498043,kWh,0.716
+2024-09-07,Scope 1,Mobile Combustion,Delivery Truck (Diesel),42.24003915096159,Liter,2.68
+2024-09-07,Scope 1,Mobile Combustion,Company Cars (Petrol),24.542793084121254,Liter,2.31
+2024-09-08,Scope 2,Purchased Electricity,State Grid,451.3318816846268,kWh,0.716
+2024-09-09,Scope 2,Purchased Electricity,State Grid,450.1595860457949,kWh,0.716
+2024-09-10,Scope 2,Purchased Electricity,State Grid,455.26184042055553,kWh,0.716
+2024-09-11,Scope 2,Purchased Electricity,State Grid,446.56442980913164,kWh,0.716
+2024-09-12,Scope 2,Purchased Electricity,State Grid,480.7008710590897,kWh,0.716
+2024-09-12,Scope 1,Stationary Combustion,DG Set (Diesel),15.867099409776758,Liter,2.68
+2024-09-13,Scope 2,Purchased Electricity,State Grid,433.2845020600696,kWh,0.716
+2024-09-13,Scope 3,Waste Generated,Mixed Municipal Waste,85.38017026476449,kg,0.45
+2024-09-13,Scope 3,Waste Generated,Scrap Metal & Cardboard,55.49879994866483,kg,0.02
+2024-09-14,Scope 2,Purchased Electricity,State Grid,449.2797990925521,kWh,0.716
+2024-09-14,Scope 1,Mobile Combustion,Delivery Truck (Diesel),44.05489802395019,Liter,2.68
+2024-09-14,Scope 1,Mobile Combustion,Company Cars (Petrol),23.292906972252382,Liter,2.31
+2024-09-15,Scope 2,Purchased Electricity,State Grid,410.8477740574801,kWh,0.716
+2024-09-15,Scope 1,Stationary Combustion,DG Set (Diesel),20.012576738999694,Liter,2.68
+2024-09-16,Scope 2,Purchased Electricity,State Grid,450.9233904268952,kWh,0.716
+2024-09-17,Scope 2,Purchased Electricity,State Grid,476.54224793895446,kWh,0.716
+2024-09-18,Scope 2,Purchased Electricity,State Grid,434.3846268826433,kWh,0.716
+2024-09-18,Scope 1,Stationary Combustion,DG Set (Diesel),12.241186418867326,Liter,2.68
+2024-09-19,Scope 2,Purchased Electricity,State Grid,448.1373254159721,kWh,0.716
+2024-09-20,Scope 2,Purchased Electricity,State Grid,434.17388407527255,kWh,0.716
+2024-09-20,Scope 3,Waste Generated,Mixed Municipal Waste,73.94986967286474,kg,0.45
+2024-09-20,Scope 3,Waste Generated,Scrap Metal & Cardboard,43.511188874770994,kg,0.02
+2024-09-21,Scope 2,Purchased Electricity,State Grid,444.6405610136732,kWh,0.716
+2024-09-21,Scope 1,Mobile Combustion,Delivery Truck (Diesel),36.63477454032146,Liter,2.68
+2024-09-21,Scope 1,Mobile Combustion,Company Cars (Petrol),21.12657009601839,Liter,2.31
+2024-09-22,Scope 2,Purchased Electricity,State Grid,454.925739652479,kWh,0.716
+2024-09-23,Scope 2,Purchased Electricity,State Grid,458.32511247684624,kWh,0.716
+2024-09-24,Scope 2,Purchased Electricity,State Grid,476.7332002298787,kWh,0.716
+2024-09-25,Scope 2,Purchased Electricity,State Grid,438.5152335788656,kWh,0.716
+2024-09-26,Scope 2,Purchased Electricity,State Grid,437.0570548749132,kWh,0.716
+2024-09-26,Scope 1,Stationary Combustion,DG Set (Diesel),28.843619009764232,Liter,2.68
+2024-09-27,Scope 2,Purchased Electricity,State Grid,436.00388766426397,kWh,0.716
+2024-09-27,Scope 3,Waste Generated,Mixed Municipal Waste,81.4259294268221,kg,0.45
+2024-09-27,Scope 3,Waste Generated,Scrap Metal & Cardboard,40.34054214310855,kg,0.02
+2024-09-28,Scope 2,Purchased Electricity,State Grid,450.3119184302787,kWh,0.716
+2024-09-28,Scope 1,Mobile Combustion,Delivery Truck (Diesel),41.48914971013366,Liter,2.68
+2024-09-28,Scope 1,Mobile Combustion,Company Cars (Petrol),23.325438110682057,Liter,2.31
+2024-09-29,Scope 2,Purchased Electricity,State Grid,438.8760204124244,kWh,0.716
+2024-09-30,Scope 2,Purchased Electricity,State Grid,436.18541165697195,kWh,0.716
+2024-10-01,Scope 2,Purchased Electricity,State Grid,466.0559167636754,kWh,0.716
+2024-10-02,Scope 2,Purchased Electricity,State Grid,437.340322161734,kWh,0.716
+2024-10-03,Scope 2,Purchased Electricity,State Grid,464.2747296550488,kWh,0.716
+2024-10-04,Scope 2,Purchased Electricity,State Grid,456.7037683914989,kWh,0.716
+2024-10-04,Scope 3,Waste Generated,Mixed Municipal Waste,81.48714068759112,kg,0.45
+2024-10-04,Scope 3,Waste Generated,Scrap Metal & Cardboard,47.664766393173466,kg,0.02
+2024-10-05,Scope 2,Purchased Electricity,State Grid,474.5823236500527,kWh,0.716
+2024-10-05,Scope 1,Mobile Combustion,Delivery Truck (Diesel),44.69421969808697,Liter,2.68
+2024-10-05,Scope 1,Mobile Combustion,Company Cars (Petrol),23.092254407711884,Liter,2.31
+2024-10-06,Scope 2,Purchased Electricity,State Grid,455.19819390564686,kWh,0.716
+2024-10-07,Scope 2,Purchased Electricity,State Grid,468.25680720447735,kWh,0.716
+2024-10-08,Scope 2,Purchased Electricity,State Grid,478.65451447376915,kWh,0.716
+2024-10-09,Scope 2,Purchased Electricity,State Grid,489.9380511402171,kWh,0.716
+2024-10-10,Scope 2,Purchased Electricity,State Grid,410.23833853914016,kWh,0.716
+2024-10-11,Scope 2,Purchased Electricity,State Grid,402.42533675308835,kWh,0.716
+2024-10-11,Scope 3,Waste Generated,Mixed Municipal Waste,79.27927178991054,kg,0.45
+2024-10-11,Scope 3,Waste Generated,Scrap Metal & Cardboard,52.16589814778093,kg,0.02
+2024-10-12,Scope 2,Purchased Electricity,State Grid,462.5510983076623,kWh,0.716
+2024-10-12,Scope 1,Mobile Combustion,Delivery Truck (Diesel),37.30054010185922,Liter,2.68
+2024-10-12,Scope 1,Mobile Combustion,Company Cars (Petrol),31.14164705131596,Liter,2.31
+2024-10-13,Scope 2,Purchased Electricity,State Grid,447.7346081961246,kWh,0.716
+2024-10-14,Scope 2,Purchased Electricity,State Grid,447.5147047951061,kWh,0.716
+2024-10-15,Scope 2,Purchased Electricity,State Grid,424.5795760929632,kWh,0.716
+2024-10-16,Scope 2,Purchased Electricity,State Grid,435.71172188459644,kWh,0.716
+2024-10-17,Scope 2,Purchased Electricity,State Grid,457.49905131758163,kWh,0.716
+2024-10-18,Scope 2,Purchased Electricity,State Grid,439.7993869667868,kWh,0.716
+2024-10-18,Scope 3,Waste Generated,Mixed Municipal Waste,85.01858081955301,kg,0.45
+2024-10-18,Scope 3,Waste Generated,Scrap Metal & Cardboard,49.01002433668833,kg,0.02
+2024-10-19,Scope 2,Purchased Electricity,State Grid,432.22303123194143,kWh,0.716
+2024-10-19,Scope 1,Mobile Combustion,Delivery Truck (Diesel),50.64852759586654,Liter,2.68
+2024-10-19,Scope 1,Mobile Combustion,Company Cars (Petrol),26.106256750162757,Liter,2.31
+2024-10-20,Scope 2,Purchased Electricity,State Grid,416.3877862123073,kWh,0.716
+2024-10-21,Scope 2,Purchased Electricity,State Grid,423.79245667894423,kWh,0.716
+2024-10-22,Scope 2,Purchased Electricity,State Grid,497.0559232196288,kWh,0.716
+2024-10-23,Scope 2,Purchased Electricity,State Grid,460.11087366949806,kWh,0.716
+2024-10-24,Scope 2,Purchased Electricity,State Grid,404.6931119650076,kWh,0.716
+2024-10-25,Scope 2,Purchased Electricity,State Grid,446.065634030513,kWh,0.716
+2024-10-25,Scope 3,Waste Generated,Mixed Municipal Waste,82.71224421061827,kg,0.45
+2024-10-25,Scope 3,Waste Generated,Scrap Metal & Cardboard,45.799506640065616,kg,0.02
+2024-10-26,Scope 2,Purchased Electricity,State Grid,460.8614265249697,kWh,0.716
+2024-10-26,Scope 1,Mobile Combustion,Delivery Truck (Diesel),40.64773690086345,Liter,2.68
+2024-10-26,Scope 1,Mobile Combustion,Company Cars (Petrol),27.78446925954907,Liter,2.31
+2024-10-27,Scope 2,Purchased Electricity,State Grid,512.1419815303017,kWh,0.716
+2024-10-28,Scope 2,Purchased Electricity,State Grid,486.23958837634103,kWh,0.716
+2024-10-29,Scope 2,Purchased Electricity,State Grid,472.68442994799966,kWh,0.716
+2024-10-30,Scope 2,Purchased Electricity,State Grid,469.27326801491097,kWh,0.716
+2024-10-31,Scope 2,Purchased Electricity,State Grid,478.98594900630457,kWh,0.716
+2024-11-01,Scope 2,Purchased Electricity,State Grid,479.5535615937835,kWh,0.716
+2024-11-01,Scope 3,Waste Generated,Mixed Municipal Waste,97.57094725762666,kg,0.45
+2024-11-01,Scope 3,Waste Generated,Scrap Metal & Cardboard,59.78301905499026,kg,0.02
+2024-11-02,Scope 2,Purchased Electricity,State Grid,435.3703159896139,kWh,0.716
+2024-11-02,Scope 1,Mobile Combustion,Delivery Truck (Diesel),28.187083509054787,Liter,2.68
+2024-11-02,Scope 1,Mobile Combustion,Company Cars (Petrol),23.331893106128692,Liter,2.31
+2024-11-03,Scope 2,Purchased Electricity,State Grid,524.2824556791293,kWh,0.716
+2024-11-04,Scope 2,Purchased Electricity,State Grid,457.33918115616433,kWh,0.716
+2024-11-05,Scope 2,Purchased Electricity,State Grid,411.4174602508753,kWh,0.716
+2024-11-06,Scope 2,Purchased Electricity,State Grid,466.2852316004638,kWh,0.716
+2024-11-07,Scope 2,Purchased Electricity,State Grid,477.5772272048889,kWh,0.716
+2024-11-08,Scope 2,Purchased Electricity,State Grid,457.06135707535816,kWh,0.716
+2024-11-08,Scope 3,Waste Generated,Mixed Municipal Waste,62.440720239915,kg,0.45
+2024-11-08,Scope 3,Waste Generated,Scrap Metal & Cardboard,56.65926555717202,kg,0.02
+2024-11-09,Scope 2,Purchased Electricity,State Grid,493.6972053670553,kWh,0.716
+2024-11-09,Scope 1,Mobile Combustion,Delivery Truck (Diesel),37.85480243446095,Liter,2.68
+2024-11-09,Scope 1,Mobile Combustion,Company Cars (Petrol),21.620656657721874,Liter,2.31
+2024-11-10,Scope 2,Purchased Electricity,State Grid,478.9271298636764,kWh,0.716
+2024-11-11,Scope 2,Purchased Electricity,State Grid,458.7655054804769,kWh,0.716
+2024-11-12,Scope 2,Purchased Electricity,State Grid,489.140123053645,kWh,0.716
+2024-11-13,Scope 2,Purchased Electricity,State Grid,463.32953033902277,kWh,0.716
+2024-11-14,Scope 2,Purchased Electricity,State Grid,503.13028651282866,kWh,0.716
+2024-11-15,Scope 2,Purchased Electricity,State Grid,462.79019960524244,kWh,0.716
+2024-11-15,Scope 3,Waste Generated,Mixed Municipal Waste,73.08949552653594,kg,0.45
+2024-11-15,Scope 3,Waste Generated,Scrap Metal & Cardboard,51.53454751112048,kg,0.02
+2024-11-16,Scope 2,Purchased Electricity,State Grid,426.463135178463,kWh,0.716
+2024-11-16,Scope 1,Mobile Combustion,Delivery Truck (Diesel),49.0876509517487,Liter,2.68
+2024-11-16,Scope 1,Mobile Combustion,Company Cars (Petrol),21.799642996041356,Liter,2.31
+2024-11-17,Scope 2,Purchased Electricity,State Grid,466.1060580986603,kWh,0.716
+2024-11-18,Scope 2,Purchased Electricity,State Grid,456.6796877984519,kWh,0.716
+2024-11-19,Scope 2,Purchased Electricity,State Grid,483.6258546636416,kWh,0.716
+2024-11-20,Scope 2,Purchased Electricity,State Grid,455.7440573768377,kWh,0.716
+2024-11-21,Scope 2,Purchased Electricity,State Grid,467.5458537150331,kWh,0.716
+2024-11-22,Scope 2,Purchased Electricity,State Grid,374.3592758357492,kWh,0.716
+2024-11-22,Scope 3,Waste Generated,Mixed Municipal Waste,76.19330869069455,kg,0.45
+2024-11-22,Scope 3,Waste Generated,Scrap Metal & Cardboard,48.80099374227799,kg,0.02
+2024-11-23,Scope 2,Purchased Electricity,State Grid,461.389300698817,kWh,0.716
+2024-11-23,Scope 1,Mobile Combustion,Delivery Truck (Diesel),39.093187072869334,Liter,2.68
+2024-11-23,Scope 1,Mobile Combustion,Company Cars (Petrol),27.997894750985875,Liter,2.31
+2024-11-24,Scope 2,Purchased Electricity,State Grid,426.00620415290683,kWh,0.716
+2024-11-25,Scope 2,Purchased Electricity,State Grid,432.7171727645467,kWh,0.716
+2024-11-26,Scope 2,Purchased Electricity,State Grid,461.4720556091809,kWh,0.716
+2024-11-27,Scope 2,Purchased Electricity,State Grid,492.696736291654,kWh,0.716
+2024-11-28,Scope 2,Purchased Electricity,State Grid,497.44123658802573,kWh,0.716
+2024-11-29,Scope 2,Purchased Electricity,State Grid,441.99572486876934,kWh,0.716
+2024-11-29,Scope 3,Waste Generated,Mixed Municipal Waste,79.18895631466012,kg,0.45
+2024-11-29,Scope 3,Waste Generated,Scrap Metal & Cardboard,54.71372195022201,kg,0.02
+2024-11-30,Scope 2,Purchased Electricity,State Grid,492.790106136518,kWh,0.716
+2024-11-30,Scope 1,Mobile Combustion,Delivery Truck (Diesel),36.9810080732634,Liter,2.68
+2024-11-30,Scope 1,Mobile Combustion,Company Cars (Petrol),25.565311281417443,Liter,2.31
+2024-12-01,Scope 2,Purchased Electricity,State Grid,402.76632987861893,kWh,0.716
+2024-12-02,Scope 2,Purchased Electricity,State Grid,485.9263302685407,kWh,0.716
+2024-12-03,Scope 2,Purchased Electricity,State Grid,440.4711694335848,kWh,0.716
+2024-12-04,Scope 2,Purchased Electricity,State Grid,495.36344819011765,kWh,0.716
+2024-12-05,Scope 2,Purchased Electricity,State Grid,503.2636499742925,kWh,0.716
+2024-12-06,Scope 2,Purchased Electricity,State Grid,492.80548608238547,kWh,0.716
+2024-12-06,Scope 3,Waste Generated,Mixed Municipal Waste,69.06651088739417,kg,0.45
+2024-12-06,Scope 3,Waste Generated,Scrap Metal & Cardboard,47.72975549847221,kg,0.02
+2024-12-07,Scope 2,Purchased Electricity,State Grid,454.893336305384,kWh,0.716
+2024-12-07,Scope 1,Mobile Combustion,Delivery Truck (Diesel),43.63027436603221,Liter,2.68
+2024-12-07,Scope 1,Mobile Combustion,Company Cars (Petrol),25.54236192781248,Liter,2.31
+2024-12-08,Scope 2,Purchased Electricity,State Grid,440.57149128352563,kWh,0.716
+2024-12-08,Scope 1,Stationary Combustion,DG Set (Diesel),12.456430679134566,Liter,2.68
+2024-12-09,Scope 2,Purchased Electricity,State Grid,439.61461478676995,kWh,0.716
+2024-12-10,Scope 2,Purchased Electricity,State Grid,439.4995754675459,kWh,0.716
+2024-12-11,Scope 2,Purchased Electricity,State Grid,434.8222055404333,kWh,0.716
+2024-12-12,Scope 2,Purchased Electricity,State Grid,418.3504482252531,kWh,0.716
+2024-12-13,Scope 2,Purchased Electricity,State Grid,391.7629294771882,kWh,0.716
+2024-12-13,Scope 3,Waste Generated,Mixed Municipal Waste,91.2512541896165,kg,0.45
+2024-12-13,Scope 3,Waste Generated,Scrap Metal & Cardboard,37.64851837593933,kg,0.02
+2024-12-14,Scope 2,Purchased Electricity,State Grid,487.75535526830447,kWh,0.716
+2024-12-14,Scope 1,Mobile Combustion,Delivery Truck (Diesel),28.522928635924146,Liter,2.68
+2024-12-14,Scope 1,Mobile Combustion,Company Cars (Petrol),24.05863140384018,Liter,2.31
+2024-12-15,Scope 2,Purchased Electricity,State Grid,461.4990512599498,kWh,0.716
+2024-12-16,Scope 2,Purchased Electricity,State Grid,441.45796076196007,kWh,0.716
+2024-12-17,Scope 2,Purchased Electricity,State Grid,450.321297024891,kWh,0.716
+2024-12-18,Scope 2,Purchased Electricity,State Grid,473.1626452517105,kWh,0.716
+2024-12-19,Scope 2,Purchased Electricity,State Grid,439.04003329196144,kWh,0.716
+2024-12-20,Scope 2,Purchased Electricity,State Grid,441.2085372855675,kWh,0.716
+2024-12-20,Scope 3,Waste Generated,Mixed Municipal Waste,76.11792080905822,kg,0.45
+2024-12-20,Scope 3,Waste Generated,Scrap Metal & Cardboard,47.15646412340486,kg,0.02
+2024-12-21,Scope 2,Purchased Electricity,State Grid,445.13564825114827,kWh,0.716
+2024-12-21,Scope 1,Mobile Combustion,Delivery Truck (Diesel),39.645631423824206,Liter,2.68
+2024-12-21,Scope 1,Mobile Combustion,Company Cars (Petrol),22.14340141714262,Liter,2.31
+2024-12-22,Scope 2,Purchased Electricity,State Grid,463.2424002101335,kWh,0.716
+2024-12-23,Scope 2,Purchased Electricity,State Grid,447.98203912938226,kWh,0.716
+2024-12-24,Scope 2,Purchased Electricity,State Grid,439.93173038807646,kWh,0.716
+2024-12-25,Scope 2,Purchased Electricity,State Grid,447.21808937818975,kWh,0.716
+2024-12-26,Scope 2,Purchased Electricity,State Grid,408.84501187744354,kWh,0.716
+2024-12-27,Scope 2,Purchased Electricity,State Grid,443.5333041198006,kWh,0.716
+2024-12-27,Scope 3,Waste Generated,Mixed Municipal Waste,63.0360484035426,kg,0.45
+2024-12-27,Scope 3,Waste Generated,Scrap Metal & Cardboard,56.65137274817138,kg,0.02
+2024-12-28,Scope 2,Purchased Electricity,State Grid,463.53646636478106,kWh,0.716
+2024-12-28,Scope 1,Mobile Combustion,Delivery Truck (Diesel),47.23482802230308,Liter,2.68
+2024-12-28,Scope 1,Mobile Combustion,Company Cars (Petrol),23.78540648721908,Liter,2.31
+2024-12-29,Scope 2,Purchased Electricity,State Grid,455.94535540469775,kWh,0.716
+2024-12-30,Scope 2,Purchased Electricity,State Grid,426.69219642053565,kWh,0.716
+2024-12-31,Scope 2,Purchased Electricity,State Grid,500.09080721206726,kWh,0.716
+2025-01-01,Scope 2,Purchased Electricity,State Grid,270.7052684486556,kWh,0.716
+2025-01-01,Scope 2,Purchased Electricity,Rooftop Solar,186.75046026601564,kWh,0.0
+2025-01-02,Scope 2,Purchased Electricity,State Grid,253.4248944190952,kWh,0.716
+2025-01-02,Scope 2,Purchased Electricity,Rooftop Solar,212.1387313678577,kWh,0.0
+2025-01-03,Scope 2,Purchased Electricity,State Grid,257.7387786257118,kWh,0.716
+2025-01-03,Scope 2,Purchased Electricity,Rooftop Solar,184.1143570355744,kWh,0.0
+2025-01-03,Scope 3,Waste Generated,Mixed Municipal Waste,96.89182967398479,kg,0.45
+2025-01-03,Scope 3,Waste Generated,Scrap Metal & Cardboard,68.33425583243508,kg,0.02
+2025-01-04,Scope 2,Purchased Electricity,State Grid,222.3837709718691,kWh,0.716
+2025-01-04,Scope 2,Purchased Electricity,Rooftop Solar,189.2439727659108,kWh,0.0
+2025-01-04,Scope 1,Mobile Combustion,Delivery Truck (Diesel),52.95222045451309,Liter,2.68
+2025-01-04,Scope 1,Mobile Combustion,Company Cars (Petrol),25.279534510065332,Liter,2.31
+2025-01-05,Scope 2,Purchased Electricity,State Grid,242.1189027319356,kWh,0.716
+2025-01-05,Scope 2,Purchased Electricity,Rooftop Solar,176.44219563700423,kWh,0.0
+2025-01-06,Scope 2,Purchased Electricity,State Grid,194.19493628454677,kWh,0.716
+2025-01-06,Scope 2,Purchased Electricity,Rooftop Solar,223.99574015009551,kWh,0.0
+2025-01-07,Scope 2,Purchased Electricity,State Grid,308.3900359059147,kWh,0.716
+2025-01-07,Scope 2,Purchased Electricity,Rooftop Solar,196.84743316057282,kWh,0.0
+2025-01-08,Scope 2,Purchased Electricity,State Grid,270.8769487309862,kWh,0.716
+2025-01-08,Scope 2,Purchased Electricity,Rooftop Solar,185.38358886462072,kWh,0.0
+2025-01-09,Scope 2,Purchased Electricity,State Grid,213.58179099981163,kWh,0.716
+2025-01-09,Scope 2,Purchased Electricity,Rooftop Solar,218.5794161120847,kWh,0.0
+2025-01-10,Scope 2,Purchased Electricity,State Grid,215.46323868733128,kWh,0.716
+2025-01-10,Scope 2,Purchased Electricity,Rooftop Solar,218.22031654196388,kWh,0.0
+2025-01-10,Scope 3,Waste Generated,Mixed Municipal Waste,73.66295154310981,kg,0.45
+2025-01-10,Scope 3,Waste Generated,Scrap Metal & Cardboard,65.6836400118378,kg,0.02
+2025-01-11,Scope 2,Purchased Electricity,State Grid,247.1471748556166,kWh,0.716
+2025-01-11,Scope 2,Purchased Electricity,Rooftop Solar,202.71769350599854,kWh,0.0
+2025-01-11,Scope 1,Mobile Combustion,Delivery Truck (Diesel),36.50327191465592,Liter,2.68
+2025-01-11,Scope 1,Mobile Combustion,Company Cars (Petrol),25.332288495325574,Liter,2.31
+2025-01-12,Scope 2,Purchased Electricity,State Grid,173.90885935618738,kWh,0.716
+2025-01-12,Scope 2,Purchased Electricity,Rooftop Solar,231.3597044509123,kWh,0.0
+2025-01-13,Scope 2,Purchased Electricity,State Grid,283.648388645905,kWh,0.716
+2025-01-13,Scope 2,Purchased Electricity,Rooftop Solar,178.810610746263,kWh,0.0
+2025-01-14,Scope 2,Purchased Electricity,State Grid,214.06960993660095,kWh,0.716
+2025-01-14,Scope 2,Purchased Electricity,Rooftop Solar,194.39777007918008,kWh,0.0
+2025-01-15,Scope 2,Purchased Electricity,State Grid,224.84117915986317,kWh,0.716
+2025-01-15,Scope 2,Purchased Electricity,Rooftop Solar,204.86171290645697,kWh,0.0
+2025-01-16,Scope 2,Purchased Electricity,State Grid,285.4533378738037,kWh,0.716
+2025-01-16,Scope 2,Purchased Electricity,Rooftop Solar,192.45079514140855,kWh,0.0
+2025-01-17,Scope 2,Purchased Electricity,State Grid,243.03186874097415,kWh,0.716
+2025-01-17,Scope 2,Purchased Electricity,Rooftop Solar,200.88813538640537,kWh,0.0
+2025-01-17,Scope 3,Waste Generated,Mixed Municipal Waste,63.23025553825652,kg,0.45
+2025-01-17,Scope 3,Waste Generated,Scrap Metal & Cardboard,62.20238536017595,kg,0.02
+2025-01-18,Scope 2,Purchased Electricity,State Grid,258.2457791859475,kWh,0.716
+2025-01-18,Scope 2,Purchased Electricity,Rooftop Solar,164.50817116287593,kWh,0.0
+2025-01-18,Scope 1,Mobile Combustion,Delivery Truck (Diesel),38.33117832885458,Liter,2.68
+2025-01-18,Scope 1,Mobile Combustion,Company Cars (Petrol),25.725492747296965,Liter,2.31
+2025-01-19,Scope 2,Purchased Electricity,State Grid,313.7251932919896,kWh,0.716
+2025-01-19,Scope 2,Purchased Electricity,Rooftop Solar,180.01342533950842,kWh,0.0
+2025-01-20,Scope 2,Purchased Electricity,State Grid,282.84369918617625,kWh,0.716
+2025-01-20,Scope 2,Purchased Electricity,Rooftop Solar,177.25370915488298,kWh,0.0
+2025-01-21,Scope 2,Purchased Electricity,State Grid,272.9494592242176,kWh,0.716
+2025-01-21,Scope 2,Purchased Electricity,Rooftop Solar,207.44812451553895,kWh,0.0
+2025-01-22,Scope 2,Purchased Electricity,State Grid,212.1508430626682,kWh,0.716
+2025-01-22,Scope 2,Purchased Electricity,Rooftop Solar,207.29620261024021,kWh,0.0
+2025-01-23,Scope 2,Purchased Electricity,State Grid,288.1058679009785,kWh,0.716
+2025-01-23,Scope 2,Purchased Electricity,Rooftop Solar,187.63870499403689,kWh,0.0
+2025-01-24,Scope 2,Purchased Electricity,State Grid,280.76642312355915,kWh,0.716
+2025-01-24,Scope 2,Purchased Electricity,Rooftop Solar,189.0446508307685,kWh,0.0
+2025-01-24,Scope 3,Waste Generated,Mixed Municipal Waste,81.63184865062554,kg,0.45
+2025-01-24,Scope 3,Waste Generated,Scrap Metal & Cardboard,60.535612142290695,kg,0.02
+2025-01-25,Scope 2,Purchased Electricity,State Grid,235.04322720458927,kWh,0.716
+2025-01-25,Scope 2,Purchased Electricity,Rooftop Solar,158.20934006210635,kWh,0.0
+2025-01-25,Scope 1,Mobile Combustion,Delivery Truck (Diesel),43.68966979452216,Liter,2.68
+2025-01-25,Scope 1,Mobile Combustion,Company Cars (Petrol),27.17385076036654,Liter,2.31
+2025-01-26,Scope 2,Purchased Electricity,State Grid,247.30110734061952,kWh,0.716
+2025-01-26,Scope 2,Purchased Electricity,Rooftop Solar,202.5519171046176,kWh,0.0
+2025-01-27,Scope 2,Purchased Electricity,State Grid,265.6367475796722,kWh,0.716
+2025-01-27,Scope 2,Purchased Electricity,Rooftop Solar,205.669956619049,kWh,0.0
+2025-01-28,Scope 2,Purchased Electricity,State Grid,239.41735929321646,kWh,0.716
+2025-01-28,Scope 2,Purchased Electricity,Rooftop Solar,216.99032928261022,kWh,0.0
+2025-01-29,Scope 2,Purchased Electricity,State Grid,250.16573612688057,kWh,0.716
+2025-01-29,Scope 2,Purchased Electricity,Rooftop Solar,205.85103898880408,kWh,0.0
+2025-01-30,Scope 2,Purchased Electricity,State Grid,276.0763445116852,kWh,0.716
+2025-01-30,Scope 2,Purchased Electricity,Rooftop Solar,210.49531057189458,kWh,0.0
+2025-01-31,Scope 2,Purchased Electricity,State Grid,176.05981362061098,kWh,0.716
+2025-01-31,Scope 2,Purchased Electricity,Rooftop Solar,188.14249654741158,kWh,0.0
+2025-01-31,Scope 3,Waste Generated,Mixed Municipal Waste,80.62064526201465,kg,0.45
+2025-01-31,Scope 3,Waste Generated,Scrap Metal & Cardboard,66.67515356054966,kg,0.02
+2025-02-01,Scope 2,Purchased Electricity,State Grid,168.1588536469848,kWh,0.716
+2025-02-01,Scope 2,Purchased Electricity,Rooftop Solar,204.23390273196557,kWh,0.0
+2025-02-01,Scope 1,Mobile Combustion,Delivery Truck (Diesel),37.58214440313627,Liter,2.68
+2025-02-01,Scope 1,Mobile Combustion,Company Cars (Petrol),21.346217989682906,Liter,2.31
+2025-02-02,Scope 2,Purchased Electricity,State Grid,271.2733538715961,kWh,0.716
+2025-02-02,Scope 2,Purchased Electricity,Rooftop Solar,213.95516274299592,kWh,0.0
+2025-02-03,Scope 2,Purchased Electricity,State Grid,222.90753252441584,kWh,0.716
+2025-02-03,Scope 2,Purchased Electricity,Rooftop Solar,201.94619852703624,kWh,0.0
+2025-02-04,Scope 2,Purchased Electricity,State Grid,237.06814569983632,kWh,0.716
+2025-02-04,Scope 2,Purchased Electricity,Rooftop Solar,177.19741636735344,kWh,0.0
+2025-02-05,Scope 2,Purchased Electricity,State Grid,242.48552005102482,kWh,0.716
+2025-02-05,Scope 2,Purchased Electricity,Rooftop Solar,184.84861757936199,kWh,0.0
+2025-02-06,Scope 2,Purchased Electricity,State Grid,286.873402217935,kWh,0.716
+2025-02-06,Scope 2,Purchased Electricity,Rooftop Solar,203.16183441569294,kWh,0.0
+2025-02-07,Scope 2,Purchased Electricity,State Grid,264.3561644249544,kWh,0.716
+2025-02-07,Scope 2,Purchased Electricity,Rooftop Solar,204.63636877495506,kWh,0.0
+2025-02-07,Scope 3,Waste Generated,Mixed Municipal Waste,84.48861265319734,kg,0.45
+2025-02-07,Scope 3,Waste Generated,Scrap Metal & Cardboard,73.07995760593796,kg,0.02
+2025-02-08,Scope 2,Purchased Electricity,State Grid,297.9092069689227,kWh,0.716
+2025-02-08,Scope 2,Purchased Electricity,Rooftop Solar,188.04666641891956,kWh,0.0
+2025-02-08,Scope 1,Mobile Combustion,Delivery Truck (Diesel),40.084321108680115,Liter,2.68
+2025-02-08,Scope 1,Mobile Combustion,Company Cars (Petrol),26.582839136581978,Liter,2.31
+2025-02-09,Scope 2,Purchased Electricity,State Grid,290.2360935555589,kWh,0.716
+2025-02-09,Scope 2,Purchased Electricity,Rooftop Solar,207.66928424049746,kWh,0.0
+2025-02-10,Scope 2,Purchased Electricity,State Grid,228.18089457777037,kWh,0.716
+2025-02-10,Scope 2,Purchased Electricity,Rooftop Solar,216.64218534325389,kWh,0.0
+2025-02-11,Scope 2,Purchased Electricity,State Grid,181.6062812011262,kWh,0.716
+2025-02-11,Scope 2,Purchased Electricity,Rooftop Solar,218.11248275782066,kWh,0.0
+2025-02-12,Scope 2,Purchased Electricity,State Grid,303.25512512618457,kWh,0.716
+2025-02-12,Scope 2,Purchased Electricity,Rooftop Solar,208.13392912069972,kWh,0.0
+2025-02-13,Scope 2,Purchased Electricity,State Grid,261.79528926621214,kWh,0.716
+2025-02-13,Scope 2,Purchased Electricity,Rooftop Solar,212.41265903708563,kWh,0.0
+2025-02-14,Scope 2,Purchased Electricity,State Grid,251.54745153809412,kWh,0.716
+2025-02-14,Scope 2,Purchased Electricity,Rooftop Solar,218.0128898687826,kWh,0.0
+2025-02-14,Scope 3,Waste Generated,Mixed Municipal Waste,78.8325069370855,kg,0.45
+2025-02-14,Scope 3,Waste Generated,Scrap Metal & Cardboard,66.37839177511218,kg,0.02
+2025-02-15,Scope 2,Purchased Electricity,State Grid,289.7142906847905,kWh,0.716
+2025-02-15,Scope 2,Purchased Electricity,Rooftop Solar,173.34008095551508,kWh,0.0
+2025-02-15,Scope 1,Mobile Combustion,Delivery Truck (Diesel),33.47126787220512,Liter,2.68
+2025-02-15,Scope 1,Mobile Combustion,Company Cars (Petrol),25.73824820468528,Liter,2.31
+2025-02-16,Scope 2,Purchased Electricity,State Grid,242.3147737641198,kWh,0.716
+2025-02-16,Scope 2,Purchased Electricity,Rooftop Solar,195.24041879251595,kWh,0.0
+2025-02-17,Scope 2,Purchased Electricity,State Grid,231.10580745656398,kWh,0.716
+2025-02-17,Scope 2,Purchased Electricity,Rooftop Solar,213.1716637284079,kWh,0.0
+2025-02-18,Scope 2,Purchased Electricity,State Grid,231.8661730448384,kWh,0.716
+2025-02-18,Scope 2,Purchased Electricity,Rooftop Solar,193.28582824588776,kWh,0.0
+2025-02-19,Scope 2,Purchased Electricity,State Grid,253.0268882957661,kWh,0.716
+2025-02-19,Scope 2,Purchased Electricity,Rooftop Solar,219.54808481649494,kWh,0.0
+2025-02-19,Scope 1,Stationary Combustion,DG Set (Diesel),7.681090020139206,Liter,2.68
+2025-02-20,Scope 2,Purchased Electricity,State Grid,216.8697093660852,kWh,0.716
+2025-02-20,Scope 2,Purchased Electricity,Rooftop Solar,199.02467809152586,kWh,0.0
+2025-02-21,Scope 2,Purchased Electricity,State Grid,299.0271571390123,kWh,0.716
+2025-02-21,Scope 2,Purchased Electricity,Rooftop Solar,157.6461087289836,kWh,0.0
+2025-02-21,Scope 3,Waste Generated,Mixed Municipal Waste,59.57241222276082,kg,0.45
+2025-02-21,Scope 3,Waste Generated,Scrap Metal & Cardboard,62.057572697756086,kg,0.02
+2025-02-22,Scope 2,Purchased Electricity,State Grid,231.98978617803957,kWh,0.716
+2025-02-22,Scope 2,Purchased Electricity,Rooftop Solar,217.57233959690714,kWh,0.0
+2025-02-22,Scope 1,Mobile Combustion,Delivery Truck (Diesel),45.14996739367055,Liter,2.68
+2025-02-22,Scope 1,Mobile Combustion,Company Cars (Petrol),28.9999675036989,Liter,2.31
+2025-02-23,Scope 2,Purchased Electricity,State Grid,245.02375704203502,kWh,0.716
+2025-02-23,Scope 2,Purchased Electricity,Rooftop Solar,177.94633140658664,kWh,0.0
+2025-02-24,Scope 2,Purchased Electricity,State Grid,221.8685572795191,kWh,0.716
+2025-02-24,Scope 2,Purchased Electricity,Rooftop Solar,215.50070676832155,kWh,0.0
+2025-02-25,Scope 2,Purchased Electricity,State Grid,260.6852497920244,kWh,0.716
+2025-02-25,Scope 2,Purchased Electricity,Rooftop Solar,205.387798171366,kWh,0.0
+2025-02-26,Scope 2,Purchased Electricity,State Grid,246.69135456465935,kWh,0.716
+2025-02-26,Scope 2,Purchased Electricity,Rooftop Solar,183.60031508892845,kWh,0.0
+2025-02-26,Scope 1,Stationary Combustion,DG Set (Diesel),16.549909655707136,Liter,2.68
+2025-02-27,Scope 2,Purchased Electricity,State Grid,257.5180049256487,kWh,0.716
+2025-02-27,Scope 2,Purchased Electricity,Rooftop Solar,203.83896277257335,kWh,0.0
+2025-02-28,Scope 2,Purchased Electricity,State Grid,252.35720766607733,kWh,0.716
+2025-02-28,Scope 2,Purchased Electricity,Rooftop Solar,205.31598986639892,kWh,0.0
+2025-02-28,Scope 3,Waste Generated,Mixed Municipal Waste,81.09597723218525,kg,0.45
+2025-02-28,Scope 3,Waste Generated,Scrap Metal & Cardboard,67.84379649587,kg,0.02
+2025-03-01,Scope 2,Purchased Electricity,State Grid,373.82900278814884,kWh,0.716
+2025-03-01,Scope 2,Purchased Electricity,Rooftop Solar,209.5625640234357,kWh,0.0
+2025-03-01,Scope 1,Mobile Combustion,Delivery Truck (Diesel),44.98262480636616,Liter,2.68
+2025-03-01,Scope 1,Mobile Combustion,Company Cars (Petrol),24.428843358594822,Liter,2.31
+2025-03-02,Scope 2,Purchased Electricity,State Grid,449.0645091360293,kWh,0.716
+2025-03-02,Scope 2,Purchased Electricity,Rooftop Solar,208.12125145284577,kWh,0.0
+2025-03-03,Scope 2,Purchased Electricity,State Grid,432.0762833505792,kWh,0.716
+2025-03-03,Scope 2,Purchased Electricity,Rooftop Solar,203.61625273719454,kWh,0.0
+2025-03-04,Scope 2,Purchased Electricity,State Grid,358.50086496770643,kWh,0.716
+2025-03-04,Scope 2,Purchased Electricity,Rooftop Solar,228.4162092697931,kWh,0.0
+2025-03-05,Scope 2,Purchased Electricity,State Grid,413.2625402989876,kWh,0.716
+2025-03-05,Scope 2,Purchased Electricity,Rooftop Solar,171.86699303281785,kWh,0.0
+2025-03-06,Scope 2,Purchased Electricity,State Grid,442.96258210649273,kWh,0.716
+2025-03-06,Scope 2,Purchased Electricity,Rooftop Solar,191.28361915189896,kWh,0.0
+2025-03-07,Scope 2,Purchased Electricity,State Grid,376.020411602074,kWh,0.716
+2025-03-07,Scope 2,Purchased Electricity,Rooftop Solar,209.53442862288833,kWh,0.0
+2025-03-07,Scope 3,Waste Generated,Mixed Municipal Waste,77.67083001911728,kg,0.45
+2025-03-07,Scope 3,Waste Generated,Scrap Metal & Cardboard,64.45824651286426,kg,0.02
+2025-03-08,Scope 2,Purchased Electricity,State Grid,432.56513323731366,kWh,0.716
+2025-03-08,Scope 2,Purchased Electricity,Rooftop Solar,178.71744865828788,kWh,0.0
+2025-03-08,Scope 1,Mobile Combustion,Delivery Truck (Diesel),46.12245120666624,Liter,2.68
+2025-03-08,Scope 1,Mobile Combustion,Company Cars (Petrol),31.192173593772623,Liter,2.31
+2025-03-09,Scope 2,Purchased Electricity,State Grid,341.42377506828,kWh,0.716
+2025-03-09,Scope 2,Purchased Electricity,Rooftop Solar,218.74441196678316,kWh,0.0
+2025-03-10,Scope 2,Purchased Electricity,State Grid,329.2529686512471,kWh,0.716
+2025-03-10,Scope 2,Purchased Electricity,Rooftop Solar,220.6853387196728,kWh,0.0
+2025-03-11,Scope 2,Purchased Electricity,State Grid,385.953622597622,kWh,0.716
+2025-03-11,Scope 2,Purchased Electricity,Rooftop Solar,233.06126555666077,kWh,0.0
+2025-03-12,Scope 2,Purchased Electricity,State Grid,436.87477048113465,kWh,0.716
+2025-03-12,Scope 2,Purchased Electricity,Rooftop Solar,184.11686466554013,kWh,0.0
+2025-03-13,Scope 2,Purchased Electricity,State Grid,375.44036832271377,kWh,0.716
+2025-03-13,Scope 2,Purchased Electricity,Rooftop Solar,185.77269498291864,kWh,0.0
+2025-03-14,Scope 2,Purchased Electricity,State Grid,472.09232369265857,kWh,0.716
+2025-03-14,Scope 2,Purchased Electricity,Rooftop Solar,178.46122106516503,kWh,0.0
+2025-03-14,Scope 3,Waste Generated,Mixed Municipal Waste,91.40417962218883,kg,0.45
+2025-03-14,Scope 3,Waste Generated,Scrap Metal & Cardboard,62.78050096233621,kg,0.02
+2025-03-15,Scope 2,Purchased Electricity,State Grid,361.64927673622935,kWh,0.716
+2025-03-15,Scope 2,Purchased Electricity,Rooftop Solar,190.06553609081027,kWh,0.0
+2025-03-15,Scope 1,Mobile Combustion,Delivery Truck (Diesel),44.24754592944188,Liter,2.68
+2025-03-15,Scope 1,Mobile Combustion,Company Cars (Petrol),25.15933086430088,Liter,2.31
+2025-03-15,Scope 1,Fugitive Emissions,AC Refrigerant (R-32),1.2413149276048276,kg,675.0
+2025-03-16,Scope 2,Purchased Electricity,State Grid,377.26921744785784,kWh,0.716
+2025-03-16,Scope 2,Purchased Electricity,Rooftop Solar,196.39224562768405,kWh,0.0
+2025-03-17,Scope 2,Purchased Electricity,State Grid,452.11156620399925,kWh,0.716
+2025-03-17,Scope 2,Purchased Electricity,Rooftop Solar,179.03167879819318,kWh,0.0
+2025-03-18,Scope 2,Purchased Electricity,State Grid,422.82293629549264,kWh,0.716
+2025-03-18,Scope 2,Purchased Electricity,Rooftop Solar,205.66478849760625,kWh,0.0
+2025-03-19,Scope 2,Purchased Electricity,State Grid,420.95832439313165,kWh,0.716
+2025-03-19,Scope 2,Purchased Electricity,Rooftop Solar,221.06353170563466,kWh,0.0
+2025-03-20,Scope 2,Purchased Electricity,State Grid,381.08812316152193,kWh,0.716
+2025-03-20,Scope 2,Purchased Electricity,Rooftop Solar,186.69481564051875,kWh,0.0
+2025-03-21,Scope 2,Purchased Electricity,State Grid,406.9952375838723,kWh,0.716
+2025-03-21,Scope 2,Purchased Electricity,Rooftop Solar,192.4744306016458,kWh,0.0
+2025-03-21,Scope 3,Waste Generated,Mixed Municipal Waste,90.79079868846486,kg,0.45
+2025-03-21,Scope 3,Waste Generated,Scrap Metal & Cardboard,57.894622971075705,kg,0.02
+2025-03-22,Scope 2,Purchased Electricity,State Grid,456.20543234745094,kWh,0.716
+2025-03-22,Scope 2,Purchased Electricity,Rooftop Solar,201.9787961157074,kWh,0.0
+2025-03-22,Scope 1,Mobile Combustion,Delivery Truck (Diesel),43.65523463830461,Liter,2.68
+2025-03-22,Scope 1,Mobile Combustion,Company Cars (Petrol),26.440478783438092,Liter,2.31
+2025-03-23,Scope 2,Purchased Electricity,State Grid,351.3409283926139,kWh,0.716
+2025-03-23,Scope 2,Purchased Electricity,Rooftop Solar,206.97007093299231,kWh,0.0
+2025-03-24,Scope 2,Purchased Electricity,State Grid,389.3601874869475,kWh,0.716
+2025-03-24,Scope 2,Purchased Electricity,Rooftop Solar,219.4865826948921,kWh,0.0
+2025-03-25,Scope 2,Purchased Electricity,State Grid,401.96288519545965,kWh,0.716
+2025-03-25,Scope 2,Purchased Electricity,Rooftop Solar,228.17283766055974,kWh,0.0
+2025-03-26,Scope 2,Purchased Electricity,State Grid,363.4565277302942,kWh,0.716
+2025-03-26,Scope 2,Purchased Electricity,Rooftop Solar,209.21308137923353,kWh,0.0
+2025-03-26,Scope 1,Stationary Combustion,DG Set (Diesel),19.648918850602573,Liter,2.68
+2025-03-27,Scope 2,Purchased Electricity,State Grid,400.676808857997,kWh,0.716
+2025-03-27,Scope 2,Purchased Electricity,Rooftop Solar,196.65555928769734,kWh,0.0
+2025-03-28,Scope 2,Purchased Electricity,State Grid,427.4195217555337,kWh,0.716
+2025-03-28,Scope 2,Purchased Electricity,Rooftop Solar,212.81472701288902,kWh,0.0
+2025-03-28,Scope 3,Waste Generated,Mixed Municipal Waste,82.38885085514168,kg,0.45
+2025-03-28,Scope 3,Waste Generated,Scrap Metal & Cardboard,70.36971752905936,kg,0.02
+2025-03-29,Scope 2,Purchased Electricity,State Grid,339.9831253660712,kWh,0.716
+2025-03-29,Scope 2,Purchased Electricity,Rooftop Solar,194.94360025625855,kWh,0.0
+2025-03-29,Scope 1,Mobile Combustion,Delivery Truck (Diesel),47.58001149182503,Liter,2.68
+2025-03-29,Scope 1,Mobile Combustion,Company Cars (Petrol),25.6986019808229,Liter,2.31
+2025-03-30,Scope 2,Purchased Electricity,State Grid,399.9956459531977,kWh,0.716
+2025-03-30,Scope 2,Purchased Electricity,Rooftop Solar,184.28857622426844,kWh,0.0
+2025-03-31,Scope 2,Purchased Electricity,State Grid,408.05883978532853,kWh,0.716
+2025-03-31,Scope 2,Purchased Electricity,Rooftop Solar,191.07796105401388,kWh,0.0
+2025-04-01,Scope 2,Purchased Electricity,State Grid,468.90663717690313,kWh,0.716
+2025-04-01,Scope 2,Purchased Electricity,Rooftop Solar,174.61200780818515,kWh,0.0
+2025-04-02,Scope 2,Purchased Electricity,State Grid,333.5802612877719,kWh,0.716
+2025-04-02,Scope 2,Purchased Electricity,Rooftop Solar,235.03624532773256,kWh,0.0
+2025-04-03,Scope 2,Purchased Electricity,State Grid,390.7906716722506,kWh,0.716
+2025-04-03,Scope 2,Purchased Electricity,Rooftop Solar,190.06469739166016,kWh,0.0
+2025-04-04,Scope 2,Purchased Electricity,State Grid,365.2864089916156,kWh,0.716
+2025-04-04,Scope 2,Purchased Electricity,Rooftop Solar,215.7712848555322,kWh,0.0
+2025-04-04,Scope 3,Waste Generated,Mixed Municipal Waste,93.74899201420475,kg,0.45
+2025-04-04,Scope 3,Waste Generated,Scrap Metal & Cardboard,63.806744337890386,kg,0.02
+2025-04-05,Scope 2,Purchased Electricity,State Grid,444.6290989566418,kWh,0.716
+2025-04-05,Scope 2,Purchased Electricity,Rooftop Solar,181.50225668695106,kWh,0.0
+2025-04-05,Scope 1,Mobile Combustion,Delivery Truck (Diesel),50.21304788840407,Liter,2.68
+2025-04-05,Scope 1,Mobile Combustion,Company Cars (Petrol),20.390969608239306,Liter,2.31
+2025-04-06,Scope 2,Purchased Electricity,State Grid,398.1590720215143,kWh,0.716
+2025-04-06,Scope 2,Purchased Electricity,Rooftop Solar,194.0221850272746,kWh,0.0
+2025-04-07,Scope 2,Purchased Electricity,State Grid,318.8677339921674,kWh,0.716
+2025-04-07,Scope 2,Purchased Electricity,Rooftop Solar,188.68322808219733,kWh,0.0
+2025-04-08,Scope 2,Purchased Electricity,State Grid,433.9711786942009,kWh,0.716
+2025-04-08,Scope 2,Purchased Electricity,Rooftop Solar,210.65608129116873,kWh,0.0
+2025-04-08,Scope 1,Stationary Combustion,DG Set (Diesel),16.454276603558775,Liter,2.68
+2025-04-09,Scope 2,Purchased Electricity,State Grid,408.0006609619196,kWh,0.716
+2025-04-09,Scope 2,Purchased Electricity,Rooftop Solar,184.41964973922964,kWh,0.0
+2025-04-10,Scope 2,Purchased Electricity,State Grid,367.5163173448001,kWh,0.716
+2025-04-10,Scope 2,Purchased Electricity,Rooftop Solar,213.21769301261781,kWh,0.0
+2025-04-11,Scope 2,Purchased Electricity,State Grid,407.3893501874213,kWh,0.716
+2025-04-11,Scope 2,Purchased Electricity,Rooftop Solar,191.57351699476627,kWh,0.0
+2025-04-11,Scope 1,Stationary Combustion,DG Set (Diesel),20.744117526191893,Liter,2.68
+2025-04-11,Scope 3,Waste Generated,Mixed Municipal Waste,87.52182166944152,kg,0.45
+2025-04-11,Scope 3,Waste Generated,Scrap Metal & Cardboard,63.091180942429624,kg,0.02
+2025-04-12,Scope 2,Purchased Electricity,State Grid,414.6810111818984,kWh,0.716
+2025-04-12,Scope 2,Purchased Electricity,Rooftop Solar,199.17916046304626,kWh,0.0
+2025-04-12,Scope 1,Mobile Combustion,Delivery Truck (Diesel),33.96873321703154,Liter,2.68
+2025-04-12,Scope 1,Mobile Combustion,Company Cars (Petrol),13.171470593372248,Liter,2.31
+2025-04-13,Scope 2,Purchased Electricity,State Grid,488.044519974207,kWh,0.716
+2025-04-13,Scope 2,Purchased Electricity,Rooftop Solar,195.02133851820338,kWh,0.0
+2025-04-14,Scope 2,Purchased Electricity,State Grid,433.349730469884,kWh,0.716
+2025-04-14,Scope 2,Purchased Electricity,Rooftop Solar,196.6666055877828,kWh,0.0
+2025-04-15,Scope 2,Purchased Electricity,State Grid,321.90929067708515,kWh,0.716
+2025-04-15,Scope 2,Purchased Electricity,Rooftop Solar,218.32857299268716,kWh,0.0
+2025-04-16,Scope 2,Purchased Electricity,State Grid,407.3978411090837,kWh,0.716
+2025-04-16,Scope 2,Purchased Electricity,Rooftop Solar,203.4078352037248,kWh,0.0
+2025-04-17,Scope 2,Purchased Electricity,State Grid,435.5773291954655,kWh,0.716
+2025-04-17,Scope 2,Purchased Electricity,Rooftop Solar,190.8159243006979,kWh,0.0
+2025-04-18,Scope 2,Purchased Electricity,State Grid,424.8193365719668,kWh,0.716
+2025-04-18,Scope 2,Purchased Electricity,Rooftop Solar,201.83129894140905,kWh,0.0
+2025-04-18,Scope 3,Waste Generated,Mixed Municipal Waste,80.2961913047428,kg,0.45
+2025-04-18,Scope 3,Waste Generated,Scrap Metal & Cardboard,72.0724810889447,kg,0.02
+2025-04-19,Scope 2,Purchased Electricity,State Grid,318.95831157370696,kWh,0.716
+2025-04-19,Scope 2,Purchased Electricity,Rooftop Solar,213.2728315077784,kWh,0.0
+2025-04-19,Scope 1,Mobile Combustion,Delivery Truck (Diesel),41.44715584678123,Liter,2.68
+2025-04-19,Scope 1,Mobile Combustion,Company Cars (Petrol),26.0545399194175,Liter,2.31
+2025-04-20,Scope 2,Purchased Electricity,State Grid,372.85536179133055,kWh,0.716
+2025-04-20,Scope 2,Purchased Electricity,Rooftop Solar,198.42289213684901,kWh,0.0
+2025-04-21,Scope 2,Purchased Electricity,State Grid,397.0469500510793,kWh,0.716
+2025-04-21,Scope 2,Purchased Electricity,Rooftop Solar,192.82512004149467,kWh,0.0
+2025-04-22,Scope 2,Purchased Electricity,State Grid,369.55323968629585,kWh,0.716
+2025-04-22,Scope 2,Purchased Electricity,Rooftop Solar,184.53834263342338,kWh,0.0
+2025-04-23,Scope 2,Purchased Electricity,State Grid,507.66467428021974,kWh,0.716
+2025-04-23,Scope 2,Purchased Electricity,Rooftop Solar,176.40653217011933,kWh,0.0
+2025-04-24,Scope 2,Purchased Electricity,State Grid,353.30754258442596,kWh,0.716
+2025-04-24,Scope 2,Purchased Electricity,Rooftop Solar,217.84665635226983,kWh,0.0
+2025-04-25,Scope 2,Purchased Electricity,State Grid,376.17622405753866,kWh,0.716
+2025-04-25,Scope 2,Purchased Electricity,Rooftop Solar,195.22507822216963,kWh,0.0
+2025-04-25,Scope 3,Waste Generated,Mixed Municipal Waste,77.38766095446432,kg,0.45
+2025-04-25,Scope 3,Waste Generated,Scrap Metal & Cardboard,75.97261885131871,kg,0.02
+2025-04-26,Scope 2,Purchased Electricity,State Grid,414.88848677539545,kWh,0.716
+2025-04-26,Scope 2,Purchased Electricity,Rooftop Solar,198.91310774602383,kWh,0.0
+2025-04-26,Scope 1,Mobile Combustion,Delivery Truck (Diesel),40.94523963769165,Liter,2.68
+2025-04-26,Scope 1,Mobile Combustion,Company Cars (Petrol),23.129747262288596,Liter,2.31
+2025-04-27,Scope 2,Purchased Electricity,State Grid,373.3327940887207,kWh,0.716
+2025-04-27,Scope 2,Purchased Electricity,Rooftop Solar,208.80041414617608,kWh,0.0
+2025-04-28,Scope 2,Purchased Electricity,State Grid,454.1227069908962,kWh,0.716
+2025-04-28,Scope 2,Purchased Electricity,Rooftop Solar,178.37037120765515,kWh,0.0
+2025-04-29,Scope 2,Purchased Electricity,State Grid,381.4953147904338,kWh,0.716
+2025-04-29,Scope 2,Purchased Electricity,Rooftop Solar,188.88527426287916,kWh,0.0
+2025-04-30,Scope 2,Purchased Electricity,State Grid,409.821735644745,kWh,0.716
+2025-04-30,Scope 2,Purchased Electricity,Rooftop Solar,182.98856588974593,kWh,0.0
+2025-05-01,Scope 2,Purchased Electricity,State Grid,406.461483962736,kWh,0.716
+2025-05-01,Scope 2,Purchased Electricity,Rooftop Solar,190.4147215172468,kWh,0.0
+2025-05-02,Scope 2,Purchased Electricity,State Grid,427.4027957993407,kWh,0.716
+2025-05-02,Scope 2,Purchased Electricity,Rooftop Solar,187.49205003538958,kWh,0.0
+2025-05-02,Scope 3,Waste Generated,Mixed Municipal Waste,64.86291240974349,kg,0.45
+2025-05-02,Scope 3,Waste Generated,Scrap Metal & Cardboard,72.88479918850814,kg,0.02
+2025-05-03,Scope 2,Purchased Electricity,State Grid,400.9642886592833,kWh,0.716
+2025-05-03,Scope 2,Purchased Electricity,Rooftop Solar,193.47161067022205,kWh,0.0
+2025-05-03,Scope 1,Mobile Combustion,Delivery Truck (Diesel),32.529673898272875,Liter,2.68
+2025-05-03,Scope 1,Mobile Combustion,Company Cars (Petrol),18.052662131157536,Liter,2.31
+2025-05-04,Scope 2,Purchased Electricity,State Grid,411.48628468709376,kWh,0.716
+2025-05-04,Scope 2,Purchased Electricity,Rooftop Solar,201.23884963888233,kWh,0.0
+2025-05-05,Scope 2,Purchased Electricity,State Grid,437.22812106546564,kWh,0.716
+2025-05-05,Scope 2,Purchased Electricity,Rooftop Solar,193.84902608955727,kWh,0.0
+2025-05-06,Scope 2,Purchased Electricity,State Grid,381.3320239934444,kWh,0.716
+2025-05-06,Scope 2,Purchased Electricity,Rooftop Solar,203.16921222621167,kWh,0.0
+2025-05-06,Scope 1,Stationary Combustion,DG Set (Diesel),12.559945943030908,Liter,2.68
+2025-05-07,Scope 2,Purchased Electricity,State Grid,414.92828915976554,kWh,0.716
+2025-05-07,Scope 2,Purchased Electricity,Rooftop Solar,214.73791675462977,kWh,0.0
+2025-05-08,Scope 2,Purchased Electricity,State Grid,424.89252705021227,kWh,0.716
+2025-05-08,Scope 2,Purchased Electricity,Rooftop Solar,187.6126851227075,kWh,0.0
+2025-05-09,Scope 2,Purchased Electricity,State Grid,421.32641151202495,kWh,0.716
+2025-05-09,Scope 2,Purchased Electricity,Rooftop Solar,189.49398014870098,kWh,0.0
+2025-05-09,Scope 1,Stationary Combustion,DG Set (Diesel),4.401823713241765,Liter,2.68
+2025-05-09,Scope 3,Waste Generated,Mixed Municipal Waste,86.18171504658413,kg,0.45
+2025-05-09,Scope 3,Waste Generated,Scrap Metal & Cardboard,65.71883230817528,kg,0.02
+2025-05-10,Scope 2,Purchased Electricity,State Grid,381.0573219271715,kWh,0.716
+2025-05-10,Scope 2,Purchased Electricity,Rooftop Solar,219.32465847258248,kWh,0.0
+2025-05-10,Scope 1,Mobile Combustion,Delivery Truck (Diesel),33.161543427242066,Liter,2.68
+2025-05-10,Scope 1,Mobile Combustion,Company Cars (Petrol),30.33179046198491,Liter,2.31
+2025-05-11,Scope 2,Purchased Electricity,State Grid,437.9559659341729,kWh,0.716
+2025-05-11,Scope 2,Purchased Electricity,Rooftop Solar,202.4650820407854,kWh,0.0
+2025-05-12,Scope 2,Purchased Electricity,State Grid,385.4067502703474,kWh,0.716
+2025-05-12,Scope 2,Purchased Electricity,Rooftop Solar,192.7562879020477,kWh,0.0
+2025-05-13,Scope 2,Purchased Electricity,State Grid,444.315654365779,kWh,0.716
+2025-05-13,Scope 2,Purchased Electricity,Rooftop Solar,186.74764133828936,kWh,0.0
+2025-05-14,Scope 2,Purchased Electricity,State Grid,387.49350379052066,kWh,0.716
+2025-05-14,Scope 2,Purchased Electricity,Rooftop Solar,219.76350523165215,kWh,0.0
+2025-05-15,Scope 2,Purchased Electricity,State Grid,397.00825973758026,kWh,0.716
+2025-05-15,Scope 2,Purchased Electricity,Rooftop Solar,206.418870950552,kWh,0.0
+2025-05-16,Scope 2,Purchased Electricity,State Grid,383.9550108008042,kWh,0.716
+2025-05-16,Scope 2,Purchased Electricity,Rooftop Solar,188.9166211928822,kWh,0.0
+2025-05-16,Scope 1,Stationary Combustion,DG Set (Diesel),17.25567092426503,Liter,2.68
+2025-05-16,Scope 3,Waste Generated,Mixed Municipal Waste,67.47847773179184,kg,0.45
+2025-05-16,Scope 3,Waste Generated,Scrap Metal & Cardboard,72.22743264836978,kg,0.02
+2025-05-17,Scope 2,Purchased Electricity,State Grid,369.2908669396027,kWh,0.716
+2025-05-17,Scope 2,Purchased Electricity,Rooftop Solar,193.8517472735802,kWh,0.0
+2025-05-17,Scope 1,Mobile Combustion,Delivery Truck (Diesel),38.43576788435009,Liter,2.68
+2025-05-17,Scope 1,Mobile Combustion,Company Cars (Petrol),26.562366481078197,Liter,2.31
+2025-05-18,Scope 2,Purchased Electricity,State Grid,431.4852974993139,kWh,0.716
+2025-05-18,Scope 2,Purchased Electricity,Rooftop Solar,171.93475982770613,kWh,0.0
+2025-05-19,Scope 2,Purchased Electricity,State Grid,385.98491914914354,kWh,0.716
+2025-05-19,Scope 2,Purchased Electricity,Rooftop Solar,226.80408755051798,kWh,0.0
+2025-05-20,Scope 2,Purchased Electricity,State Grid,382.7045550396124,kWh,0.716
+2025-05-20,Scope 2,Purchased Electricity,Rooftop Solar,204.95799723716323,kWh,0.0
+2025-05-20,Scope 1,Stationary Combustion,DG Set (Diesel),14.189772188359226,Liter,2.68
+2025-05-21,Scope 2,Purchased Electricity,State Grid,373.099781047958,kWh,0.716
+2025-05-21,Scope 2,Purchased Electricity,Rooftop Solar,211.65838097934613,kWh,0.0
+2025-05-22,Scope 2,Purchased Electricity,State Grid,373.2746057103606,kWh,0.716
+2025-05-22,Scope 2,Purchased Electricity,Rooftop Solar,184.6583595901679,kWh,0.0
+2025-05-23,Scope 2,Purchased Electricity,State Grid,394.9297707339863,kWh,0.716
+2025-05-23,Scope 2,Purchased Electricity,Rooftop Solar,197.39212275215547,kWh,0.0
+2025-05-23,Scope 3,Waste Generated,Mixed Municipal Waste,79.36140168334711,kg,0.45
+2025-05-23,Scope 3,Waste Generated,Scrap Metal & Cardboard,55.107878040286934,kg,0.02
+2025-05-24,Scope 2,Purchased Electricity,State Grid,433.17531955872636,kWh,0.716
+2025-05-24,Scope 2,Purchased Electricity,Rooftop Solar,164.45940345544494,kWh,0.0
+2025-05-24,Scope 1,Mobile Combustion,Delivery Truck (Diesel),38.633109466192415,Liter,2.68
+2025-05-24,Scope 1,Mobile Combustion,Company Cars (Petrol),28.270733557643837,Liter,2.31
+2025-05-25,Scope 2,Purchased Electricity,State Grid,438.3744115842227,kWh,0.716
+2025-05-25,Scope 2,Purchased Electricity,Rooftop Solar,179.7902725251798,kWh,0.0
+2025-05-26,Scope 2,Purchased Electricity,State Grid,388.36656549592857,kWh,0.716
+2025-05-26,Scope 2,Purchased Electricity,Rooftop Solar,192.65989677697013,kWh,0.0
+2025-05-26,Scope 1,Stationary Combustion,DG Set (Diesel),7.048029757515706,Liter,2.68
+2025-05-27,Scope 2,Purchased Electricity,State Grid,363.0321752224581,kWh,0.716
+2025-05-27,Scope 2,Purchased Electricity,Rooftop Solar,198.8413050451996,kWh,0.0
+2025-05-28,Scope 2,Purchased Electricity,State Grid,457.9926558920728,kWh,0.716
+2025-05-28,Scope 2,Purchased Electricity,Rooftop Solar,174.6470621826004,kWh,0.0
+2025-05-29,Scope 2,Purchased Electricity,State Grid,411.5050511218621,kWh,0.716
+2025-05-29,Scope 2,Purchased Electricity,Rooftop Solar,220.19981223614553,kWh,0.0
+2025-05-30,Scope 2,Purchased Electricity,State Grid,459.19721556585307,kWh,0.716
+2025-05-30,Scope 2,Purchased Electricity,Rooftop Solar,215.32627023353493,kWh,0.0
+2025-05-30,Scope 3,Waste Generated,Mixed Municipal Waste,75.47328965342204,kg,0.45
+2025-05-30,Scope 3,Waste Generated,Scrap Metal & Cardboard,65.73278696728545,kg,0.02
+2025-05-31,Scope 2,Purchased Electricity,State Grid,415.2783217181259,kWh,0.716
+2025-05-31,Scope 2,Purchased Electricity,Rooftop Solar,210.52503424058273,kWh,0.0
+2025-05-31,Scope 1,Mobile Combustion,Delivery Truck (Diesel),36.97814497934915,Liter,2.68
+2025-05-31,Scope 1,Mobile Combustion,Company Cars (Petrol),26.716599649895556,Liter,2.31
+2025-06-01,Scope 2,Purchased Electricity,State Grid,421.7392131916231,kWh,0.716
+2025-06-01,Scope 2,Purchased Electricity,Rooftop Solar,202.74580160649566,kWh,0.0
+2025-06-02,Scope 2,Purchased Electricity,State Grid,427.921581876839,kWh,0.716
+2025-06-02,Scope 2,Purchased Electricity,Rooftop Solar,215.0066075816238,kWh,0.0
+2025-06-03,Scope 2,Purchased Electricity,State Grid,342.81154442162097,kWh,0.716
+2025-06-03,Scope 2,Purchased Electricity,Rooftop Solar,178.20273361342026,kWh,0.0
+2025-06-04,Scope 2,Purchased Electricity,State Grid,400.0678904605347,kWh,0.716
+2025-06-04,Scope 2,Purchased Electricity,Rooftop Solar,222.1874273903902,kWh,0.0
+2025-06-05,Scope 2,Purchased Electricity,State Grid,443.7786020763898,kWh,0.716
+2025-06-05,Scope 2,Purchased Electricity,Rooftop Solar,201.1560022471813,kWh,0.0
+2025-06-06,Scope 2,Purchased Electricity,State Grid,364.59455120942255,kWh,0.716
+2025-06-06,Scope 2,Purchased Electricity,Rooftop Solar,199.19851307555606,kWh,0.0
+2025-06-06,Scope 3,Waste Generated,Mixed Municipal Waste,73.37488430071204,kg,0.45
+2025-06-06,Scope 3,Waste Generated,Scrap Metal & Cardboard,59.79209700409979,kg,0.02
+2025-06-07,Scope 2,Purchased Electricity,State Grid,426.1070180952795,kWh,0.716
+2025-06-07,Scope 2,Purchased Electricity,Rooftop Solar,169.50882969023053,kWh,0.0
+2025-06-07,Scope 1,Mobile Combustion,Delivery Truck (Diesel),38.54236260943121,Liter,2.68
+2025-06-07,Scope 1,Mobile Combustion,Company Cars (Petrol),25.028729913308222,Liter,2.31
+2025-06-08,Scope 2,Purchased Electricity,State Grid,430.19586087770506,kWh,0.716
+2025-06-08,Scope 2,Purchased Electricity,Rooftop Solar,205.235812664419,kWh,0.0
+2025-06-09,Scope 2,Purchased Electricity,State Grid,303.0626395609687,kWh,0.716
+2025-06-09,Scope 2,Purchased Electricity,Rooftop Solar,215.71212529309568,kWh,0.0
+2025-06-10,Scope 2,Purchased Electricity,State Grid,407.6556200550738,kWh,0.716
+2025-06-10,Scope 2,Purchased Electricity,Rooftop Solar,198.6812675352988,kWh,0.0
+2025-06-11,Scope 2,Purchased Electricity,State Grid,380.5908084267227,kWh,0.716
+2025-06-11,Scope 2,Purchased Electricity,Rooftop Solar,200.5478077575696,kWh,0.0
+2025-06-12,Scope 2,Purchased Electricity,State Grid,422.14200077812563,kWh,0.716
+2025-06-12,Scope 2,Purchased Electricity,Rooftop Solar,205.16202140455434,kWh,0.0
+2025-06-13,Scope 2,Purchased Electricity,State Grid,460.55386232033993,kWh,0.716
+2025-06-13,Scope 2,Purchased Electricity,Rooftop Solar,216.45499095065455,kWh,0.0
+2025-06-13,Scope 1,Stationary Combustion,DG Set (Diesel),15.488554232809967,Liter,2.68
+2025-06-13,Scope 3,Waste Generated,Mixed Municipal Waste,89.658375412737,kg,0.45
+2025-06-13,Scope 3,Waste Generated,Scrap Metal & Cardboard,63.39115510506806,kg,0.02
+2025-06-14,Scope 2,Purchased Electricity,State Grid,419.74555704568127,kWh,0.716
+2025-06-14,Scope 2,Purchased Electricity,Rooftop Solar,209.13825479804208,kWh,0.0
+2025-06-14,Scope 1,Mobile Combustion,Delivery Truck (Diesel),26.557402742090765,Liter,2.68
+2025-06-14,Scope 1,Mobile Combustion,Company Cars (Petrol),17.81503679651468,Liter,2.31
+2025-06-15,Scope 2,Purchased Electricity,State Grid,364.71058784678536,kWh,0.716
+2025-06-15,Scope 2,Purchased Electricity,Rooftop Solar,194.07379331399733,kWh,0.0
+2025-06-16,Scope 2,Purchased Electricity,State Grid,340.502431449074,kWh,0.716
+2025-06-16,Scope 2,Purchased Electricity,Rooftop Solar,219.09757468752065,kWh,0.0
+2025-06-17,Scope 2,Purchased Electricity,State Grid,418.78042279981315,kWh,0.716
+2025-06-17,Scope 2,Purchased Electricity,Rooftop Solar,207.5055273708469,kWh,0.0
+2025-06-18,Scope 2,Purchased Electricity,State Grid,356.3871563718567,kWh,0.716
+2025-06-18,Scope 2,Purchased Electricity,Rooftop Solar,219.4403795072017,kWh,0.0
+2025-06-19,Scope 2,Purchased Electricity,State Grid,414.02031588530724,kWh,0.716
+2025-06-19,Scope 2,Purchased Electricity,Rooftop Solar,212.17351493751264,kWh,0.0
+2025-06-19,Scope 1,Stationary Combustion,DG Set (Diesel),15.820810943271633,Liter,2.68
+2025-06-20,Scope 2,Purchased Electricity,State Grid,373.0701231572357,kWh,0.716
+2025-06-20,Scope 2,Purchased Electricity,Rooftop Solar,196.5013480813652,kWh,0.0
+2025-06-20,Scope 3,Waste Generated,Mixed Municipal Waste,95.62667106164038,kg,0.45
+2025-06-20,Scope 3,Waste Generated,Scrap Metal & Cardboard,63.405279343109825,kg,0.02
+2025-06-21,Scope 2,Purchased Electricity,State Grid,403.52949360642975,kWh,0.716
+2025-06-21,Scope 2,Purchased Electricity,Rooftop Solar,207.58594941095345,kWh,0.0
+2025-06-21,Scope 1,Mobile Combustion,Delivery Truck (Diesel),43.686476806468704,Liter,2.68
+2025-06-21,Scope 1,Mobile Combustion,Company Cars (Petrol),25.946565484150856,Liter,2.31
+2025-06-22,Scope 2,Purchased Electricity,State Grid,342.9570233155656,kWh,0.716
+2025-06-22,Scope 2,Purchased Electricity,Rooftop Solar,214.18039234762094,kWh,0.0
+2025-06-23,Scope 2,Purchased Electricity,State Grid,406.16890454946895,kWh,0.716
+2025-06-23,Scope 2,Purchased Electricity,Rooftop Solar,215.97820404411257,kWh,0.0
+2025-06-24,Scope 2,Purchased Electricity,State Grid,425.1132248639336,kWh,0.716
+2025-06-24,Scope 2,Purchased Electricity,Rooftop Solar,210.24847799056883,kWh,0.0
+2025-06-24,Scope 1,Stationary Combustion,DG Set (Diesel),14.668121459389267,Liter,2.68
+2025-06-25,Scope 2,Purchased Electricity,State Grid,343.0698393155793,kWh,0.716
+2025-06-25,Scope 2,Purchased Electricity,Rooftop Solar,215.84102144536322,kWh,0.0
+2025-06-26,Scope 2,Purchased Electricity,State Grid,452.89878028923386,kWh,0.716
+2025-06-26,Scope 2,Purchased Electricity,Rooftop Solar,209.84376078826674,kWh,0.0
+2025-06-27,Scope 2,Purchased Electricity,State Grid,445.12059544273535,kWh,0.716
+2025-06-27,Scope 2,Purchased Electricity,Rooftop Solar,195.33135509865696,kWh,0.0
+2025-06-27,Scope 3,Waste Generated,Mixed Municipal Waste,70.80965691654407,kg,0.45
+2025-06-27,Scope 3,Waste Generated,Scrap Metal & Cardboard,64.12570944540501,kg,0.02
+2025-06-28,Scope 2,Purchased Electricity,State Grid,365.51363365539964,kWh,0.716
+2025-06-28,Scope 2,Purchased Electricity,Rooftop Solar,187.82816885155026,kWh,0.0
+2025-06-28,Scope 1,Stationary Combustion,DG Set (Diesel),17.434125852030668,Liter,2.68
+2025-06-28,Scope 1,Mobile Combustion,Delivery Truck (Diesel),45.4943843070568,Liter,2.68
+2025-06-28,Scope 1,Mobile Combustion,Company Cars (Petrol),25.927192715362406,Liter,2.31
+2025-06-29,Scope 2,Purchased Electricity,State Grid,350.0347495053301,kWh,0.716
+2025-06-29,Scope 2,Purchased Electricity,Rooftop Solar,217.7816361608464,kWh,0.0
+2025-06-30,Scope 2,Purchased Electricity,State Grid,422.1855981886031,kWh,0.716
+2025-06-30,Scope 2,Purchased Electricity,Rooftop Solar,202.10531574442288,kWh,0.0
+2025-06-30,Scope 1,Stationary Combustion,DG Set (Diesel),17.59360014948621,Liter,2.68
+2025-07-01,Scope 2,Purchased Electricity,State Grid,361.05576421912656,kWh,0.716
+2025-07-01,Scope 2,Purchased Electricity,Rooftop Solar,107.99245024990357,kWh,0.0
+2025-07-02,Scope 2,Purchased Electricity,State Grid,321.4217534240026,kWh,0.716
+2025-07-02,Scope 2,Purchased Electricity,Rooftop Solar,119.08967661001111,kWh,0.0
+2025-07-03,Scope 2,Purchased Electricity,State Grid,340.9625106440856,kWh,0.716
+2025-07-03,Scope 2,Purchased Electricity,Rooftop Solar,106.65485629700215,kWh,0.0
+2025-07-04,Scope 2,Purchased Electricity,State Grid,294.3155411832458,kWh,0.716
+2025-07-04,Scope 2,Purchased Electricity,Rooftop Solar,119.55096123143689,kWh,0.0
+2025-07-04,Scope 3,Waste Generated,Mixed Municipal Waste,88.68045665599287,kg,0.45
+2025-07-04,Scope 3,Waste Generated,Scrap Metal & Cardboard,65.87219090836307,kg,0.02
+2025-07-05,Scope 2,Purchased Electricity,State Grid,381.1676007119118,kWh,0.716
+2025-07-05,Scope 2,Purchased Electricity,Rooftop Solar,108.05825580735421,kWh,0.0
+2025-07-05,Scope 1,Mobile Combustion,Delivery Truck (Diesel),43.85779951739202,Liter,2.68
+2025-07-05,Scope 1,Mobile Combustion,Company Cars (Petrol),25.8055329415346,Liter,2.31
+2025-07-06,Scope 2,Purchased Electricity,State Grid,412.4280408782487,kWh,0.716
+2025-07-06,Scope 2,Purchased Electricity,Rooftop Solar,122.43587999606942,kWh,0.0
+2025-07-06,Scope 1,Stationary Combustion,DG Set (Diesel),12.414293224107624,Liter,2.68
+2025-07-07,Scope 2,Purchased Electricity,State Grid,325.3025115821948,kWh,0.716
+2025-07-07,Scope 2,Purchased Electricity,Rooftop Solar,130.30157555254326,kWh,0.0
+2025-07-08,Scope 2,Purchased Electricity,State Grid,347.7864031851807,kWh,0.716
+2025-07-08,Scope 2,Purchased Electricity,Rooftop Solar,108.47518215763688,kWh,0.0
+2025-07-09,Scope 2,Purchased Electricity,State Grid,281.7793221099629,kWh,0.716
+2025-07-09,Scope 2,Purchased Electricity,Rooftop Solar,123.97952452613967,kWh,0.0
+2025-07-10,Scope 2,Purchased Electricity,State Grid,339.57194644232004,kWh,0.716
+2025-07-10,Scope 2,Purchased Electricity,Rooftop Solar,110.08918916090552,kWh,0.0
+2025-07-10,Scope 1,Stationary Combustion,DG Set (Diesel),19.806587759018335,Liter,2.68
+2025-07-11,Scope 2,Purchased Electricity,State Grid,355.50673562282356,kWh,0.716
+2025-07-11,Scope 2,Purchased Electricity,Rooftop Solar,114.72073873389331,kWh,0.0
+2025-07-11,Scope 3,Waste Generated,Mixed Municipal Waste,73.26276798280573,kg,0.45
+2025-07-11,Scope 3,Waste Generated,Scrap Metal & Cardboard,66.73101763450906,kg,0.02
+2025-07-12,Scope 2,Purchased Electricity,State Grid,297.902754644408,kWh,0.716
+2025-07-12,Scope 2,Purchased Electricity,Rooftop Solar,134.86139293688913,kWh,0.0
+2025-07-12,Scope 1,Mobile Combustion,Delivery Truck (Diesel),47.5287553871415,Liter,2.68
+2025-07-12,Scope 1,Mobile Combustion,Company Cars (Petrol),20.231881422971753,Liter,2.31
+2025-07-13,Scope 2,Purchased Electricity,State Grid,323.4177862305743,kWh,0.716
+2025-07-13,Scope 2,Purchased Electricity,Rooftop Solar,132.9993514134913,kWh,0.0
+2025-07-13,Scope 1,Stationary Combustion,DG Set (Diesel),8.894614499531492,Liter,2.68
+2025-07-14,Scope 2,Purchased Electricity,State Grid,321.08661560200477,kWh,0.716
+2025-07-14,Scope 2,Purchased Electricity,Rooftop Solar,128.35260824179812,kWh,0.0
+2025-07-14,Scope 1,Stationary Combustion,DG Set (Diesel),15.616790106800707,Liter,2.68
+2025-07-15,Scope 2,Purchased Electricity,State Grid,317.6694490449126,kWh,0.716
+2025-07-15,Scope 2,Purchased Electricity,Rooftop Solar,114.50646859763502,kWh,0.0
+2025-07-16,Scope 2,Purchased Electricity,State Grid,296.69397244786916,kWh,0.716
+2025-07-16,Scope 2,Purchased Electricity,Rooftop Solar,119.24779981786658,kWh,0.0
+2025-07-17,Scope 2,Purchased Electricity,State Grid,333.48445562612466,kWh,0.716
+2025-07-17,Scope 2,Purchased Electricity,Rooftop Solar,121.14192763228026,kWh,0.0
+2025-07-18,Scope 2,Purchased Electricity,State Grid,356.1743742449297,kWh,0.716
+2025-07-18,Scope 2,Purchased Electricity,Rooftop Solar,106.95917279234375,kWh,0.0
+2025-07-18,Scope 3,Waste Generated,Mixed Municipal Waste,71.32295646893135,kg,0.45
+2025-07-18,Scope 3,Waste Generated,Scrap Metal & Cardboard,57.91810572447522,kg,0.02
+2025-07-19,Scope 2,Purchased Electricity,State Grid,289.6039805020457,kWh,0.716
+2025-07-19,Scope 2,Purchased Electricity,Rooftop Solar,121.11954987214644,kWh,0.0
+2025-07-19,Scope 1,Mobile Combustion,Delivery Truck (Diesel),32.005385078089304,Liter,2.68
+2025-07-19,Scope 1,Mobile Combustion,Company Cars (Petrol),28.608847247108603,Liter,2.31
+2025-07-20,Scope 2,Purchased Electricity,State Grid,403.7253766042774,kWh,0.716
+2025-07-20,Scope 2,Purchased Electricity,Rooftop Solar,101.25517162659963,kWh,0.0
+2025-07-21,Scope 2,Purchased Electricity,State Grid,343.29801063498167,kWh,0.716
+2025-07-21,Scope 2,Purchased Electricity,Rooftop Solar,112.51435265579484,kWh,0.0
+2025-07-22,Scope 2,Purchased Electricity,State Grid,354.4613701051014,kWh,0.716
+2025-07-22,Scope 2,Purchased Electricity,Rooftop Solar,126.75676151408813,kWh,0.0
+2025-07-23,Scope 2,Purchased Electricity,State Grid,279.4451384505602,kWh,0.716
+2025-07-23,Scope 2,Purchased Electricity,Rooftop Solar,120.15855012468043,kWh,0.0
+2025-07-23,Scope 1,Stationary Combustion,DG Set (Diesel),10.349208080452375,Liter,2.68
+2025-07-24,Scope 2,Purchased Electricity,State Grid,325.68629028183784,kWh,0.716
+2025-07-24,Scope 2,Purchased Electricity,Rooftop Solar,121.00531437352078,kWh,0.0
+2025-07-25,Scope 2,Purchased Electricity,State Grid,352.88856134149313,kWh,0.716
+2025-07-25,Scope 2,Purchased Electricity,Rooftop Solar,117.46428845743925,kWh,0.0
+2025-07-25,Scope 3,Waste Generated,Mixed Municipal Waste,93.04444373758807,kg,0.45
+2025-07-25,Scope 3,Waste Generated,Scrap Metal & Cardboard,69.72832965625544,kg,0.02
+2025-07-26,Scope 2,Purchased Electricity,State Grid,284.7764615294921,kWh,0.716
+2025-07-26,Scope 2,Purchased Electricity,Rooftop Solar,126.20948212615865,kWh,0.0
+2025-07-26,Scope 1,Mobile Combustion,Delivery Truck (Diesel),41.546728105667704,Liter,2.68
+2025-07-26,Scope 1,Mobile Combustion,Company Cars (Petrol),25.214739864172774,Liter,2.31
+2025-07-27,Scope 2,Purchased Electricity,State Grid,335.5309129148145,kWh,0.716
+2025-07-27,Scope 2,Purchased Electricity,Rooftop Solar,110.06269056007238,kWh,0.0
+2025-07-28,Scope 2,Purchased Electricity,State Grid,358.936425391128,kWh,0.716
+2025-07-28,Scope 2,Purchased Electricity,Rooftop Solar,114.52946951288025,kWh,0.0
+2025-07-28,Scope 1,Stationary Combustion,DG Set (Diesel),11.977584011502147,Liter,2.68
+2025-07-29,Scope 2,Purchased Electricity,State Grid,291.16503548163354,kWh,0.716
+2025-07-29,Scope 2,Purchased Electricity,Rooftop Solar,133.15822678152279,kWh,0.0
+2025-07-30,Scope 2,Purchased Electricity,State Grid,301.35996647382444,kWh,0.716
+2025-07-30,Scope 2,Purchased Electricity,Rooftop Solar,126.66991586506049,kWh,0.0
+2025-07-31,Scope 2,Purchased Electricity,State Grid,377.3804194988524,kWh,0.716
+2025-07-31,Scope 2,Purchased Electricity,Rooftop Solar,109.40339512176973,kWh,0.0
+2025-07-31,Scope 1,Stationary Combustion,DG Set (Diesel),23.83200996919779,Liter,2.68
+2025-08-01,Scope 2,Purchased Electricity,State Grid,360.57410036063413,kWh,0.716
+2025-08-01,Scope 2,Purchased Electricity,Rooftop Solar,124.23966494853728,kWh,0.0
+2025-08-01,Scope 1,Stationary Combustion,DG Set (Diesel),4.155035133031788,Liter,2.68
+2025-08-01,Scope 3,Waste Generated,Mixed Municipal Waste,87.91683405820747,kg,0.45
+2025-08-01,Scope 3,Waste Generated,Scrap Metal & Cardboard,62.51945423206026,kg,0.02
+2025-08-02,Scope 2,Purchased Electricity,State Grid,366.74400333644803,kWh,0.716
+2025-08-02,Scope 2,Purchased Electricity,Rooftop Solar,116.38433979909937,kWh,0.0
+2025-08-02,Scope 1,Mobile Combustion,Delivery Truck (Diesel),42.202747249472765,Liter,2.68
+2025-08-02,Scope 1,Mobile Combustion,Company Cars (Petrol),27.519045524554464,Liter,2.31
+2025-08-03,Scope 2,Purchased Electricity,State Grid,342.97919376273444,kWh,0.716
+2025-08-03,Scope 2,Purchased Electricity,Rooftop Solar,122.38364602911386,kWh,0.0
+2025-08-04,Scope 2,Purchased Electricity,State Grid,348.88162991836685,kWh,0.716
+2025-08-04,Scope 2,Purchased Electricity,Rooftop Solar,126.58924848252902,kWh,0.0
+2025-08-05,Scope 2,Purchased Electricity,State Grid,312.760997591922,kWh,0.716
+2025-08-05,Scope 2,Purchased Electricity,Rooftop Solar,129.34596818753133,kWh,0.0
+2025-08-06,Scope 2,Purchased Electricity,State Grid,301.2837324517474,kWh,0.716
+2025-08-06,Scope 2,Purchased Electricity,Rooftop Solar,111.58209198350511,kWh,0.0
+2025-08-07,Scope 2,Purchased Electricity,State Grid,314.9511750485877,kWh,0.716
+2025-08-07,Scope 2,Purchased Electricity,Rooftop Solar,141.60984977424408,kWh,0.0
+2025-08-07,Scope 1,Stationary Combustion,DG Set (Diesel),14.36044734271496,Liter,2.68
+2025-08-08,Scope 2,Purchased Electricity,State Grid,288.8769030304908,kWh,0.716
+2025-08-08,Scope 2,Purchased Electricity,Rooftop Solar,122.4279349061933,kWh,0.0
+2025-08-08,Scope 3,Waste Generated,Mixed Municipal Waste,102.19617801518501,kg,0.45
+2025-08-08,Scope 3,Waste Generated,Scrap Metal & Cardboard,61.39888948445513,kg,0.02
+2025-08-09,Scope 2,Purchased Electricity,State Grid,332.20584752633545,kWh,0.716
+2025-08-09,Scope 2,Purchased Electricity,Rooftop Solar,123.7499189235998,kWh,0.0
+2025-08-09,Scope 1,Mobile Combustion,Delivery Truck (Diesel),38.59318910885371,Liter,2.68
+2025-08-09,Scope 1,Mobile Combustion,Company Cars (Petrol),24.519573806106028,Liter,2.31
+2025-08-10,Scope 2,Purchased Electricity,State Grid,343.42763330662314,kWh,0.716
+2025-08-10,Scope 2,Purchased Electricity,Rooftop Solar,110.23507963057263,kWh,0.0
+2025-08-11,Scope 2,Purchased Electricity,State Grid,295.017921909541,kWh,0.716
+2025-08-11,Scope 2,Purchased Electricity,Rooftop Solar,120.71307835321092,kWh,0.0
+2025-08-12,Scope 2,Purchased Electricity,State Grid,255.22508827308624,kWh,0.716
+2025-08-12,Scope 2,Purchased Electricity,Rooftop Solar,132.8946912013573,kWh,0.0
+2025-08-13,Scope 2,Purchased Electricity,State Grid,330.12310698217914,kWh,0.716
+2025-08-13,Scope 2,Purchased Electricity,Rooftop Solar,113.33921680130089,kWh,0.0
+2025-08-14,Scope 2,Purchased Electricity,State Grid,304.31179468222723,kWh,0.716
+2025-08-14,Scope 2,Purchased Electricity,Rooftop Solar,136.25444010933933,kWh,0.0
+2025-08-15,Scope 2,Purchased Electricity,State Grid,330.0322694914359,kWh,0.716
+2025-08-15,Scope 2,Purchased Electricity,Rooftop Solar,112.89875051406403,kWh,0.0
+2025-08-15,Scope 3,Waste Generated,Mixed Municipal Waste,72.54840615725432,kg,0.45
+2025-08-15,Scope 3,Waste Generated,Scrap Metal & Cardboard,65.25107332347199,kg,0.02
+2025-08-16,Scope 2,Purchased Electricity,State Grid,371.27232024260934,kWh,0.716
+2025-08-16,Scope 2,Purchased Electricity,Rooftop Solar,125.46885217375261,kWh,0.0
+2025-08-16,Scope 1,Mobile Combustion,Delivery Truck (Diesel),41.25160169499419,Liter,2.68
+2025-08-16,Scope 1,Mobile Combustion,Company Cars (Petrol),24.319291303095618,Liter,2.31
+2025-08-17,Scope 2,Purchased Electricity,State Grid,296.4168887146114,kWh,0.716
+2025-08-17,Scope 2,Purchased Electricity,Rooftop Solar,124.8387183959212,kWh,0.0
+2025-08-18,Scope 2,Purchased Electricity,State Grid,312.10104338506085,kWh,0.716
+2025-08-18,Scope 2,Purchased Electricity,Rooftop Solar,120.0658078226729,kWh,0.0
+2025-08-19,Scope 2,Purchased Electricity,State Grid,300.4894943181088,kWh,0.716
+2025-08-19,Scope 2,Purchased Electricity,Rooftop Solar,119.76261802706381,kWh,0.0
+2025-08-20,Scope 2,Purchased Electricity,State Grid,363.63126581462996,kWh,0.716
+2025-08-20,Scope 2,Purchased Electricity,Rooftop Solar,112.63831811614071,kWh,0.0
+2025-08-21,Scope 2,Purchased Electricity,State Grid,362.01590391036376,kWh,0.716
+2025-08-21,Scope 2,Purchased Electricity,Rooftop Solar,96.26002864185283,kWh,0.0
+2025-08-22,Scope 2,Purchased Electricity,State Grid,320.22654953232677,kWh,0.716
+2025-08-22,Scope 2,Purchased Electricity,Rooftop Solar,117.44157445372848,kWh,0.0
+2025-08-22,Scope 3,Waste Generated,Mixed Municipal Waste,74.30863529694103,kg,0.45
+2025-08-22,Scope 3,Waste Generated,Scrap Metal & Cardboard,69.22742993332676,kg,0.02
+2025-08-23,Scope 2,Purchased Electricity,State Grid,326.7364916817539,kWh,0.716
+2025-08-23,Scope 2,Purchased Electricity,Rooftop Solar,124.07898261838314,kWh,0.0
+2025-08-23,Scope 1,Stationary Combustion,DG Set (Diesel),11.706852780922395,Liter,2.68
+2025-08-23,Scope 1,Mobile Combustion,Delivery Truck (Diesel),43.46553905578897,Liter,2.68
+2025-08-23,Scope 1,Mobile Combustion,Company Cars (Petrol),22.839162178482866,Liter,2.31
+2025-08-24,Scope 2,Purchased Electricity,State Grid,307.49484873731353,kWh,0.716
+2025-08-24,Scope 2,Purchased Electricity,Rooftop Solar,122.65422023153207,kWh,0.0
+2025-08-25,Scope 2,Purchased Electricity,State Grid,275.09603829892205,kWh,0.716
+2025-08-25,Scope 2,Purchased Electricity,Rooftop Solar,129.45662752299774,kWh,0.0
+2025-08-26,Scope 2,Purchased Electricity,State Grid,368.65194868962254,kWh,0.716
+2025-08-26,Scope 2,Purchased Electricity,Rooftop Solar,122.63963215115092,kWh,0.0
+2025-08-27,Scope 2,Purchased Electricity,State Grid,263.66916559197927,kWh,0.716
+2025-08-27,Scope 2,Purchased Electricity,Rooftop Solar,117.56720302783145,kWh,0.0
+2025-08-27,Scope 1,Stationary Combustion,DG Set (Diesel),12.251587894339936,Liter,2.68
+2025-08-28,Scope 2,Purchased Electricity,State Grid,351.55057185068256,kWh,0.716
+2025-08-28,Scope 2,Purchased Electricity,Rooftop Solar,108.09445385082032,kWh,0.0
+2025-08-29,Scope 2,Purchased Electricity,State Grid,280.7393152175291,kWh,0.716
+2025-08-29,Scope 2,Purchased Electricity,Rooftop Solar,136.09706174364192,kWh,0.0
+2025-08-29,Scope 3,Waste Generated,Mixed Municipal Waste,82.65257551620634,kg,0.45
+2025-08-29,Scope 3,Waste Generated,Scrap Metal & Cardboard,71.83495816518608,kg,0.02
+2025-08-30,Scope 2,Purchased Electricity,State Grid,269.9242132639996,kWh,0.716
+2025-08-30,Scope 2,Purchased Electricity,Rooftop Solar,114.48520958756225,kWh,0.0
+2025-08-30,Scope 1,Mobile Combustion,Delivery Truck (Diesel),47.58012497067891,Liter,2.68
+2025-08-30,Scope 1,Mobile Combustion,Company Cars (Petrol),24.961475906848346,Liter,2.31
+2025-08-31,Scope 2,Purchased Electricity,State Grid,313.8091317609486,kWh,0.716
+2025-08-31,Scope 2,Purchased Electricity,Rooftop Solar,95.31554268056121,kWh,0.0
+2025-09-01,Scope 2,Purchased Electricity,State Grid,261.2395534713114,kWh,0.716
+2025-09-01,Scope 2,Purchased Electricity,Rooftop Solar,215.04755949618462,kWh,0.0
+2025-09-02,Scope 2,Purchased Electricity,State Grid,242.93920563552734,kWh,0.716
+2025-09-02,Scope 2,Purchased Electricity,Rooftop Solar,181.46303634619227,kWh,0.0
+2025-09-03,Scope 2,Purchased Electricity,State Grid,281.98780518814965,kWh,0.716
+2025-09-03,Scope 2,Purchased Electricity,Rooftop Solar,214.58034425401235,kWh,0.0
+2025-09-04,Scope 2,Purchased Electricity,State Grid,278.3685046154487,kWh,0.716
+2025-09-04,Scope 2,Purchased Electricity,Rooftop Solar,206.88213555246872,kWh,0.0
+2025-09-05,Scope 2,Purchased Electricity,State Grid,260.2191176319097,kWh,0.716
+2025-09-05,Scope 2,Purchased Electricity,Rooftop Solar,163.26587397622063,kWh,0.0
+2025-09-05,Scope 3,Waste Generated,Mixed Municipal Waste,77.69570112525787,kg,0.45
+2025-09-05,Scope 3,Waste Generated,Scrap Metal & Cardboard,60.196636506253896,kg,0.02
+2025-09-06,Scope 2,Purchased Electricity,State Grid,234.1870549454905,kWh,0.716
+2025-09-06,Scope 2,Purchased Electricity,Rooftop Solar,208.43275074801033,kWh,0.0
+2025-09-06,Scope 1,Mobile Combustion,Delivery Truck (Diesel),41.970618451297796,Liter,2.68
+2025-09-06,Scope 1,Mobile Combustion,Company Cars (Petrol),25.921209105169524,Liter,2.31
+2025-09-07,Scope 2,Purchased Electricity,State Grid,279.25327439900235,kWh,0.716
+2025-09-07,Scope 2,Purchased Electricity,Rooftop Solar,203.97875306530904,kWh,0.0
+2025-09-08,Scope 2,Purchased Electricity,State Grid,254.61948833149802,kWh,0.716
+2025-09-08,Scope 2,Purchased Electricity,Rooftop Solar,196.80600408398004,kWh,0.0
+2025-09-09,Scope 2,Purchased Electricity,State Grid,286.1332974643369,kWh,0.716
+2025-09-09,Scope 2,Purchased Electricity,Rooftop Solar,205.25625881412816,kWh,0.0
+2025-09-10,Scope 2,Purchased Electricity,State Grid,320.6572278793488,kWh,0.716
+2025-09-10,Scope 2,Purchased Electricity,Rooftop Solar,200.23194653575996,kWh,0.0
+2025-09-10,Scope 1,Stationary Combustion,DG Set (Diesel),16.14270349022035,Liter,2.68
+2025-09-11,Scope 2,Purchased Electricity,State Grid,198.026845930683,kWh,0.716
+2025-09-11,Scope 2,Purchased Electricity,Rooftop Solar,224.9912414312463,kWh,0.0
+2025-09-12,Scope 2,Purchased Electricity,State Grid,184.74944674700228,kWh,0.716
+2025-09-12,Scope 2,Purchased Electricity,Rooftop Solar,203.11300683750565,kWh,0.0
+2025-09-12,Scope 3,Waste Generated,Mixed Municipal Waste,78.3730336012063,kg,0.45
+2025-09-12,Scope 3,Waste Generated,Scrap Metal & Cardboard,71.9146709573251,kg,0.02
+2025-09-13,Scope 2,Purchased Electricity,State Grid,227.12700133464799,kWh,0.716
+2025-09-13,Scope 2,Purchased Electricity,Rooftop Solar,181.11118757132058,kWh,0.0
+2025-09-13,Scope 1,Mobile Combustion,Delivery Truck (Diesel),46.81204602922775,Liter,2.68
+2025-09-13,Scope 1,Mobile Combustion,Company Cars (Petrol),19.220206813191275,Liter,2.31
+2025-09-14,Scope 2,Purchased Electricity,State Grid,247.70405320321532,kWh,0.716
+2025-09-14,Scope 2,Purchased Electricity,Rooftop Solar,209.21868501234422,kWh,0.0
+2025-09-15,Scope 2,Purchased Electricity,State Grid,250.55952821229067,kWh,0.716
+2025-09-15,Scope 2,Purchased Electricity,Rooftop Solar,205.51926347221195,kWh,0.0
+2025-09-16,Scope 2,Purchased Electricity,State Grid,224.98252146110838,kWh,0.716
+2025-09-16,Scope 2,Purchased Electricity,Rooftop Solar,203.86615977270185,kWh,0.0
+2025-09-17,Scope 2,Purchased Electricity,State Grid,285.17354452635016,kWh,0.716
+2025-09-17,Scope 2,Purchased Electricity,Rooftop Solar,198.09691934836297,kWh,0.0
+2025-09-18,Scope 2,Purchased Electricity,State Grid,246.48237169552797,kWh,0.716
+2025-09-18,Scope 2,Purchased Electricity,Rooftop Solar,208.0762534895521,kWh,0.0
+2025-09-19,Scope 2,Purchased Electricity,State Grid,233.4478411877359,kWh,0.716
+2025-09-19,Scope 2,Purchased Electricity,Rooftop Solar,213.82817315990235,kWh,0.0
+2025-09-19,Scope 3,Waste Generated,Mixed Municipal Waste,69.83073583629239,kg,0.45
+2025-09-19,Scope 3,Waste Generated,Scrap Metal & Cardboard,55.437232504939374,kg,0.02
+2025-09-20,Scope 2,Purchased Electricity,State Grid,316.99869288922173,kWh,0.716
+2025-09-20,Scope 2,Purchased Electricity,Rooftop Solar,187.73404814562085,kWh,0.0
+2025-09-20,Scope 1,Mobile Combustion,Delivery Truck (Diesel),41.486969778979216,Liter,2.68
+2025-09-20,Scope 1,Mobile Combustion,Company Cars (Petrol),26.973817105504644,Liter,2.31
+2025-09-21,Scope 2,Purchased Electricity,State Grid,250.72960323088094,kWh,0.716
+2025-09-21,Scope 2,Purchased Electricity,Rooftop Solar,209.48101536423192,kWh,0.0
+2025-09-22,Scope 2,Purchased Electricity,State Grid,200.02659659427408,kWh,0.716
+2025-09-22,Scope 2,Purchased Electricity,Rooftop Solar,198.68129390159154,kWh,0.0
+2025-09-23,Scope 2,Purchased Electricity,State Grid,319.35417750511874,kWh,0.716
+2025-09-23,Scope 2,Purchased Electricity,Rooftop Solar,193.783227241634,kWh,0.0
+2025-09-24,Scope 2,Purchased Electricity,State Grid,289.4260560890251,kWh,0.716
+2025-09-24,Scope 2,Purchased Electricity,Rooftop Solar,215.53261574285975,kWh,0.0
+2025-09-25,Scope 2,Purchased Electricity,State Grid,241.16729611909508,kWh,0.716
+2025-09-25,Scope 2,Purchased Electricity,Rooftop Solar,217.0903759725389,kWh,0.0
+2025-09-26,Scope 2,Purchased Electricity,State Grid,229.7618420737482,kWh,0.716
+2025-09-26,Scope 2,Purchased Electricity,Rooftop Solar,196.75734999106407,kWh,0.0
+2025-09-26,Scope 3,Waste Generated,Mixed Municipal Waste,94.23699981959837,kg,0.45
+2025-09-26,Scope 3,Waste Generated,Scrap Metal & Cardboard,63.08267924930431,kg,0.02
+2025-09-27,Scope 2,Purchased Electricity,State Grid,280.546665608984,kWh,0.716
+2025-09-27,Scope 2,Purchased Electricity,Rooftop Solar,190.00327285619232,kWh,0.0
+2025-09-27,Scope 1,Mobile Combustion,Delivery Truck (Diesel),39.14469473285943,Liter,2.68
+2025-09-27,Scope 1,Mobile Combustion,Company Cars (Petrol),22.82783562959845,Liter,2.31
+2025-09-28,Scope 2,Purchased Electricity,State Grid,211.2000301646219,kWh,0.716
+2025-09-28,Scope 2,Purchased Electricity,Rooftop Solar,183.31252008239053,kWh,0.0
+2025-09-29,Scope 2,Purchased Electricity,State Grid,256.77740435210933,kWh,0.716
+2025-09-29,Scope 2,Purchased Electricity,Rooftop Solar,194.9575772557668,kWh,0.0
+2025-09-30,Scope 2,Purchased Electricity,State Grid,292.1250658439909,kWh,0.716
+2025-09-30,Scope 2,Purchased Electricity,Rooftop Solar,173.2320495355103,kWh,0.0
+2025-10-01,Scope 2,Purchased Electricity,State Grid,275.73740094694756,kWh,0.716
+2025-10-01,Scope 2,Purchased Electricity,Rooftop Solar,185.96048067921905,kWh,0.0
+2025-10-02,Scope 2,Purchased Electricity,State Grid,270.6394835095982,kWh,0.716
+2025-10-02,Scope 2,Purchased Electricity,Rooftop Solar,197.11785469808913,kWh,0.0
+2025-10-02,Scope 1,Stationary Combustion,DG Set (Diesel),18.878126589506195,Liter,2.68
+2025-10-03,Scope 2,Purchased Electricity,State Grid,270.2138554322037,kWh,0.716
+2025-10-03,Scope 2,Purchased Electricity,Rooftop Solar,195.79748460513372,kWh,0.0
+2025-10-03,Scope 3,Waste Generated,Mixed Municipal Waste,81.09372754141016,kg,0.45
+2025-10-03,Scope 3,Waste Generated,Scrap Metal & Cardboard,63.213903491609344,kg,0.02
+2025-10-04,Scope 2,Purchased Electricity,State Grid,261.1594251524227,kWh,0.716
+2025-10-04,Scope 2,Purchased Electricity,Rooftop Solar,180.25376812072273,kWh,0.0
+2025-10-04,Scope 1,Mobile Combustion,Delivery Truck (Diesel),40.96536724615852,Liter,2.68
+2025-10-04,Scope 1,Mobile Combustion,Company Cars (Petrol),23.307454649698425,Liter,2.31
+2025-10-05,Scope 2,Purchased Electricity,State Grid,224.614537154454,kWh,0.716
+2025-10-05,Scope 2,Purchased Electricity,Rooftop Solar,212.33769534087685,kWh,0.0
+2025-10-06,Scope 2,Purchased Electricity,State Grid,284.91253319718203,kWh,0.716
+2025-10-06,Scope 2,Purchased Electricity,Rooftop Solar,199.8932637674704,kWh,0.0
+2025-10-07,Scope 2,Purchased Electricity,State Grid,247.45225870695424,kWh,0.716
+2025-10-07,Scope 2,Purchased Electricity,Rooftop Solar,190.64117724571872,kWh,0.0
+2025-10-08,Scope 2,Purchased Electricity,State Grid,251.08189782148878,kWh,0.716
+2025-10-08,Scope 2,Purchased Electricity,Rooftop Solar,171.0896607474777,kWh,0.0
+2025-10-09,Scope 2,Purchased Electricity,State Grid,250.07239346582938,kWh,0.716
+2025-10-09,Scope 2,Purchased Electricity,Rooftop Solar,180.65878663639805,kWh,0.0
+2025-10-10,Scope 2,Purchased Electricity,State Grid,237.28532589424708,kWh,0.716
+2025-10-10,Scope 2,Purchased Electricity,Rooftop Solar,214.6652274521083,kWh,0.0
+2025-10-10,Scope 3,Waste Generated,Mixed Municipal Waste,94.75005103755649,kg,0.45
+2025-10-10,Scope 3,Waste Generated,Scrap Metal & Cardboard,64.12039874527613,kg,0.02
+2025-10-11,Scope 2,Purchased Electricity,State Grid,254.81803186849788,kWh,0.716
+2025-10-11,Scope 2,Purchased Electricity,Rooftop Solar,198.89384207102626,kWh,0.0
+2025-10-11,Scope 1,Mobile Combustion,Delivery Truck (Diesel),45.25487872141738,Liter,2.68
+2025-10-11,Scope 1,Mobile Combustion,Company Cars (Petrol),22.414695901761686,Liter,2.31
+2025-10-12,Scope 2,Purchased Electricity,State Grid,255.46224818829648,kWh,0.716
+2025-10-12,Scope 2,Purchased Electricity,Rooftop Solar,175.71700868419987,kWh,0.0
+2025-10-13,Scope 2,Purchased Electricity,State Grid,250.59622100409325,kWh,0.716
+2025-10-13,Scope 2,Purchased Electricity,Rooftop Solar,198.7557083859374,kWh,0.0
+2025-10-14,Scope 2,Purchased Electricity,State Grid,242.5019577477116,kWh,0.716
+2025-10-14,Scope 2,Purchased Electricity,Rooftop Solar,210.37171592034505,kWh,0.0
+2025-10-15,Scope 2,Purchased Electricity,State Grid,272.87757142790775,kWh,0.716
+2025-10-15,Scope 2,Purchased Electricity,Rooftop Solar,226.4184780646121,kWh,0.0
+2025-10-16,Scope 2,Purchased Electricity,State Grid,250.96320539995102,kWh,0.716
+2025-10-16,Scope 2,Purchased Electricity,Rooftop Solar,191.23310829928826,kWh,0.0
+2025-10-17,Scope 2,Purchased Electricity,State Grid,214.06351915426296,kWh,0.716
+2025-10-17,Scope 2,Purchased Electricity,Rooftop Solar,212.307969751931,kWh,0.0
+2025-10-17,Scope 3,Waste Generated,Mixed Municipal Waste,83.73278950080257,kg,0.45
+2025-10-17,Scope 3,Waste Generated,Scrap Metal & Cardboard,68.12832200196324,kg,0.02
+2025-10-18,Scope 2,Purchased Electricity,State Grid,220.2704967248394,kWh,0.716
+2025-10-18,Scope 2,Purchased Electricity,Rooftop Solar,224.4145948547968,kWh,0.0
+2025-10-18,Scope 1,Mobile Combustion,Delivery Truck (Diesel),34.66777134275825,Liter,2.68
+2025-10-18,Scope 1,Mobile Combustion,Company Cars (Petrol),26.81661325387784,Liter,2.31
+2025-10-19,Scope 2,Purchased Electricity,State Grid,256.41201945300395,kWh,0.716
+2025-10-19,Scope 2,Purchased Electricity,Rooftop Solar,208.6170758757651,kWh,0.0
+2025-10-20,Scope 2,Purchased Electricity,State Grid,266.34381130846793,kWh,0.716
+2025-10-20,Scope 2,Purchased Electricity,Rooftop Solar,200.05383100939136,kWh,0.0
+2025-10-21,Scope 2,Purchased Electricity,State Grid,263.60987214861086,kWh,0.716
+2025-10-21,Scope 2,Purchased Electricity,Rooftop Solar,186.71348956528638,kWh,0.0
+2025-10-22,Scope 2,Purchased Electricity,State Grid,243.4195898318079,kWh,0.716
+2025-10-22,Scope 2,Purchased Electricity,Rooftop Solar,182.80644927278053,kWh,0.0
+2025-10-23,Scope 2,Purchased Electricity,State Grid,264.3109663287216,kWh,0.716
+2025-10-23,Scope 2,Purchased Electricity,Rooftop Solar,182.31573356404994,kWh,0.0
+2025-10-24,Scope 2,Purchased Electricity,State Grid,279.91543463578466,kWh,0.716
+2025-10-24,Scope 2,Purchased Electricity,Rooftop Solar,195.01337940258506,kWh,0.0
+2025-10-24,Scope 3,Waste Generated,Mixed Municipal Waste,73.84331129408412,kg,0.45
+2025-10-24,Scope 3,Waste Generated,Scrap Metal & Cardboard,64.3169789978828,kg,0.02
+2025-10-25,Scope 2,Purchased Electricity,State Grid,261.35307363686485,kWh,0.716
+2025-10-25,Scope 2,Purchased Electricity,Rooftop Solar,209.5246920702349,kWh,0.0
+2025-10-25,Scope 1,Mobile Combustion,Delivery Truck (Diesel),41.25916553952574,Liter,2.68
+2025-10-25,Scope 1,Mobile Combustion,Company Cars (Petrol),25.829476593884515,Liter,2.31
+2025-10-26,Scope 2,Purchased Electricity,State Grid,270.60024329556785,kWh,0.716
+2025-10-26,Scope 2,Purchased Electricity,Rooftop Solar,186.59975550671749,kWh,0.0
+2025-10-27,Scope 2,Purchased Electricity,State Grid,213.0938300693057,kWh,0.716
+2025-10-27,Scope 2,Purchased Electricity,Rooftop Solar,225.94964679199265,kWh,0.0
+2025-10-28,Scope 2,Purchased Electricity,State Grid,230.77445069510685,kWh,0.716
+2025-10-28,Scope 2,Purchased Electricity,Rooftop Solar,213.6718151484747,kWh,0.0
+2025-10-29,Scope 2,Purchased Electricity,State Grid,275.5168127360512,kWh,0.716
+2025-10-29,Scope 2,Purchased Electricity,Rooftop Solar,183.49090909586675,kWh,0.0
+2025-10-30,Scope 2,Purchased Electricity,State Grid,198.95642547700336,kWh,0.716
+2025-10-30,Scope 2,Purchased Electricity,Rooftop Solar,200.3840044492977,kWh,0.0
+2025-10-31,Scope 2,Purchased Electricity,State Grid,237.35421380267937,kWh,0.716
+2025-10-31,Scope 2,Purchased Electricity,Rooftop Solar,221.41492954557387,kWh,0.0
+2025-10-31,Scope 1,Stationary Combustion,DG Set (Diesel),12.592819824015569,Liter,2.68
+2025-10-31,Scope 3,Waste Generated,Mixed Municipal Waste,82.24919902082443,kg,0.45
+2025-10-31,Scope 3,Waste Generated,Scrap Metal & Cardboard,63.00846966908424,kg,0.02
+2025-11-01,Scope 2,Purchased Electricity,State Grid,278.74157436816427,kWh,0.716
+2025-11-01,Scope 2,Purchased Electricity,Rooftop Solar,211.50600548182362,kWh,0.0
+2025-11-01,Scope 1,Mobile Combustion,Delivery Truck (Diesel),39.43721864039041,Liter,2.68
+2025-11-01,Scope 1,Mobile Combustion,Company Cars (Petrol),23.356724159900704,Liter,2.31
+2025-11-02,Scope 2,Purchased Electricity,State Grid,197.46446742504497,kWh,0.716
+2025-11-02,Scope 2,Purchased Electricity,Rooftop Solar,233.4810308453699,kWh,0.0
+2025-11-03,Scope 2,Purchased Electricity,State Grid,201.28763014856702,kWh,0.716
+2025-11-03,Scope 2,Purchased Electricity,Rooftop Solar,217.41717774201703,kWh,0.0
+2025-11-04,Scope 2,Purchased Electricity,State Grid,190.63590254435246,kWh,0.716
+2025-11-04,Scope 2,Purchased Electricity,Rooftop Solar,211.7646717285785,kWh,0.0
+2025-11-05,Scope 2,Purchased Electricity,State Grid,243.32972511548869,kWh,0.716
+2025-11-05,Scope 2,Purchased Electricity,Rooftop Solar,198.1141081253679,kWh,0.0
+2025-11-06,Scope 2,Purchased Electricity,State Grid,276.8832861134422,kWh,0.716
+2025-11-06,Scope 2,Purchased Electricity,Rooftop Solar,195.85935208778946,kWh,0.0
+2025-11-07,Scope 2,Purchased Electricity,State Grid,232.19564937113623,kWh,0.716
+2025-11-07,Scope 2,Purchased Electricity,Rooftop Solar,222.51277706539432,kWh,0.0
+2025-11-07,Scope 3,Waste Generated,Mixed Municipal Waste,79.42810125232766,kg,0.45
+2025-11-07,Scope 3,Waste Generated,Scrap Metal & Cardboard,62.266002240100406,kg,0.02
+2025-11-08,Scope 2,Purchased Electricity,State Grid,228.0481936865121,kWh,0.716
+2025-11-08,Scope 2,Purchased Electricity,Rooftop Solar,206.5942995937608,kWh,0.0
+2025-11-08,Scope 1,Mobile Combustion,Delivery Truck (Diesel),40.574967521932614,Liter,2.68
+2025-11-08,Scope 1,Mobile Combustion,Company Cars (Petrol),28.25885584035849,Liter,2.31
+2025-11-09,Scope 2,Purchased Electricity,State Grid,239.1022030005116,kWh,0.716
+2025-11-09,Scope 2,Purchased Electricity,Rooftop Solar,200.52281263115648,kWh,0.0
+2025-11-10,Scope 2,Purchased Electricity,State Grid,196.18022834558928,kWh,0.716
+2025-11-10,Scope 2,Purchased Electricity,Rooftop Solar,198.2599942490657,kWh,0.0
+2025-11-11,Scope 2,Purchased Electricity,State Grid,227.3086153335779,kWh,0.716
+2025-11-11,Scope 2,Purchased Electricity,Rooftop Solar,191.02557473963952,kWh,0.0
+2025-11-12,Scope 2,Purchased Electricity,State Grid,226.08586091110737,kWh,0.716
+2025-11-12,Scope 2,Purchased Electricity,Rooftop Solar,206.68553636556334,kWh,0.0
+2025-11-13,Scope 2,Purchased Electricity,State Grid,258.1721749882172,kWh,0.716
+2025-11-13,Scope 2,Purchased Electricity,Rooftop Solar,176.53773006970826,kWh,0.0
+2025-11-14,Scope 2,Purchased Electricity,State Grid,219.46654883518826,kWh,0.716
+2025-11-14,Scope 2,Purchased Electricity,Rooftop Solar,198.01709364265545,kWh,0.0
+2025-11-14,Scope 3,Waste Generated,Mixed Municipal Waste,80.66135468312055,kg,0.45
+2025-11-14,Scope 3,Waste Generated,Scrap Metal & Cardboard,66.56188701893129,kg,0.02
+2025-11-15,Scope 2,Purchased Electricity,State Grid,278.2007008574725,kWh,0.716
+2025-11-15,Scope 2,Purchased Electricity,Rooftop Solar,192.52494459316145,kWh,0.0
+2025-11-15,Scope 1,Mobile Combustion,Delivery Truck (Diesel),31.73471001002753,Liter,2.68
+2025-11-15,Scope 1,Mobile Combustion,Company Cars (Petrol),24.295474780974263,Liter,2.31
+2025-11-16,Scope 2,Purchased Electricity,State Grid,263.9275339566434,kWh,0.716
+2025-11-16,Scope 2,Purchased Electricity,Rooftop Solar,167.40769902097549,kWh,0.0
+2025-11-17,Scope 2,Purchased Electricity,State Grid,224.7818921385881,kWh,0.716
+2025-11-17,Scope 2,Purchased Electricity,Rooftop Solar,216.03414126535029,kWh,0.0
+2025-11-18,Scope 2,Purchased Electricity,State Grid,215.27169364959104,kWh,0.716
+2025-11-18,Scope 2,Purchased Electricity,Rooftop Solar,198.86974488557354,kWh,0.0
+2025-11-19,Scope 2,Purchased Electricity,State Grid,242.39033302501954,kWh,0.716
+2025-11-19,Scope 2,Purchased Electricity,Rooftop Solar,217.2445638254657,kWh,0.0
+2025-11-20,Scope 2,Purchased Electricity,State Grid,296.868593623674,kWh,0.716
+2025-11-20,Scope 2,Purchased Electricity,Rooftop Solar,210.41304257787556,kWh,0.0
+2025-11-21,Scope 2,Purchased Electricity,State Grid,209.0119183033881,kWh,0.716
+2025-11-21,Scope 2,Purchased Electricity,Rooftop Solar,192.61323880151434,kWh,0.0
+2025-11-21,Scope 3,Waste Generated,Mixed Municipal Waste,88.72985441741179,kg,0.45
+2025-11-21,Scope 3,Waste Generated,Scrap Metal & Cardboard,67.343429398424,kg,0.02
+2025-11-22,Scope 2,Purchased Electricity,State Grid,235.21975656101225,kWh,0.716
+2025-11-22,Scope 2,Purchased Electricity,Rooftop Solar,191.4403988832522,kWh,0.0
+2025-11-22,Scope 1,Mobile Combustion,Delivery Truck (Diesel),39.720943236933515,Liter,2.68
+2025-11-22,Scope 1,Mobile Combustion,Company Cars (Petrol),23.08016108192639,Liter,2.31
+2025-11-23,Scope 2,Purchased Electricity,State Grid,254.85671825681084,kWh,0.716
+2025-11-23,Scope 2,Purchased Electricity,Rooftop Solar,190.14099155484706,kWh,0.0
+2025-11-23,Scope 1,Stationary Combustion,DG Set (Diesel),5.310188265383509,Liter,2.68
+2025-11-24,Scope 2,Purchased Electricity,State Grid,258.47639671679497,kWh,0.716
+2025-11-24,Scope 2,Purchased Electricity,Rooftop Solar,171.80100655492126,kWh,0.0
+2025-11-25,Scope 2,Purchased Electricity,State Grid,228.55605269034874,kWh,0.716
+2025-11-25,Scope 2,Purchased Electricity,Rooftop Solar,191.99633235097747,kWh,0.0
+2025-11-26,Scope 2,Purchased Electricity,State Grid,268.20098884220357,kWh,0.716
+2025-11-26,Scope 2,Purchased Electricity,Rooftop Solar,193.01728949727925,kWh,0.0
+2025-11-27,Scope 2,Purchased Electricity,State Grid,283.3406679378468,kWh,0.716
+2025-11-27,Scope 2,Purchased Electricity,Rooftop Solar,199.34880190234006,kWh,0.0
+2025-11-28,Scope 2,Purchased Electricity,State Grid,270.36112282528563,kWh,0.716
+2025-11-28,Scope 2,Purchased Electricity,Rooftop Solar,211.55148985068593,kWh,0.0
+2025-11-28,Scope 3,Waste Generated,Mixed Municipal Waste,93.97086915347998,kg,0.45
+2025-11-28,Scope 3,Waste Generated,Scrap Metal & Cardboard,64.27276031908463,kg,0.02
+2025-11-29,Scope 2,Purchased Electricity,State Grid,226.8270348737396,kWh,0.716
+2025-11-29,Scope 2,Purchased Electricity,Rooftop Solar,184.19089648152521,kWh,0.0
+2025-11-29,Scope 1,Mobile Combustion,Delivery Truck (Diesel),33.9310912770262,Liter,2.68
+2025-11-29,Scope 1,Mobile Combustion,Company Cars (Petrol),28.356119189576326,Liter,2.31
+2025-11-30,Scope 2,Purchased Electricity,State Grid,225.97992997291522,kWh,0.716
+2025-11-30,Scope 2,Purchased Electricity,Rooftop Solar,205.56248128571565,kWh,0.0
+2025-12-01,Scope 2,Purchased Electricity,State Grid,264.59894407939754,kWh,0.716
+2025-12-01,Scope 2,Purchased Electricity,Rooftop Solar,215.49704082832238,kWh,0.0
+2025-12-02,Scope 2,Purchased Electricity,State Grid,280.0393675153978,kWh,0.716
+2025-12-02,Scope 2,Purchased Electricity,Rooftop Solar,200.37776893719735,kWh,0.0
+2025-12-03,Scope 2,Purchased Electricity,State Grid,248.87138218353752,kWh,0.716
+2025-12-03,Scope 2,Purchased Electricity,Rooftop Solar,188.28239875901718,kWh,0.0
+2025-12-04,Scope 2,Purchased Electricity,State Grid,253.8506936449707,kWh,0.716
+2025-12-04,Scope 2,Purchased Electricity,Rooftop Solar,189.85033333440816,kWh,0.0
+2025-12-05,Scope 2,Purchased Electricity,State Grid,246.34376160079285,kWh,0.716
+2025-12-05,Scope 2,Purchased Electricity,Rooftop Solar,183.96511743169344,kWh,0.0
+2025-12-05,Scope 3,Waste Generated,Mixed Municipal Waste,70.59463148773685,kg,0.45
+2025-12-05,Scope 3,Waste Generated,Scrap Metal & Cardboard,69.69793271035905,kg,0.02
+2025-12-06,Scope 2,Purchased Electricity,State Grid,333.98628627213037,kWh,0.716
+2025-12-06,Scope 2,Purchased Electricity,Rooftop Solar,206.45602333615813,kWh,0.0
+2025-12-06,Scope 1,Mobile Combustion,Delivery Truck (Diesel),40.66418534725568,Liter,2.68
+2025-12-06,Scope 1,Mobile Combustion,Company Cars (Petrol),19.826768241201357,Liter,2.31
+2025-12-07,Scope 2,Purchased Electricity,State Grid,226.13139993247322,kWh,0.716
+2025-12-07,Scope 2,Purchased Electricity,Rooftop Solar,204.59449055423013,kWh,0.0
+2025-12-08,Scope 2,Purchased Electricity,State Grid,269.18119306649584,kWh,0.716
+2025-12-08,Scope 2,Purchased Electricity,Rooftop Solar,213.72378921131883,kWh,0.0
+2025-12-09,Scope 2,Purchased Electricity,State Grid,302.48349187807173,kWh,0.716
+2025-12-09,Scope 2,Purchased Electricity,Rooftop Solar,221.88938892487917,kWh,0.0
+2025-12-10,Scope 2,Purchased Electricity,State Grid,237.69627538964468,kWh,0.716
+2025-12-10,Scope 2,Purchased Electricity,Rooftop Solar,212.51060363845144,kWh,0.0
+2025-12-10,Scope 1,Stationary Combustion,DG Set (Diesel),6.008944156826475,Liter,2.68
+2025-12-11,Scope 2,Purchased Electricity,State Grid,242.48068685267083,kWh,0.716
+2025-12-11,Scope 2,Purchased Electricity,Rooftop Solar,203.56484043084623,kWh,0.0
+2025-12-12,Scope 2,Purchased Electricity,State Grid,190.2006625614414,kWh,0.716
+2025-12-12,Scope 2,Purchased Electricity,Rooftop Solar,222.190872436377,kWh,0.0
+2025-12-12,Scope 3,Waste Generated,Mixed Municipal Waste,72.41048514202124,kg,0.45
+2025-12-12,Scope 3,Waste Generated,Scrap Metal & Cardboard,78.76229390879062,kg,0.02
+2025-12-13,Scope 2,Purchased Electricity,State Grid,279.9948272536679,kWh,0.716
+2025-12-13,Scope 2,Purchased Electricity,Rooftop Solar,193.39834470629847,kWh,0.0
+2025-12-13,Scope 1,Mobile Combustion,Delivery Truck (Diesel),38.1923385313443,Liter,2.68
+2025-12-13,Scope 1,Mobile Combustion,Company Cars (Petrol),24.11547325323802,Liter,2.31
+2025-12-14,Scope 2,Purchased Electricity,State Grid,259.8444299275119,kWh,0.716
+2025-12-14,Scope 2,Purchased Electricity,Rooftop Solar,228.28301635018488,kWh,0.0
+2025-12-14,Scope 1,Stationary Combustion,DG Set (Diesel),15.941106388042414,Liter,2.68
+2025-12-15,Scope 2,Purchased Electricity,State Grid,258.52805091975006,kWh,0.716
+2025-12-15,Scope 2,Purchased Electricity,Rooftop Solar,179.2309197589219,kWh,0.0
+2025-12-16,Scope 2,Purchased Electricity,State Grid,237.64424976071626,kWh,0.716
+2025-12-16,Scope 2,Purchased Electricity,Rooftop Solar,227.2828021604205,kWh,0.0
+2025-12-17,Scope 2,Purchased Electricity,State Grid,288.23448064396797,kWh,0.716
+2025-12-17,Scope 2,Purchased Electricity,Rooftop Solar,220.87536807306924,kWh,0.0
+2025-12-18,Scope 2,Purchased Electricity,State Grid,302.23306300747686,kWh,0.716
+2025-12-18,Scope 2,Purchased Electricity,Rooftop Solar,185.8783020889514,kWh,0.0
+2025-12-19,Scope 2,Purchased Electricity,State Grid,211.1271936729281,kWh,0.716
+2025-12-19,Scope 2,Purchased Electricity,Rooftop Solar,185.35218346930904,kWh,0.0
+2025-12-19,Scope 3,Waste Generated,Mixed Municipal Waste,57.66319708791165,kg,0.45
+2025-12-19,Scope 3,Waste Generated,Scrap Metal & Cardboard,63.343508322631635,kg,0.02
+2025-12-20,Scope 2,Purchased Electricity,State Grid,202.298938555358,kWh,0.716
+2025-12-20,Scope 2,Purchased Electricity,Rooftop Solar,217.93488587306155,kWh,0.0
+2025-12-20,Scope 1,Mobile Combustion,Delivery Truck (Diesel),49.99726710885788,Liter,2.68
+2025-12-20,Scope 1,Mobile Combustion,Company Cars (Petrol),26.01031357481517,Liter,2.31
+2025-12-21,Scope 2,Purchased Electricity,State Grid,220.84170974052182,kWh,0.716
+2025-12-21,Scope 2,Purchased Electricity,Rooftop Solar,212.40310706327062,kWh,0.0
+2025-12-22,Scope 2,Purchased Electricity,State Grid,255.72238113561616,kWh,0.716
+2025-12-22,Scope 2,Purchased Electricity,Rooftop Solar,220.71523043073114,kWh,0.0
+2025-12-23,Scope 2,Purchased Electricity,State Grid,280.34479155320435,kWh,0.716
+2025-12-23,Scope 2,Purchased Electricity,Rooftop Solar,203.9188341352075,kWh,0.0
+2025-12-24,Scope 2,Purchased Electricity,State Grid,237.5271174074037,kWh,0.716
+2025-12-24,Scope 2,Purchased Electricity,Rooftop Solar,195.9881185669542,kWh,0.0
+2025-12-25,Scope 2,Purchased Electricity,State Grid,273.0478411956908,kWh,0.716
+2025-12-25,Scope 2,Purchased Electricity,Rooftop Solar,193.22551297396123,kWh,0.0
+2025-12-26,Scope 2,Purchased Electricity,State Grid,190.671100031091,kWh,0.716
+2025-12-26,Scope 2,Purchased Electricity,Rooftop Solar,212.13388071004113,kWh,0.0
+2025-12-26,Scope 3,Waste Generated,Mixed Municipal Waste,82.34024649057496,kg,0.45
+2025-12-26,Scope 3,Waste Generated,Scrap Metal & Cardboard,57.94518450462232,kg,0.02
+2025-12-27,Scope 2,Purchased Electricity,State Grid,326.7148762573969,kWh,0.716
+2025-12-27,Scope 2,Purchased Electricity,Rooftop Solar,202.57698007532403,kWh,0.0
+2025-12-27,Scope 1,Mobile Combustion,Delivery Truck (Diesel),40.3801666978394,Liter,2.68
+2025-12-27,Scope 1,Mobile Combustion,Company Cars (Petrol),28.298343043978,Liter,2.31
+2025-12-28,Scope 2,Purchased Electricity,State Grid,217.007739678526,kWh,0.716
+2025-12-28,Scope 2,Purchased Electricity,Rooftop Solar,207.1997646219576,kWh,0.0
+2025-12-29,Scope 2,Purchased Electricity,State Grid,240.46021583422862,kWh,0.716
+2025-12-29,Scope 2,Purchased Electricity,Rooftop Solar,207.57803103010986,kWh,0.0
+2025-12-30,Scope 2,Purchased Electricity,State Grid,228.42177470892528,kWh,0.716
+2025-12-30,Scope 2,Purchased Electricity,Rooftop Solar,211.50391342840004,kWh,0.0
+2025-12-31,Scope 2,Purchased Electricity,State Grid,222.42534178178406,kWh,0.716
+2025-12-31,Scope 2,Purchased Electricity,Rooftop Solar,206.64628249653762,kWh,0.0
+2026-01-01,Scope 2,Purchased Electricity,State Grid,281.978904090358,kWh,0.716
+2026-01-01,Scope 2,Purchased Electricity,Rooftop Solar,161.96786698104594,kWh,0.0
+2026-01-02,Scope 2,Purchased Electricity,State Grid,266.67795116022,kWh,0.716
+2026-01-02,Scope 2,Purchased Electricity,Rooftop Solar,193.3527305818353,kWh,0.0
+2026-01-02,Scope 3,Waste Generated,Mixed Municipal Waste,74.77483238464738,kg,0.45
+2026-01-02,Scope 3,Waste Generated,Scrap Metal & Cardboard,62.37342457219499,kg,0.02
+2026-01-03,Scope 2,Purchased Electricity,State Grid,236.27074353697031,kWh,0.716
+2026-01-03,Scope 2,Purchased Electricity,Rooftop Solar,212.81874021326826,kWh,0.0
+2026-01-03,Scope 1,Stationary Combustion,DG Set (Diesel),11.236154569492921,Liter,2.68
+2026-01-03,Scope 1,Mobile Combustion,Delivery Truck (Diesel),40.815313503901564,Liter,2.68
+2026-01-03,Scope 1,Mobile Combustion,Company Cars (Petrol),24.387839948314785,Liter,2.31
+2026-01-04,Scope 2,Purchased Electricity,State Grid,236.11589398084013,kWh,0.716
+2026-01-04,Scope 2,Purchased Electricity,Rooftop Solar,190.15726749979788,kWh,0.0
+2026-01-05,Scope 2,Purchased Electricity,State Grid,190.0845011288719,kWh,0.716
+2026-01-05,Scope 2,Purchased Electricity,Rooftop Solar,211.45747241357824,kWh,0.0
+2026-01-06,Scope 2,Purchased Electricity,State Grid,258.7077627222907,kWh,0.716
+2026-01-06,Scope 2,Purchased Electricity,Rooftop Solar,224.35179223059342,kWh,0.0
+2026-01-07,Scope 2,Purchased Electricity,State Grid,276.4623745374417,kWh,0.716
+2026-01-07,Scope 2,Purchased Electricity,Rooftop Solar,198.9216100290309,kWh,0.0
+2026-01-08,Scope 2,Purchased Electricity,State Grid,258.7596690525954,kWh,0.716
+2026-01-08,Scope 2,Purchased Electricity,Rooftop Solar,213.1109231567151,kWh,0.0
+2026-01-09,Scope 2,Purchased Electricity,State Grid,249.92686721647954,kWh,0.716
+2026-01-09,Scope 2,Purchased Electricity,Rooftop Solar,206.47035964060007,kWh,0.0
+2026-01-09,Scope 3,Waste Generated,Mixed Municipal Waste,72.23893348305089,kg,0.45
+2026-01-09,Scope 3,Waste Generated,Scrap Metal & Cardboard,69.07198090688536,kg,0.02
+2026-01-10,Scope 2,Purchased Electricity,State Grid,286.1158802869069,kWh,0.716
+2026-01-10,Scope 2,Purchased Electricity,Rooftop Solar,191.61370626603312,kWh,0.0
+2026-01-10,Scope 1,Mobile Combustion,Delivery Truck (Diesel),48.09327698584757,Liter,2.68
+2026-01-10,Scope 1,Mobile Combustion,Company Cars (Petrol),19.156490416409113,Liter,2.31
+2026-01-11,Scope 2,Purchased Electricity,State Grid,224.8119935063945,kWh,0.716
+2026-01-11,Scope 2,Purchased Electricity,Rooftop Solar,203.03585540178224,kWh,0.0
+2026-01-12,Scope 2,Purchased Electricity,State Grid,219.56223814644449,kWh,0.716
+2026-01-12,Scope 2,Purchased Electricity,Rooftop Solar,194.75299037410792,kWh,0.0
+2026-01-12,Scope 1,Stationary Combustion,DG Set (Diesel),14.388906094958555,Liter,2.68
+2026-01-13,Scope 2,Purchased Electricity,State Grid,278.4012353423341,kWh,0.716
+2026-01-13,Scope 2,Purchased Electricity,Rooftop Solar,199.42238962397192,kWh,0.0
+2026-01-14,Scope 2,Purchased Electricity,State Grid,253.89235418060795,kWh,0.716
+2026-01-14,Scope 2,Purchased Electricity,Rooftop Solar,183.51440754666672,kWh,0.0
+2026-01-15,Scope 2,Purchased Electricity,State Grid,248.1355623355662,kWh,0.716
+2026-01-15,Scope 2,Purchased Electricity,Rooftop Solar,205.2690234447623,kWh,0.0
+2026-01-16,Scope 2,Purchased Electricity,State Grid,287.9702296103104,kWh,0.716
+2026-01-16,Scope 2,Purchased Electricity,Rooftop Solar,217.98018177052268,kWh,0.0
+2026-01-16,Scope 3,Waste Generated,Mixed Municipal Waste,66.32501343185885,kg,0.45
+2026-01-16,Scope 3,Waste Generated,Scrap Metal & Cardboard,60.488636912708564,kg,0.02
+2026-01-17,Scope 2,Purchased Electricity,State Grid,286.08798951295887,kWh,0.716
+2026-01-17,Scope 2,Purchased Electricity,Rooftop Solar,197.2200674687222,kWh,0.0
+2026-01-17,Scope 1,Mobile Combustion,Delivery Truck (Diesel),45.21079574728211,Liter,2.68
+2026-01-17,Scope 1,Mobile Combustion,Company Cars (Petrol),23.68204241752125,Liter,2.31
+2026-01-18,Scope 2,Purchased Electricity,State Grid,286.43495773624426,kWh,0.716
+2026-01-18,Scope 2,Purchased Electricity,Rooftop Solar,196.57468696504048,kWh,0.0
+2026-01-19,Scope 2,Purchased Electricity,State Grid,248.82249573030708,kWh,0.716
+2026-01-19,Scope 2,Purchased Electricity,Rooftop Solar,192.66617050480846,kWh,0.0
+2026-01-20,Scope 2,Purchased Electricity,State Grid,238.89348822781074,kWh,0.716
+2026-01-20,Scope 2,Purchased Electricity,Rooftop Solar,181.4224732402701,kWh,0.0
+2026-01-21,Scope 2,Purchased Electricity,State Grid,242.75729196670733,kWh,0.716
+2026-01-21,Scope 2,Purchased Electricity,Rooftop Solar,190.13887415581155,kWh,0.0
+2026-01-22,Scope 2,Purchased Electricity,State Grid,230.5648684330787,kWh,0.716
+2026-01-22,Scope 2,Purchased Electricity,Rooftop Solar,230.32465021504123,kWh,0.0
+2026-01-23,Scope 2,Purchased Electricity,State Grid,229.4540405546178,kWh,0.716
+2026-01-23,Scope 2,Purchased Electricity,Rooftop Solar,204.4333521617694,kWh,0.0
+2026-01-23,Scope 1,Stationary Combustion,DG Set (Diesel),11.685795720538595,Liter,2.68
+2026-01-23,Scope 3,Waste Generated,Mixed Municipal Waste,86.72790845256387,kg,0.45
+2026-01-23,Scope 3,Waste Generated,Scrap Metal & Cardboard,66.50870367398707,kg,0.02
+2026-01-24,Scope 2,Purchased Electricity,State Grid,242.81801996526337,kWh,0.716
+2026-01-24,Scope 2,Purchased Electricity,Rooftop Solar,219.97635119541138,kWh,0.0
+2026-01-24,Scope 1,Mobile Combustion,Delivery Truck (Diesel),38.951757214395215,Liter,2.68
+2026-01-24,Scope 1,Mobile Combustion,Company Cars (Petrol),27.902876238218997,Liter,2.31
+2026-01-25,Scope 2,Purchased Electricity,State Grid,265.8251698047269,kWh,0.716
+2026-01-25,Scope 2,Purchased Electricity,Rooftop Solar,203.40389075473084,kWh,0.0
+2026-01-26,Scope 2,Purchased Electricity,State Grid,265.5948194013573,kWh,0.716
+2026-01-26,Scope 2,Purchased Electricity,Rooftop Solar,183.69367046593192,kWh,0.0
+2026-01-26,Scope 1,Stationary Combustion,DG Set (Diesel),14.66330613943383,Liter,2.68
+2026-01-27,Scope 2,Purchased Electricity,State Grid,284.1066376530671,kWh,0.716
+2026-01-27,Scope 2,Purchased Electricity,Rooftop Solar,182.7529972736506,kWh,0.0
+2026-01-28,Scope 2,Purchased Electricity,State Grid,242.39481354266226,kWh,0.716
+2026-01-28,Scope 2,Purchased Electricity,Rooftop Solar,192.54154231704015,kWh,0.0
+2026-01-29,Scope 2,Purchased Electricity,State Grid,242.35555489524566,kWh,0.716
+2026-01-29,Scope 2,Purchased Electricity,Rooftop Solar,204.6613366027896,kWh,0.0
+2026-01-30,Scope 2,Purchased Electricity,State Grid,176.18532476801923,kWh,0.716
+2026-01-30,Scope 2,Purchased Electricity,Rooftop Solar,210.00593243595014,kWh,0.0
+2026-01-30,Scope 1,Stationary Combustion,DG Set (Diesel),15.44269752686253,Liter,2.68
+2026-01-30,Scope 3,Waste Generated,Mixed Municipal Waste,78.21705934759521,kg,0.45
+2026-01-30,Scope 3,Waste Generated,Scrap Metal & Cardboard,67.16330413868404,kg,0.02
+2026-01-31,Scope 2,Purchased Electricity,State Grid,247.47617856088686,kWh,0.716
+2026-01-31,Scope 2,Purchased Electricity,Rooftop Solar,208.38705580862046,kWh,0.0
+2026-01-31,Scope 1,Mobile Combustion,Delivery Truck (Diesel),36.31829762051589,Liter,2.68
+2026-01-31,Scope 1,Mobile Combustion,Company Cars (Petrol),27.606125557092202,Liter,2.31
+2026-02-01,Scope 2,Purchased Electricity,State Grid,253.82087696095434,kWh,0.716
+2026-02-01,Scope 2,Purchased Electricity,Rooftop Solar,208.69779129215445,kWh,0.0
+2026-02-02,Scope 2,Purchased Electricity,State Grid,230.16466612916614,kWh,0.716
+2026-02-02,Scope 2,Purchased Electricity,Rooftop Solar,175.86749375452038,kWh,0.0
+2026-02-03,Scope 2,Purchased Electricity,State Grid,249.94214051077873,kWh,0.716
+2026-02-03,Scope 2,Purchased Electricity,Rooftop Solar,194.35441218415454,kWh,0.0
+2026-02-04,Scope 2,Purchased Electricity,State Grid,183.30590392737605,kWh,0.716
+2026-02-04,Scope 2,Purchased Electricity,Rooftop Solar,209.73020701841773,kWh,0.0
+2026-02-05,Scope 2,Purchased Electricity,State Grid,301.120376970125,kWh,0.716
+2026-02-05,Scope 2,Purchased Electricity,Rooftop Solar,186.91573186387458,kWh,0.0
+2026-02-06,Scope 2,Purchased Electricity,State Grid,258.4024188987993,kWh,0.716
+2026-02-06,Scope 2,Purchased Electricity,Rooftop Solar,208.35421701691448,kWh,0.0
+2026-02-06,Scope 3,Waste Generated,Mixed Municipal Waste,87.23567753675839,kg,0.45
+2026-02-06,Scope 3,Waste Generated,Scrap Metal & Cardboard,58.58313437263068,kg,0.02
+2026-02-07,Scope 2,Purchased Electricity,State Grid,226.88461221261792,kWh,0.716
+2026-02-07,Scope 2,Purchased Electricity,Rooftop Solar,187.30643682486857,kWh,0.0
+2026-02-07,Scope 1,Mobile Combustion,Delivery Truck (Diesel),32.04886144723631,Liter,2.68
+2026-02-07,Scope 1,Mobile Combustion,Company Cars (Petrol),19.010336844328187,Liter,2.31
+2026-02-08,Scope 2,Purchased Electricity,State Grid,283.2658432036335,kWh,0.716
+2026-02-08,Scope 2,Purchased Electricity,Rooftop Solar,182.2818359870145,kWh,0.0
+2026-02-09,Scope 2,Purchased Electricity,State Grid,217.90250546220597,kWh,0.716
+2026-02-09,Scope 2,Purchased Electricity,Rooftop Solar,183.77908769270147,kWh,0.0
+2026-02-10,Scope 2,Purchased Electricity,State Grid,202.88568469286787,kWh,0.716
+2026-02-10,Scope 2,Purchased Electricity,Rooftop Solar,211.0783073702567,kWh,0.0
+2026-02-11,Scope 2,Purchased Electricity,State Grid,232.8768251033702,kWh,0.716
+2026-02-11,Scope 2,Purchased Electricity,Rooftop Solar,181.36762236428325,kWh,0.0
+2026-02-12,Scope 2,Purchased Electricity,State Grid,299.7705940286246,kWh,0.716
+2026-02-12,Scope 2,Purchased Electricity,Rooftop Solar,180.0954100733619,kWh,0.0
+2026-02-13,Scope 2,Purchased Electricity,State Grid,183.1028537439996,kWh,0.716
+2026-02-13,Scope 2,Purchased Electricity,Rooftop Solar,190.88869265841006,kWh,0.0
+2026-02-13,Scope 3,Waste Generated,Mixed Municipal Waste,66.76664039192474,kg,0.45
+2026-02-13,Scope 3,Waste Generated,Scrap Metal & Cardboard,68.6461610837934,kg,0.02
+2026-02-14,Scope 2,Purchased Electricity,State Grid,234.1770921660047,kWh,0.716
+2026-02-14,Scope 2,Purchased Electricity,Rooftop Solar,201.8432784167376,kWh,0.0
+2026-02-14,Scope 1,Mobile Combustion,Delivery Truck (Diesel),39.53858710537711,Liter,2.68
+2026-02-14,Scope 1,Mobile Combustion,Company Cars (Petrol),22.766819658345195,Liter,2.31
+2026-02-15,Scope 2,Purchased Electricity,State Grid,284.30414895025785,kWh,0.716
+2026-02-15,Scope 2,Purchased Electricity,Rooftop Solar,194.22752233020753,kWh,0.0
+2026-02-16,Scope 2,Purchased Electricity,State Grid,183.62651906811124,kWh,0.716
+2026-02-16,Scope 2,Purchased Electricity,Rooftop Solar,185.3531981324528,kWh,0.0
+2026-02-17,Scope 2,Purchased Electricity,State Grid,207.90332008551076,kWh,0.716
+2026-02-17,Scope 2,Purchased Electricity,Rooftop Solar,179.70776092661123,kWh,0.0
+2026-02-18,Scope 2,Purchased Electricity,State Grid,274.5003427286391,kWh,0.716
+2026-02-18,Scope 2,Purchased Electricity,Rooftop Solar,199.7601359265358,kWh,0.0
+2026-02-19,Scope 2,Purchased Electricity,State Grid,293.0897820290469,kWh,0.716
+2026-02-19,Scope 2,Purchased Electricity,Rooftop Solar,194.0481042347625,kWh,0.0
+2026-02-20,Scope 2,Purchased Electricity,State Grid,269.448850725837,kWh,0.716
+2026-02-20,Scope 2,Purchased Electricity,Rooftop Solar,186.42293359731414,kWh,0.0
+2026-02-20,Scope 3,Waste Generated,Mixed Municipal Waste,82.12181725249872,kg,0.45
+2026-02-20,Scope 3,Waste Generated,Scrap Metal & Cardboard,56.8375855500208,kg,0.02
+2026-02-21,Scope 2,Purchased Electricity,State Grid,204.85526739923108,kWh,0.716
+2026-02-21,Scope 2,Purchased Electricity,Rooftop Solar,213.87881968842072,kWh,0.0
+2026-02-21,Scope 1,Mobile Combustion,Delivery Truck (Diesel),37.449970934584194,Liter,2.68
+2026-02-21,Scope 1,Mobile Combustion,Company Cars (Petrol),24.097700459154353,Liter,2.31
+2026-02-22,Scope 2,Purchased Electricity,State Grid,243.57025296220834,kWh,0.716
+2026-02-22,Scope 2,Purchased Electricity,Rooftop Solar,204.44714652306513,kWh,0.0
+2026-02-23,Scope 2,Purchased Electricity,State Grid,244.15125834934628,kWh,0.716
+2026-02-23,Scope 2,Purchased Electricity,Rooftop Solar,210.48239644405595,kWh,0.0
+2026-02-24,Scope 2,Purchased Electricity,State Grid,279.9741489176389,kWh,0.716
+2026-02-24,Scope 2,Purchased Electricity,Rooftop Solar,188.62109079517205,kWh,0.0
+2026-02-25,Scope 2,Purchased Electricity,State Grid,249.5939890164177,kWh,0.716
+2026-02-25,Scope 2,Purchased Electricity,Rooftop Solar,217.5613190116428,kWh,0.0
+2026-02-26,Scope 2,Purchased Electricity,State Grid,265.4403146943758,kWh,0.716
+2026-02-26,Scope 2,Purchased Electricity,Rooftop Solar,222.92871124527983,kWh,0.0
+2026-02-27,Scope 2,Purchased Electricity,State Grid,233.70762701131844,kWh,0.716
+2026-02-27,Scope 2,Purchased Electricity,Rooftop Solar,204.03308155195162,kWh,0.0
+2026-02-27,Scope 3,Waste Generated,Mixed Municipal Waste,66.71933790936725,kg,0.45
+2026-02-27,Scope 3,Waste Generated,Scrap Metal & Cardboard,60.90278102525265,kg,0.02
+2026-02-28,Scope 2,Purchased Electricity,State Grid,252.89946456115106,kWh,0.716
+2026-02-28,Scope 2,Purchased Electricity,Rooftop Solar,193.33764600176121,kWh,0.0
+2026-02-28,Scope 1,Mobile Combustion,Delivery Truck (Diesel),37.56593557945304,Liter,2.68
+2026-02-28,Scope 1,Mobile Combustion,Company Cars (Petrol),22.770512934833683,Liter,2.31
+2026-03-01,Scope 2,Purchased Electricity,State Grid,432.65706602866516,kWh,0.716
+2026-03-01,Scope 2,Purchased Electricity,Rooftop Solar,195.91699551073492,kWh,0.0
+2026-03-02,Scope 2,Purchased Electricity,State Grid,388.5214842041963,kWh,0.716
+2026-03-02,Scope 2,Purchased Electricity,Rooftop Solar,205.86002934651492,kWh,0.0
+2026-03-03,Scope 2,Purchased Electricity,State Grid,371.4019965300455,kWh,0.716
+2026-03-03,Scope 2,Purchased Electricity,Rooftop Solar,197.38452999858524,kWh,0.0
+2026-03-04,Scope 2,Purchased Electricity,State Grid,389.9866871797972,kWh,0.716
+2026-03-04,Scope 2,Purchased Electricity,Rooftop Solar,202.85136675385715,kWh,0.0
+2026-03-05,Scope 2,Purchased Electricity,State Grid,390.3706579923057,kWh,0.716
+2026-03-05,Scope 2,Purchased Electricity,Rooftop Solar,199.544476176389,kWh,0.0
+2026-03-06,Scope 2,Purchased Electricity,State Grid,400.17778771797293,kWh,0.716
+2026-03-06,Scope 2,Purchased Electricity,Rooftop Solar,202.65658601705263,kWh,0.0
+2026-03-06,Scope 3,Waste Generated,Mixed Municipal Waste,75.74320394161002,kg,0.45
+2026-03-06,Scope 3,Waste Generated,Scrap Metal & Cardboard,65.55989159388231,kg,0.02
+2026-03-07,Scope 2,Purchased Electricity,State Grid,457.94218541103817,kWh,0.716
+2026-03-07,Scope 2,Purchased Electricity,Rooftop Solar,195.037663178067,kWh,0.0
+2026-03-07,Scope 1,Mobile Combustion,Delivery Truck (Diesel),32.78177088855698,Liter,2.68
+2026-03-07,Scope 1,Mobile Combustion,Company Cars (Petrol),27.7286854102438,Liter,2.31
+2026-03-08,Scope 2,Purchased Electricity,State Grid,370.7141715500774,kWh,0.716
+2026-03-08,Scope 2,Purchased Electricity,Rooftop Solar,182.56522324911208,kWh,0.0
+2026-03-09,Scope 2,Purchased Electricity,State Grid,359.7185561416851,kWh,0.716
+2026-03-09,Scope 2,Purchased Electricity,Rooftop Solar,249.58098166327292,kWh,0.0
+2026-03-10,Scope 2,Purchased Electricity,State Grid,429.72253527203077,kWh,0.716
+2026-03-10,Scope 2,Purchased Electricity,Rooftop Solar,187.0220512496409,kWh,0.0
+2026-03-11,Scope 2,Purchased Electricity,State Grid,353.4590145054684,kWh,0.716
+2026-03-11,Scope 2,Purchased Electricity,Rooftop Solar,221.0842200702815,kWh,0.0
+2026-03-12,Scope 2,Purchased Electricity,State Grid,354.53922994715674,kWh,0.716
+2026-03-12,Scope 2,Purchased Electricity,Rooftop Solar,202.42082012678475,kWh,0.0
+2026-03-13,Scope 2,Purchased Electricity,State Grid,457.3470856706392,kWh,0.716
+2026-03-13,Scope 2,Purchased Electricity,Rooftop Solar,185.34942653668784,kWh,0.0
+2026-03-13,Scope 3,Waste Generated,Mixed Municipal Waste,86.98973739882616,kg,0.45
+2026-03-13,Scope 3,Waste Generated,Scrap Metal & Cardboard,64.20732574005591,kg,0.02
+2026-03-14,Scope 2,Purchased Electricity,State Grid,523.7221407015306,kWh,0.716
+2026-03-14,Scope 2,Purchased Electricity,Rooftop Solar,172.74188956063037,kWh,0.0
+2026-03-14,Scope 1,Mobile Combustion,Delivery Truck (Diesel),42.482276881775256,Liter,2.68
+2026-03-14,Scope 1,Mobile Combustion,Company Cars (Petrol),32.2178475547127,Liter,2.31
+2026-03-15,Scope 2,Purchased Electricity,State Grid,353.605504733393,kWh,0.716
+2026-03-15,Scope 2,Purchased Electricity,Rooftop Solar,205.79461083141885,kWh,0.0
+2026-03-15,Scope 1,Fugitive Emissions,AC Refrigerant (R-32),1.4717581827322617,kg,675.0
+2026-03-16,Scope 2,Purchased Electricity,State Grid,417.7118527475362,kWh,0.716
+2026-03-16,Scope 2,Purchased Electricity,Rooftop Solar,205.6803610405583,kWh,0.0
+2026-03-17,Scope 2,Purchased Electricity,State Grid,329.3338614335146,kWh,0.716
+2026-03-17,Scope 2,Purchased Electricity,Rooftop Solar,232.72145106163114,kWh,0.0
+2026-03-18,Scope 2,Purchased Electricity,State Grid,410.6239942237551,kWh,0.716
+2026-03-18,Scope 2,Purchased Electricity,Rooftop Solar,209.24130971904327,kWh,0.0
+2026-03-19,Scope 2,Purchased Electricity,State Grid,363.7070901966084,kWh,0.716
+2026-03-19,Scope 2,Purchased Electricity,Rooftop Solar,219.48097276575172,kWh,0.0
+2026-03-20,Scope 2,Purchased Electricity,State Grid,416.1491534979507,kWh,0.716
+2026-03-20,Scope 2,Purchased Electricity,Rooftop Solar,189.00724070064553,kWh,0.0
+2026-03-20,Scope 1,Stationary Combustion,DG Set (Diesel),15.103925821517766,Liter,2.68
+2026-03-20,Scope 3,Waste Generated,Mixed Municipal Waste,87.83165762539225,kg,0.45
+2026-03-20,Scope 3,Waste Generated,Scrap Metal & Cardboard,65.61680299267466,kg,0.02
+2026-03-21,Scope 2,Purchased Electricity,State Grid,340.9489966203922,kWh,0.716
+2026-03-21,Scope 2,Purchased Electricity,Rooftop Solar,210.5601291458282,kWh,0.0
+2026-03-21,Scope 1,Mobile Combustion,Delivery Truck (Diesel),34.067688840876684,Liter,2.68
+2026-03-21,Scope 1,Mobile Combustion,Company Cars (Petrol),25.828481546868595,Liter,2.31
+2026-03-22,Scope 2,Purchased Electricity,State Grid,439.4268642059709,kWh,0.716
+2026-03-22,Scope 2,Purchased Electricity,Rooftop Solar,213.4091679379893,kWh,0.0
+2026-03-23,Scope 2,Purchased Electricity,State Grid,478.25632062720774,kWh,0.716
+2026-03-23,Scope 2,Purchased Electricity,Rooftop Solar,193.50711818623813,kWh,0.0
+2026-03-24,Scope 2,Purchased Electricity,State Grid,452.8253449832722,kWh,0.716
+2026-03-24,Scope 2,Purchased Electricity,Rooftop Solar,190.38447499810377,kWh,0.0
+2026-03-24,Scope 1,Stationary Combustion,DG Set (Diesel),7.736545811027325,Liter,2.68
+2026-03-25,Scope 2,Purchased Electricity,State Grid,363.20734368823923,kWh,0.716
+2026-03-25,Scope 2,Purchased Electricity,Rooftop Solar,177.72925051338757,kWh,0.0
+2026-03-26,Scope 2,Purchased Electricity,State Grid,279.5544264704585,kWh,0.716
+2026-03-26,Scope 2,Purchased Electricity,Rooftop Solar,204.38504999739422,kWh,0.0
+2026-03-27,Scope 2,Purchased Electricity,State Grid,408.0256774212262,kWh,0.716
+2026-03-27,Scope 2,Purchased Electricity,Rooftop Solar,191.38128732316866,kWh,0.0
+2026-03-27,Scope 3,Waste Generated,Mixed Municipal Waste,80.26584481645529,kg,0.45
+2026-03-27,Scope 3,Waste Generated,Scrap Metal & Cardboard,79.06021285657089,kg,0.02
+2026-03-28,Scope 2,Purchased Electricity,State Grid,420.13598920948635,kWh,0.716
+2026-03-28,Scope 2,Purchased Electricity,Rooftop Solar,236.24655853826602,kWh,0.0
+2026-03-28,Scope 1,Mobile Combustion,Delivery Truck (Diesel),36.33841546940727,Liter,2.68
+2026-03-28,Scope 1,Mobile Combustion,Company Cars (Petrol),25.31942267736834,Liter,2.31
+2026-03-29,Scope 2,Purchased Electricity,State Grid,414.29692116481533,kWh,0.716
+2026-03-29,Scope 2,Purchased Electricity,Rooftop Solar,205.154926281694,kWh,0.0
+2026-03-30,Scope 2,Purchased Electricity,State Grid,375.10130165373477,kWh,0.716
+2026-03-30,Scope 2,Purchased Electricity,Rooftop Solar,190.26838366532246,kWh,0.0
+2026-03-31,Scope 2,Purchased Electricity,State Grid,339.4279043253928,kWh,0.716
+2026-03-31,Scope 2,Purchased Electricity,Rooftop Solar,223.25100466694707,kWh,0.0
+2026-04-01,Scope 2,Purchased Electricity,State Grid,379.6531920595633,kWh,0.716
+2026-04-01,Scope 2,Purchased Electricity,Rooftop Solar,225.718241525799,kWh,0.0
+2026-04-02,Scope 2,Purchased Electricity,State Grid,412.15348162546786,kWh,0.716
+2026-04-02,Scope 2,Purchased Electricity,Rooftop Solar,189.27478883186643,kWh,0.0
+2026-04-03,Scope 2,Purchased Electricity,State Grid,347.0415497831117,kWh,0.716
+2026-04-03,Scope 2,Purchased Electricity,Rooftop Solar,198.70864435376373,kWh,0.0
+2026-04-03,Scope 3,Waste Generated,Mixed Municipal Waste,85.9285234307388,kg,0.45
+2026-04-03,Scope 3,Waste Generated,Scrap Metal & Cardboard,64.44308235216313,kg,0.02
+2026-04-04,Scope 2,Purchased Electricity,State Grid,456.07465934165486,kWh,0.716
+2026-04-04,Scope 2,Purchased Electricity,Rooftop Solar,203.6098946779637,kWh,0.0
+2026-04-04,Scope 1,Mobile Combustion,Delivery Truck (Diesel),32.71797727455844,Liter,2.68
+2026-04-04,Scope 1,Mobile Combustion,Company Cars (Petrol),22.792055801586546,Liter,2.31
+2026-04-05,Scope 2,Purchased Electricity,State Grid,434.40367417973835,kWh,0.716
+2026-04-05,Scope 2,Purchased Electricity,Rooftop Solar,195.19032463408618,kWh,0.0
+2026-04-06,Scope 2,Purchased Electricity,State Grid,400.83019790941734,kWh,0.716
+2026-04-06,Scope 2,Purchased Electricity,Rooftop Solar,191.43886485458285,kWh,0.0

@@ -14,8 +14,8 @@ ui.page_header(
     subtitle="Five specialist agents for reporting, offset advisory, regulation radar, and emission optimisation.",
 )
 
-if not os.getenv("GROQ_API_KEY"):
-    st.error("**GROQ_API_KEY not set.** Add it to your `.env` file and restart the application.")
+if not os.getenv("CarbonZero_API_KEY"):
+    st.error("**CarbonZero_API_KEY not set.** Add it to your `.env` file and restart the application.")
     st.stop()
 
 from ai_agents import CarbonZeroAgents
