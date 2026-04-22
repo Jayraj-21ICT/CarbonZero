@@ -34,7 +34,7 @@ if has_data:
     min_d = df["date"].min()
     max_d = df["date"].max()
     period_str  = f"{min_d.strftime('%b %Y')} – {max_d.strftime('%b %Y')}"
-    updated_str = max_d.strftime("%-d %b %Y") if pd.notna(max_d) else "—"
+    updated_str = max_d.strftime("%d %b %Y").lstrip("0") if pd.notna(max_d) else "—"
 
     # Snapshot KPIs
     scope_totals  = df.groupby("ghg_scope")["emissions_kgCO2e"].sum() if "ghg_scope" in df.columns else df.groupby("scope")["emissions_kgCO2e"].sum()
